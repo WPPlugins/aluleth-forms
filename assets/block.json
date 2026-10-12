@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "aluleth/form",
+	"title": "Aluleth Form",
+	"category": "widgets",
+	"icon": "feedback",
+	"description": "Show one of your Aluleth forms.",
+	"keywords": [ "form", "contact", "aluleth" ],
+	"textdomain": "aluleth-forms",
+	"attributes": {
+		"formId": { "type": "number", "default": 0 }
+	},
+	"supports": { "html": false, "align": [ "wide", "full" ] }
+}

@@ -1,0 +1,12 @@
+/* Aluleth › Settings › General (Aluleth Forms). */
+.alf-g-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.alf-g-controls{display:flex;flex-direction:column;gap:16px}
+.al-radios--stack{flex-direction:column;align-items:flex-start;gap:6px}
+.al-radios--stack legend{font-weight:600;margin:0 0 4px}
+.alf-g-preview{position:sticky;top:48px;display:flex;flex-direction:column;gap:10px;padding:18px;border-radius:12px;background:var(--al-soft,#f4f5f7)}
+.alf-g-preview .alf{background:#fff;padding:20px;border-radius:12px}
+.alf-g-preview .alf.alf--dark{background:#121417}
+.alf-g-preview .alf .alf-input{pointer-events:none}
+.alf-g-preview .alf.alf-help-below .alf-help--label,.alf-g-preview .alf.alf-help-label .alf-help--below,.alf-g-preview .alf.alf-labels-inside .alf-help--label{display:none}
+.alf-g-preview .alf.alf-labels-inside.alf-help-label .alf-help--below{display:block}
+@media (max-width:960px){.alf-g-layout{grid-template-columns:1fr}.alf-g-preview{position:static}}

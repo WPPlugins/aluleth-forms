@@ -1,0 +1,121 @@
+/* Aluleth Forms – front end. Styles: clean (default), soft, dark.
+   Every rule is scoped under .alf with two classes so theme and builder
+   styles for input, select, textarea and button do not override it. */
+.alf{--alf-accent:#0e1116;--alf-on-accent:#fff;--alf-text:inherit;--alf-muted:#5b6370;--alf-bg:transparent;--alf-field:#fff;--alf-field-text:#0e1116;--alf-border:#c9ced6;--alf-focus:#2f5bea;--alf-radius:10px;--alf-gap:18px;--alf-error:#b42318;color:var(--alf-text);background:var(--alf-bg);font:inherit;max-width:100%}
+.alf *,.alf *::before,.alf *::after{box-sizing:border-box}
+.alf .alf-form{display:flex;flex-wrap:wrap;gap:var(--alf-gap);margin:0;padding:0}
+.alf .alf-step{display:flex;flex-wrap:wrap;gap:var(--alf-gap);width:100%}
+.alf [hidden]{display:none!important}
+.alf .alf-field{flex:1 1 100%;display:flex;flex-direction:column;gap:7px;min-width:0;margin:0}
+.alf .alf-half{flex:1 1 calc(50% - var(--alf-gap));min-width:220px}
+.alf .alf-label{display:block;font-weight:600;font-size:.95em;line-height:1.3;padding:0;margin:0;color:inherit}
+.alf .alf-required{color:var(--alf-error);margin-left:3px}
+.alf .alf-input{display:block;width:100%;max-width:none;height:auto;min-height:48px;margin:0;font:inherit;font-size:1em;line-height:1.4;color:var(--alf-field-text);background:var(--alf-field);border:1.5px solid var(--alf-border);border-radius:var(--alf-radius);padding:.75em .9em;box-shadow:none;outline:none;appearance:none;transition:border-color .15s,box-shadow .15s}
+.alf textarea.alf-input{min-height:120px;resize:vertical}
+.alf select.alf-input{appearance:auto;padding-right:.6em}
+.alf .alf-input::placeholder{color:var(--alf-muted);opacity:1}
+.alf .alf-input:focus{border-color:var(--alf-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--alf-focus) 22%,transparent)}
+.alf .alf-field.has-error .alf-input{border-color:var(--alf-error)}
+.alf .alf-help{margin:0;font-size:.85em;color:var(--alf-muted)}
+.alf .alf-error{margin:0;font-size:.85em;font-weight:600;color:var(--alf-error)}
+.alf .alf-choices{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;min-width:0}
+.alf .alf-choices legend{margin:0 0 8px;padding:0;width:100%}
+.alf .alf-choice{display:inline-flex;align-items:center;gap:8px;margin:0;padding:.6em .9em;border:1.5px solid var(--alf-border);border-radius:var(--alf-radius);background:var(--alf-field);color:var(--alf-field-text);cursor:pointer;min-height:44px;font-weight:500}
+.alf .alf-choice:has(input:checked){border-color:var(--alf-accent);box-shadow:inset 0 0 0 1px var(--alf-accent)}
+.alf .alf-choice input,.alf .alf-consent input{accent-color:var(--alf-accent);width:18px;height:18px;margin:0;flex:none;position:static;opacity:1}
+.alf .alf-consent{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:.92em;line-height:1.45;cursor:pointer}
+.alf .alf-consent input{margin-top:2px}
+.alf .alf-heading{width:100%;margin:6px 0 0;font-size:1.25em;line-height:1.25;color:inherit}
+.alf .alf-paragraph{width:100%;margin:0;color:var(--alf-muted)}
+.alf .alf-actions{display:flex;gap:10px;width:100%;flex-wrap:wrap;margin:0}
+.alf .alf-button{display:inline-flex;align-items:center;justify-content:center;width:auto;margin:0;font:inherit;font-size:1em;font-weight:700;line-height:1.2;letter-spacing:normal;text-transform:none;text-decoration:none;cursor:pointer;border:0;border-radius:var(--alf-radius);padding:.8em 1.5em;min-height:48px;background:var(--alf-accent);color:var(--alf-on-accent);box-shadow:none;transition:opacity .15s}
+.alf .alf-button:hover{opacity:.9;background:var(--alf-accent);color:var(--alf-on-accent)}
+.alf .alf-button:focus-visible{outline:3px solid var(--alf-focus);outline-offset:2px}
+.alf .alf-button:disabled{opacity:.6;cursor:wait}
+.alf .alf-button--ghost,.alf .alf-button--ghost:hover{background:transparent;color:inherit;border:1.5px solid var(--alf-border)}
+.alf .alf-actions .alf-next,.alf .alf-actions .alf-submit{margin-left:auto}
+.alf .alf-status{width:100%;font-size:.92em;min-height:1.2em;margin:0}
+.alf .alf-status.is-error{color:var(--alf-error);font-weight:600}
+.alf .alf-done{padding:1.2em 1.4em;border-radius:var(--alf-radius);background:color-mix(in srgb,var(--alf-accent) 8%,transparent);border:1.5px solid color-mix(in srgb,var(--alf-accent) 25%,transparent);font-weight:600}
+.alf .alf-done:focus{outline:none}
+.alf .alf-progress{list-style:none;display:flex;gap:8px;margin:0;padding:0;width:100%}
+.alf .alf-progress-item{flex:1;display:flex;flex-direction:column;gap:6px;margin:0;font-size:.8em;color:var(--alf-muted)}
+.alf .alf-progress-bar{height:4px;border-radius:4px;background:var(--alf-border)}
+.alf .alf-progress-item.is-current,.alf .alf-progress-item.is-done{color:inherit;font-weight:600}
+.alf .alf-progress-item.is-current .alf-progress-bar,.alf .alf-progress-item.is-done .alf-progress-bar{background:var(--alf-accent)}
+.alf .alf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.alf .alf-form.is-sending{opacity:.85}
+/* Soft */
+.alf--soft{--alf-accent:#2f5bea;--alf-field:#eef2fd;--alf-border:#eef2fd;--alf-radius:14px}
+.alf--soft .alf-button{border-radius:999px}
+.alf--soft .alf-progress-bar{background:#dfe6fb}
+/* Dark */
+.alf--dark{--alf-accent:#ff6a1f;--alf-on-accent:#0e1116;--alf-text:#f2f3f5;--alf-muted:#b8bec8;--alf-bg:#121417;--alf-field:#1b1f25;--alf-field-text:#f2f3f5;--alf-border:#3a404b;--alf-focus:#ff6a1f;--alf-error:#ff8a80;padding:28px;border-radius:16px}
+@media (prefers-reduced-motion:reduce){.alf *{transition:none!important}}
+.alf .alf-status:empty{margin-top:calc(var(--alf-gap) * -1)}
+.alf .alf-third{flex:1 1 calc(33.333% - var(--alf-gap));min-width:160px}
+.alf .alf-captcha{margin:4px 0 14px;min-height:0}
+.alf .alf-captcha--preview{padding:12px 14px;border:1px dashed var(--alf-line,#d5d9e0);border-radius:10px;font-size:.85em;color:var(--alf-muted)}
+/* Error summary at the top of the form */
+.alf .alf-summary{width:100%;margin:0;padding:12px 16px;border-radius:var(--alf-radius);border:1.5px solid var(--alf-error);background:color-mix(in srgb,var(--alf-error) 7%,transparent)}
+.alf .alf-summary:focus{outline:3px solid var(--alf-focus);outline-offset:2px}
+.alf .alf-summary-title{margin:0 0 6px;font-weight:700;color:var(--alf-error)}
+.alf .alf-summary ul{margin:0;padding:0 0 0 1.2em}
+.alf .alf-summary li{margin:2px 0}
+.alf .alf-summary a{color:inherit;text-decoration:underline}
+/* Labels beside the fields, when the form is wide enough */
+.alf.alf-labels-beside .alf-form{container-type:inline-size}
+@container (min-width:560px){
+.alf.alf-labels-beside .alf-field:is(.alf-field--text,.alf-field--email,.alf-field--phone,.alf-field--number,.alf-field--date,.alf-field--select,.alf-field--textarea){display:grid;grid-template-columns:minmax(120px,32%) minmax(0,1fr);column-gap:18px;row-gap:6px;align-items:start}
+.alf.alf-labels-beside .alf-field>*{grid-column:2}
+.alf.alf-labels-beside .alf-field>.alf-label{grid-column:1;grid-row:1;padding-top:.8em}
+.alf.alf-labels-beside .alf-field>.alf-input{grid-row:1}
+.alf.alf-labels-beside.alf-help-label .alf-field>.alf-help{grid-column:1;grid-row:2}
+.alf.alf-labels-beside.alf-help-label .alf-field>.alf-input{grid-row:1 / span 2}
+.alf.alf-labels-beside.alf-help-label .alf-field:has(>.alf-help){grid-template-rows:auto 1fr}
+.alf.alf-labels-beside .alf-field:is(.alf-field--radio,.alf-field--checkboxes) .alf-choices{display:grid;grid-template-columns:minmax(120px,32%) minmax(0,1fr);column-gap:18px;row-gap:8px;justify-items:start}
+.alf.alf-labels-beside .alf-field:is(.alf-field--radio,.alf-field--checkboxes) .alf-choices>legend{float:left;grid-column:1;grid-row:1;width:auto;margin:0;padding-top:.6em}
+.alf.alf-labels-beside .alf-field:is(.alf-field--radio,.alf-field--checkboxes) .alf-choice{grid-column:2}
+.alf.alf-labels-beside .alf-field:is(.alf-field--radio,.alf-field--checkboxes)>:is(.alf-help,.alf-error){margin-left:calc(32% + 18px)}
+.alf.alf-labels-beside .alf-field:is(.alf-half,.alf-third){flex-basis:100%}
+}
+/* Labels inside the fields */
+.alf.alf-labels-inside .alf-field:is(.alf-field--text,.alf-field--email,.alf-field--phone,.alf-field--number,.alf-field--date,.alf-field--select,.alf-field--textarea){position:relative}
+.alf.alf-labels-inside .alf-field:is(.alf-field--text,.alf-field--email,.alf-field--phone,.alf-field--number,.alf-field--date,.alf-field--select,.alf-field--textarea)>.alf-label{position:absolute;z-index:1;left:calc(.9em + 1.5px);top:.6em;max-width:calc(100% - 2.4em);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:.75em;font-weight:600;color:var(--alf-muted);pointer-events:none;transition:top .15s,font-size .15s}
+.alf.alf-labels-inside .alf-field:is(.alf-field--text,.alf-field--email,.alf-field--phone,.alf-field--number,.alf-field--date,.alf-field--select,.alf-field--textarea) .alf-input{min-height:56px;padding-top:1.5em;padding-bottom:.45em}
+.alf.alf-labels-inside .alf-field:has(.alf-input[placeholder=" "]:placeholder-shown:not(:focus))>.alf-label{top:1.05em;font-size:1em;font-weight:500}
+.alf.alf-labels-inside .alf-field--textarea:has(.alf-input[placeholder=" "]:placeholder-shown:not(:focus))>.alf-label{top:.95em}
+/* Payment fields */
+.alf .alf-prices{flex-direction:column;flex-wrap:nowrap}
+.alf .alf-price-choice{display:flex;width:100%;justify-content:flex-start;padding:.85em 1em;min-height:52px}
+.alf .alf-price-name{flex:1;min-width:0}
+.alf .alf-price{font-weight:700;white-space:nowrap}
+.alf .alf-line{display:flex;justify-content:space-between;gap:12px;margin:0;padding:.85em 1em;border:1.5px solid var(--alf-border);border-radius:var(--alf-radius);background:var(--alf-field);color:var(--alf-field-text)}
+.alf .alf-amount{display:flex;align-items:stretch;gap:0}
+.alf .alf-amount .alf-currency{display:flex;align-items:center;padding:0 .8em;border:1.5px solid var(--alf-border);border-right:0;border-radius:var(--alf-radius) 0 0 var(--alf-radius);background:var(--alf-field);color:var(--alf-muted);font-weight:600;font-size:.9em}
+.alf .alf-amount .alf-input{border-radius:0 var(--alf-radius) var(--alf-radius) 0}
+.alf .alf-total{padding:1em 1.1em;border-radius:var(--alf-radius);background:color-mix(in srgb,var(--alf-field-text) 5%,transparent)}
+.alf--dark .alf-total{background:#1b1f25}
+.alf .alf-total-lines{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.92em}
+.alf .alf-total-lines:empty{display:none}
+.alf .alf-total-lines li{display:flex;justify-content:space-between;gap:12px;margin:0}
+.alf .alf-total-row{display:flex;justify-content:space-between;gap:12px;margin:0;font-size:1.05em;font-weight:800}
+.alf .alf-total-lines:not(:empty)+.alf-total-row{border-top:1px solid var(--alf-border);margin-top:8px;padding-top:8px}
+.alf .alf-pay{width:100%;max-width:420px;margin-left:auto;display:flex;flex-direction:column;gap:8px}
+.alf .alf-pay[hidden]{display:none!important}
+.alf .alf-pay-note{margin:0;font-size:.8em;color:var(--alf-muted);text-align:center}
+.alf .alf-pay--preview{padding:16px;border:1.5px dashed var(--alf-border);border-radius:var(--alf-radius);text-align:center;color:var(--alf-muted);font-size:.9em}
+.alf .alf-pay--off p{margin:0;color:var(--alf-muted);font-size:.9em}
+.alf .alf-paypal{min-height:45px}
+
+/* Without JavaScript, conditional fields stay visible so nothing is impossible to fill in. */
+@media (scripting: none) {
+	.alf [data-alf-cond][hidden] {
+		display: flex !important;
+	}
+}
+
+/* Design › Corners: pill. */
+.alf.alf-pill .alf-button {
+	border-radius: 999px;
+}

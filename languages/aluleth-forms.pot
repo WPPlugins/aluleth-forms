@@ -1,0 +1,5494 @@
+# Copyright (C) 2026 Aluleth
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Aluleth Forms 0.19.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aluleth-forms\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-07T01:47:41+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: aluleth-forms\n"
+
+#. Plugin Name of the plugin
+#: aluleth-forms.php
+#: includes/class-ai.php:99
+msgid "Aluleth Forms"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: aluleth-forms.php
+msgid "https://market.alulethmarketing.com/"
+msgstr ""
+
+#. Description of the plugin
+#: aluleth-forms.php
+msgid "Fast, beautiful forms that match your site. Entries, contacts and email notifications included, with no payment fees and nothing locked."
+msgstr ""
+
+#. Author of the plugin
+#: aluleth-forms.php
+#: core/src/class-admin.php:61
+msgid "Aluleth"
+msgstr ""
+
+#. Author URI of the plugin
+#: aluleth-forms.php
+msgid "https://alulethmarketing.com/"
+msgstr ""
+
+#: aluleth-forms.php:62
+msgid "Aluleth Forms needs a newer version of your other Aluleth plugins. Please update them."
+msgstr ""
+
+#: core/src/class-access.php:44
+msgid "See contacts and export them"
+msgstr ""
+
+#: core/src/class-access.php:48
+msgid "Settings and connections"
+msgstr ""
+
+#: core/src/class-access.php:50
+msgid "Includes API keys of your tools: give it only to people you trust."
+msgstr ""
+
+#: core/src/class-access.php:152
+msgid "What each role can do"
+msgstr ""
+
+#: core/src/class-access.php:152
+msgid "Administrators can always do everything. People only see the screens they are allowed to use."
+msgstr ""
+
+#: core/src/class-access.php:153
+msgid "What they can do"
+msgstr ""
+
+#. translators: 1: role, 2: what the role can do.
+#: core/src/class-access.php:163
+#: core/src/class-access.php:165
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: core/src/class-admin.php:62
+msgid "Dashboard"
+msgstr ""
+
+#: core/src/class-admin.php:71
+#: core/src/class-admin.php:131
+msgid "Contacts"
+msgstr ""
+
+#: core/src/class-admin.php:95
+#: core/src/class-connections.php:134
+#: core/src/class-settings.php:186
+msgid "Sorry, you are not allowed to see this page."
+msgstr ""
+
+#: core/src/class-admin.php:107
+msgid "Sorry, you are not allowed to see contacts."
+msgstr ""
+
+#: core/src/class-admin.php:131
+#: core/src/class-admin.php:135
+#: core/src/class-dashboard.php:350
+#: core/src/class-import-admin.php:237
+msgid "Import contacts"
+msgstr ""
+
+#: core/src/class-admin.php:132
+msgid "Search contacts"
+msgstr ""
+
+#: core/src/class-admin.php:132
+msgid "Name or email"
+msgstr ""
+
+#: core/src/class-admin.php:132
+msgid "Search"
+msgstr ""
+
+#: core/src/class-admin.php:135
+msgid "No contact matches your search."
+msgstr ""
+
+#: core/src/class-admin.php:135
+msgid "No contacts yet. They appear here when someone sends one of your forms, or import the list you had in another tool."
+msgstr ""
+
+#: core/src/class-admin.php:139
+#: assets/builder.js:32
+msgid "Name"
+msgstr ""
+
+#: core/src/class-admin.php:139
+#: core/src/class-admin.php:190
+#: core/src/class-import.php:47
+#: includes/class-builder.php:116
+#: includes/class-general.php:305
+#: includes/class-general.php:307
+#: includes/class-schema.php:241
+#: includes/class-templates.php:54
+#: includes/class-templates.php:230
+#: includes/class-templates.php:401
+#: assets/builder.js:29
+#: assets/builder.js:50
+msgid "Email"
+msgstr ""
+
+#: core/src/class-admin.php:139
+#: core/src/class-admin.php:192
+#: core/src/class-connections.php:240
+#: includes/class-admin.php:155
+#: includes/class-admin.php:235
+#: includes/class-admin.php:408
+#: includes/class-board.php:257
+#: includes/class-board.php:263
+msgid "Status"
+msgstr ""
+
+#: core/src/class-admin.php:139
+msgid "Last activity"
+msgstr ""
+
+#: core/src/class-admin.php:149
+msgid "(no name)"
+msgstr ""
+
+#: core/src/class-admin.php:181
+#: core/src/class-dashboard.php:644
+#: core/src/class-import-admin.php:236
+msgid "All contacts"
+msgstr ""
+
+#: core/src/class-admin.php:183
+msgid "This contact does not exist."
+msgstr ""
+
+#: core/src/class-admin.php:191
+#: core/src/class-import.php:51
+#: includes/class-builder.php:195
+#: includes/class-templates.php:63
+#: includes/class-templates.php:260
+#: assets/builder.js:30
+#: assets/builder.js:50
+msgid "Phone"
+msgstr ""
+
+#: core/src/class-admin.php:193
+msgid "Contact since"
+msgstr ""
+
+#: core/src/class-admin.php:212
+msgid "History"
+msgstr ""
+
+#: core/src/class-admin.php:227
+#: core/src/class-import-admin.php:381
+msgid "Subscribed"
+msgstr ""
+
+#: core/src/class-admin.php:228
+#: core/src/class-import-admin.php:382
+msgid "Waiting for confirmation"
+msgstr ""
+
+#: core/src/class-admin.php:229
+msgid "Unsubscribed"
+msgstr ""
+
+#: core/src/class-admin.php:230
+msgid "Bounced"
+msgstr ""
+
+#: core/src/class-admin.php:231
+msgid "Marked as spam"
+msgstr ""
+
+#: core/src/class-admin.php:232
+#: core/src/class-import-admin.php:380
+msgid "Not subscribed"
+msgstr ""
+
+#: core/src/class-connections.php:42
+#: core/src/class-queue.php:404
+msgid "Sorry, you are not allowed to do this."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-connections.php:56
+#, php-format
+msgid "%s is disconnected. Forms that send to it will show the sends as failed until you connect it again."
+msgstr ""
+
+#: core/src/class-connections.php:76
+msgid "Paste the key first."
+msgstr ""
+
+#. translators: 1: service name, 2: account name.
+#: core/src/class-connections.php:94
+#, php-format
+msgid "%1$s is connected (%2$s). Choose it in a form’s Settings › Integrations."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-connections.php:96
+#, php-format
+msgid "The %s connection works."
+msgstr ""
+
+#: core/src/class-connections.php:110
+#: core/src/class-connections.php:142
+#: core/src/class-settings.php:135
+msgid "Connections"
+msgstr ""
+
+#: core/src/class-connections.php:143
+msgid "Send your contacts to the tools you already use. Each form chooses where its entries go, in its Settings › Integrations. Sending happens in the background, so a slow tool never slows down your forms."
+msgstr ""
+
+#: core/src/class-connections.php:146
+#: includes/class-admin.php:301
+msgid "Sent again successfully."
+msgstr ""
+
+#: core/src/class-connections.php:148
+msgid "It failed again. The reason is shown in the list below."
+msgstr ""
+
+#: core/src/class-connections.php:162
+msgid "Email marketing and CRM"
+msgstr ""
+
+#: core/src/class-connections.php:163
+msgid "Team alerts"
+msgstr ""
+
+#: core/src/class-connections.php:164
+msgid "Automation"
+msgstr ""
+
+#: core/src/class-connections.php:203
+#: core/src/class-connections.php:206
+#: core/src/class-security.php:518
+msgid "Ready"
+msgstr ""
+
+#. translators: %s: plugin name, e.g. MailPoet.
+#: core/src/class-connections.php:208
+#, php-format
+msgid "%s is active on this site: no key needed."
+msgstr ""
+
+#: core/src/class-connections.php:210
+msgid "Not installed"
+msgstr ""
+
+#: core/src/class-connections.php:217
+msgid "Find the plugin"
+msgstr ""
+
+#: core/src/class-connections.php:230
+msgid "Recent sends"
+msgstr ""
+
+#: core/src/class-connections.php:230
+#: includes/class-admin.php:162
+msgid "Filter"
+msgstr ""
+
+#: core/src/class-connections.php:231
+msgid "All"
+msgstr ""
+
+#: core/src/class-connections.php:232
+msgid "Problems"
+msgstr ""
+
+#: core/src/class-connections.php:236
+msgid "No problem: every send went through."
+msgstr ""
+
+#: core/src/class-connections.php:236
+msgid "Nothing sent yet. Sends appear here once a form has an integration and receives an entry."
+msgstr ""
+
+#: core/src/class-connections.php:240
+msgid "When"
+msgstr ""
+
+#: core/src/class-connections.php:240
+msgid "Tool"
+msgstr ""
+
+#: core/src/class-connections.php:240
+msgid "From"
+msgstr ""
+
+#: core/src/class-connections.php:240
+msgid "Details"
+msgstr ""
+
+#: core/src/class-connections.php:263
+msgid "Connected"
+msgstr ""
+
+#: core/src/class-connections.php:263
+msgid "Not connected"
+msgstr ""
+
+#. translators: 1: account name, 2: date.
+#: core/src/class-connections.php:271
+#, php-format
+msgid "Account: %1$s · connected on %2$s"
+msgstr ""
+
+#. translators: 1: account name, 2: date.
+#: core/src/class-connections.php:271
+msgid "Key ending in"
+msgstr ""
+
+#: core/src/class-connections.php:272
+msgid "Test the connection"
+msgstr ""
+
+#: core/src/class-connections.php:273
+msgid "Disconnect"
+msgstr ""
+
+#: core/src/class-connections.php:284
+msgid "Connect"
+msgstr ""
+
+#: core/src/class-connections.php:319
+msgid "Send again"
+msgstr ""
+
+#. translators: 1: object type, 2: id.
+#: core/src/class-connections.php:344
+#, php-format
+msgid "%1$s #%2$d"
+msgstr ""
+
+#. translators: %s: change in percent, e.g. +18%.
+#: core/src/class-dashboard.php:178
+#, php-format
+msgid "%s vs the 12 months before"
+msgstr ""
+
+#. translators: 1: change in percent, e.g. +18%, 2: number of days.
+#: core/src/class-dashboard.php:181
+#, php-format
+msgid "%1$s vs the %2$d days before"
+msgstr ""
+
+#. translators: %s: number of contacts.
+#: core/src/class-dashboard.php:210
+#, php-format
+msgid "%s from an import"
+msgid_plural "%s from an import"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-dashboard.php:216
+#: core/src/class-dashboard.php:249
+#: core/src/class-import-admin.php:452
+#: includes/class-general.php:556
+msgid "New contacts"
+msgstr ""
+
+#: core/src/class-dashboard.php:223
+msgid "Newsletter subscribers"
+msgstr ""
+
+#. translators: %s: percentage of contacts.
+#: core/src/class-dashboard.php:226
+#, php-format
+msgid "%s of your contacts"
+msgstr ""
+
+#: core/src/class-dashboard.php:289
+msgid "Writes your pages, forms and emails"
+msgstr ""
+
+#: core/src/class-dashboard.php:302
+msgid "Show your forms at the right moment"
+msgstr ""
+
+#: core/src/class-dashboard.php:303
+msgid "Emails that land in the inbox"
+msgstr ""
+
+#. translators: %s: first name of the user.
+#: core/src/class-dashboard.php:323
+#, php-format
+msgid "Good morning, %s"
+msgstr ""
+
+#. translators: %s: first name of the user.
+#: core/src/class-dashboard.php:326
+#, php-format
+msgid "Good afternoon, %s"
+msgstr ""
+
+#. translators: %s: first name of the user.
+#: core/src/class-dashboard.php:329
+#, php-format
+msgid "Good evening, %s"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: core/src/class-dashboard.php:338
+#, php-format
+msgid "%s new entry is waiting for you."
+msgid_plural "%s new entries are waiting for you."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-dashboard.php:340
+msgid "Everything is handled. Here is how your site is doing."
+msgstr ""
+
+#: core/src/class-dashboard.php:342
+msgid "Period"
+msgstr ""
+
+#: core/src/class-dashboard.php:344
+msgid "7 days"
+msgstr ""
+
+#: core/src/class-dashboard.php:345
+msgid "30 days"
+msgstr ""
+
+#: core/src/class-dashboard.php:346
+#: includes/class-general.php:354
+msgid "12 months"
+msgstr ""
+
+#. translators: %s: number of failed sends.
+#: core/src/class-dashboard.php:367
+#, php-format
+msgid "%s send to one of your tools failed this week."
+msgid_plural "%s sends to your tools failed this week."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of failed sends.
+#: core/src/class-dashboard.php:367
+msgid "See what happened"
+msgstr ""
+
+#: core/src/class-dashboard.php:371
+msgid "Key numbers"
+msgstr ""
+
+#: core/src/class-dashboard.php:387
+#: includes/class-stats.php:281
+msgid "To handle"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: core/src/class-dashboard.php:402
+#, php-format
+msgid "+%s more"
+msgid_plural "+%s more"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-dashboard.php:405
+msgid "Nothing to handle right now."
+msgstr ""
+
+#: core/src/class-dashboard.php:510
+msgid "Chart of the period, the same numbers are in the table below."
+msgstr ""
+
+#: core/src/class-dashboard.php:537
+msgid "Your first entries and contacts will draw this chart."
+msgstr ""
+
+#: core/src/class-dashboard.php:541
+#: core/src/class-import-admin.php:322
+#: includes/class-general.php:127
+#: assets/builder.js:36
+#: assets/builder.js:51
+msgid "Date"
+msgstr ""
+
+#: core/src/class-dashboard.php:565
+#: core/src/class-service-kit.php:272
+#: includes/class-plugin.php:124
+#: includes/class-plugin.php:170
+#: includes/class-plugin.php:178
+msgid "Forms"
+msgstr ""
+
+#: core/src/class-dashboard.php:566
+#: core/src/class-import-admin.php:242
+#: includes/class-import-screen.php:105
+msgid "Import"
+msgstr ""
+
+#: core/src/class-dashboard.php:567
+#: core/src/class-dashboard.php:568
+msgid "Shop customers"
+msgstr ""
+
+#: core/src/class-dashboard.php:569
+msgid "New user accounts"
+msgstr ""
+
+#: core/src/class-dashboard.php:573
+#: includes/class-general.php:189
+#: includes/class-general.php:347
+#: includes/class-templates.php:372
+#: includes/class-templates.php:408
+msgid "Other"
+msgstr ""
+
+#: core/src/class-dashboard.php:585
+msgid "Where new contacts come from"
+msgstr ""
+
+#: core/src/class-dashboard.php:587
+msgid "No new contact in this period."
+msgstr ""
+
+#. translators: 1: number of contacts, 2: list name.
+#: core/src/class-dashboard.php:634
+#, php-format
+msgid "%1$s contact imported from %2$s"
+msgid_plural "%1$s contacts imported from %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-dashboard.php:644
+msgid "Recent activity"
+msgstr ""
+
+#: core/src/class-dashboard.php:646
+msgid "Nothing yet."
+msgstr ""
+
+#: core/src/class-dashboard.php:668
+#: includes/class-board.php:202
+msgid "Yesterday"
+msgstr ""
+
+#: core/src/class-dashboard.php:680
+msgid "Your Aluleth tools"
+msgstr ""
+
+#: core/src/class-dashboard.php:683
+#: core/src/class-security.php:502
+#: assets/builder.js:914
+msgid "Active"
+msgstr ""
+
+#: core/src/class-dashboard.php:683
+msgid "Soon"
+msgstr ""
+
+#: core/src/class-events.php:106
+msgid "Became a contact"
+msgstr ""
+
+#: core/src/class-events.php:107
+msgid "Tagged"
+msgstr ""
+
+#. translators: %s: form title.
+#: core/src/class-events.php:108
+#: includes/class-plugin.php:334
+msgid "Sent a form"
+msgstr ""
+
+#: core/src/class-events.php:109
+msgid "Received an email"
+msgstr ""
+
+#: core/src/class-events.php:110
+msgid "An email bounced"
+msgstr ""
+
+#: core/src/class-events.php:111
+msgid "Marked an email as spam"
+msgstr ""
+
+#: core/src/class-events.php:112
+msgid "Gave consent"
+msgstr ""
+
+#: core/src/class-events.php:113
+msgid "Withdrew consent"
+msgstr ""
+
+#: core/src/class-import-admin.php:55
+msgid "Sorry, you are not allowed to import contacts."
+msgstr ""
+
+#: core/src/class-import-admin.php:111
+#: core/src/class-import-admin.php:159
+msgid "This import has expired. Please start again."
+msgstr ""
+
+#: core/src/class-import-admin.php:198
+msgid "This file is no longer available."
+msgstr ""
+
+#. translators: 1: rows done, 2: total rows.
+#: core/src/class-import-admin.php:227
+#: core/src/class-import-admin.php:432
+#, php-format
+msgid "%1$s of %2$s"
+msgstr ""
+
+#: core/src/class-import-admin.php:228
+msgid "The import stopped because of a connection problem. Your contacts are safe: click Continue to go on where it stopped."
+msgstr ""
+
+#: core/src/class-import-admin.php:229
+#: core/src/class-import-admin.php:316
+#: core/src/class-import-admin.php:436
+msgid "Continue"
+msgstr ""
+
+#: core/src/class-import-admin.php:240
+msgid "Choose your list"
+msgstr ""
+
+#: core/src/class-import-admin.php:241
+msgid "Match the columns"
+msgstr ""
+
+#: core/src/class-import-admin.php:279
+msgid "Bring the list you had in another tool. Your contacts stay on your own site."
+msgstr ""
+
+#: core/src/class-import-admin.php:281
+msgid "Source"
+msgstr ""
+
+#: core/src/class-import-admin.php:283
+msgid "A file"
+msgstr ""
+
+#: core/src/class-import-admin.php:283
+msgid "CSV, TXT or ZIP exported from Mailchimp, Brevo, MailerLite, Kit, ActiveCampaign, systeme.io, Excel or Google Sheets."
+msgstr ""
+
+#: core/src/class-import-admin.php:284
+msgid "Paste addresses"
+msgstr ""
+
+#: core/src/class-import-admin.php:284
+msgid "A few addresses copied from an email or a document."
+msgstr ""
+
+#: core/src/class-import-admin.php:285
+#: core/src/class-import.php:280
+msgid "WordPress users"
+msgstr ""
+
+#: core/src/class-import-admin.php:285
+msgid "The people who have an account on this site."
+msgstr ""
+
+#: core/src/class-import-admin.php:292
+msgid "Your file"
+msgstr ""
+
+#. translators: %s: maximum upload size, e.g. 64 MB.
+#: core/src/class-import-admin.php:295
+#, php-format
+msgid "Up to %s. Columns can be separated by commas, semicolons or tabs, in any encoding."
+msgstr ""
+
+#: core/src/class-import-admin.php:296
+msgid "How do I get this file?"
+msgstr ""
+
+#: core/src/class-import-admin.php:297
+msgid "In your old tool, open the page that lists your contacts (often called Contacts, Subscribers or Audience) and look for Export. Choose CSV."
+msgstr ""
+
+#: core/src/class-import-admin.php:298
+msgid "Mailchimp gives a ZIP file with one file per status. Import the ZIP as it is: people who unsubscribed or bounced stay out of your emails."
+msgstr ""
+
+#: core/src/class-import-admin.php:299
+msgid "Excel: File › Save as › CSV. Google Sheets: File › Download › CSV."
+msgstr ""
+
+#: core/src/class-import-admin.php:302
+msgid "Addresses"
+msgstr ""
+
+#: core/src/class-import-admin.php:304
+msgid "One person per line. You can add the name before the address or after a comma."
+msgstr ""
+
+#: core/src/class-import-admin.php:306
+msgid "Roles to import"
+msgstr ""
+
+#: core/src/class-import-admin.php:321
+msgid "Recent imports"
+msgstr ""
+
+#: core/src/class-import-admin.php:322
+#: includes/class-admin.php:80
+msgid "List"
+msgstr ""
+
+#: core/src/class-import-admin.php:322
+#: includes/class-schema.php:165
+#: includes/class-templates.php:154
+#: includes/class-templates.php:206
+#: includes/class-templates.php:390
+msgid "New"
+msgstr ""
+
+#: core/src/class-import-admin.php:322
+#: core/src/class-import-admin.php:453
+msgid "Updated"
+msgstr ""
+
+#: core/src/class-import-admin.php:322
+#: core/src/class-import-admin.php:458
+msgid "Not imported"
+msgstr ""
+
+#. translators: %d: number of days.
+#: core/src/class-import-admin.php:328
+#, php-format
+msgid "Imports are listed here for %d day."
+msgid_plural "Imports are listed here for %d days."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of users.
+#: core/src/class-import-admin.php:346
+#, php-format
+msgid "%s user will be imported with their name and email address."
+msgid_plural "%s users will be imported with their name and email address."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: file name, 2: number of rows.
+#: core/src/class-import-admin.php:349
+#, php-format
+msgid "%1$s: %2$s row found. Check where each column goes."
+msgid_plural "%1$s: %2$s rows found. Check where each column goes."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-import-admin.php:351
+msgid "Column in your file"
+msgstr ""
+
+#: core/src/class-import-admin.php:351
+msgid "Examples"
+msgstr ""
+
+#: core/src/class-import-admin.php:351
+msgid "Import as"
+msgstr ""
+
+#: core/src/class-import-admin.php:368
+msgid "Custom field name"
+msgstr ""
+
+#: core/src/class-import-admin.php:368
+msgid "Field name"
+msgstr ""
+
+#: core/src/class-import-admin.php:378
+msgid "Marketing emails"
+msgstr ""
+
+#: core/src/class-import-admin.php:380
+msgid "They only receive emails linked to what they do on your site (orders, account, replies)."
+msgstr ""
+
+#: core/src/class-import-admin.php:381
+msgid "They agreed to receive your newsletters and offers."
+msgstr ""
+
+#: core/src/class-import-admin.php:382
+msgid "You will be able to ask them to confirm by email."
+msgstr ""
+
+#: core/src/class-import-admin.php:389
+msgid "Your file has a status column: it is used for each person. People who unsubscribed, bounced or marked emails as spam stay out of your marketing emails. Subscribed people are imported as subscribed only if you tick the box above."
+msgstr ""
+
+#: core/src/class-import-admin.php:391
+msgid "People who unsubscribed in the past are never subscribed again by an import."
+msgstr ""
+
+#: core/src/class-import-admin.php:395
+msgid "People already in your contacts"
+msgstr ""
+
+#: core/src/class-import-admin.php:397
+msgid "Fill in only what is missing"
+msgstr ""
+
+#: core/src/class-import-admin.php:398
+msgid "Replace with the values of the file"
+msgstr ""
+
+#: core/src/class-import-admin.php:399
+msgid "Leave them as they are"
+msgstr ""
+
+#: core/src/class-import-admin.php:406
+msgid "Add tags to everyone"
+msgstr ""
+
+#: core/src/class-import-admin.php:407
+msgid "For example: Mailchimp, Newsletter"
+msgstr ""
+
+#: core/src/class-import-admin.php:411
+msgid "Separate tags with commas. A tag helps you find this group later."
+msgstr ""
+
+#. translators: %s: number of rows.
+#: core/src/class-import-admin.php:414
+#, php-format
+msgid "Import %s contact"
+msgid_plural "Import %s contacts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-import-admin.php:416
+msgid "Cancel this import"
+msgstr ""
+
+#: core/src/class-import-admin.php:429
+msgid "Importing your contacts… You can keep this page open; it only takes a moment for most lists."
+msgstr ""
+
+#: core/src/class-import-admin.php:449
+msgid "Import finished"
+msgstr ""
+
+#: core/src/class-import-admin.php:456
+msgid "Already there, left as they were"
+msgstr ""
+
+#. translators: %s: number of rows.
+#: core/src/class-import-admin.php:465
+#, php-format
+msgid "%s address appeared more than once in the file and was merged."
+msgid_plural "%s addresses appeared more than once in the file and were merged."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of contacts.
+#: core/src/class-import-admin.php:469
+#, php-format
+msgid "%s person had unsubscribed before and stays unsubscribed."
+msgid_plural "%s people had unsubscribed before and stay unsubscribed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: list of tags.
+#: core/src/class-import-admin.php:473
+#, php-format
+msgid "Tags added: %s"
+msgstr ""
+
+#: core/src/class-import-admin.php:476
+msgid "See your contacts"
+msgstr ""
+
+#: core/src/class-import-admin.php:476
+msgid "Import another list"
+msgstr ""
+
+#: core/src/class-import-admin.php:488
+msgid "Download the rows not imported"
+msgstr ""
+
+#: core/src/class-import.php:46
+msgid "Do not import"
+msgstr ""
+
+#: core/src/class-import.php:48
+#: includes/class-builder.php:192
+#: includes/class-templates.php:222
+msgid "First name"
+msgstr ""
+
+#: core/src/class-import.php:49
+#: includes/class-builder.php:193
+msgid "Last name"
+msgstr ""
+
+#: core/src/class-import.php:50
+msgid "Full name (split in two)"
+msgstr ""
+
+#: core/src/class-import.php:52
+#: core/src/class-privacy.php:88
+#: assets/builder.js:858
+msgid "Tags"
+msgstr ""
+
+#: core/src/class-import.php:53
+msgid "Status in the old tool"
+msgstr ""
+
+#: core/src/class-import.php:54
+msgid "Unsubscribed (yes / no)"
+msgstr ""
+
+#: core/src/class-import.php:55
+msgid "Country"
+msgstr ""
+
+#: core/src/class-import.php:56
+msgid "Language"
+msgstr ""
+
+#: core/src/class-import.php:57
+msgid "Custom field"
+msgstr ""
+
+#: core/src/class-import.php:211
+msgid "The file could not be uploaded. It may be bigger than your server allows."
+msgstr ""
+
+#: core/src/class-import.php:216
+msgid "Please choose a CSV, TXT or ZIP file. In Excel or Google Sheets, use \"Save as\" or \"Download\" › CSV."
+msgstr ""
+
+#: core/src/class-import.php:219
+msgid "The file could not be uploaded."
+msgstr ""
+
+#: core/src/class-import.php:223
+msgid "The uploads folder is not writable."
+msgstr ""
+
+#: core/src/class-import.php:265
+msgid "Paste at least one email address."
+msgstr ""
+
+#: core/src/class-import.php:267
+msgid "Pasted addresses"
+msgstr ""
+
+#: core/src/class-import.php:307
+#: core/src/class-import.php:316
+msgid "This file is empty."
+msgstr ""
+
+#. translators: %d: column number.
+#: core/src/class-import.php:327
+#, php-format
+msgid "Column %d"
+msgstr ""
+
+#: core/src/class-import.php:504
+msgid "Choose which column holds the email addresses."
+msgstr ""
+
+#: core/src/class-import.php:511
+msgid "To import people as subscribed, confirm that they agreed to receive your emails."
+msgstr ""
+
+#: core/src/class-import.php:671
+msgid "No email address"
+msgstr ""
+
+#: core/src/class-import.php:671
+msgid "Not a valid email address"
+msgstr ""
+
+#: core/src/class-import.php:731
+msgid "Could not be saved"
+msgstr ""
+
+#: core/src/class-import.php:764
+msgid "These people agreed to receive my marketing emails (for example they subscribed to my newsletter) and I can prove it."
+msgstr ""
+
+#: core/src/class-import.php:790
+msgid "Reason"
+msgstr ""
+
+#: core/src/class-import.php:830
+msgid "Your server cannot open ZIP files. Unzip the file on your computer and import the CSV files one by one."
+msgstr ""
+
+#: core/src/class-import.php:834
+msgid "This ZIP file could not be opened."
+msgstr ""
+
+#: core/src/class-import.php:879
+msgid "No CSV file was found in this ZIP file."
+msgstr ""
+
+#: core/src/class-integrations.php:232
+#: core/src/class-integrations.php:269
+msgid "No newsletter consent was given, so nothing was sent."
+msgstr ""
+
+#: core/src/class-integrations.php:263
+msgid "This tool is no longer available on this site."
+msgstr ""
+
+#. translators: %s: tool name, e.g. "MailPoet".
+#: core/src/class-integrations.php:308
+#, php-format
+msgid "Sent to %s"
+msgstr ""
+
+#. translators: %s: tool name, e.g. "MailPoet".
+#: core/src/class-integrations.php:312
+#, php-format
+msgid "Could not be sent to %s"
+msgstr ""
+
+#: core/src/class-integrations.php:363
+msgid "This tool cannot be tested this way."
+msgstr ""
+
+#: core/src/class-integrations.php:371
+msgid "Example answer"
+msgstr ""
+
+#: core/src/class-integrations.php:378
+#: core/src/class-service-discord.php:139
+#: core/src/class-service-slack.php:139
+#: core/src/class-service-telegram.php:193
+#: includes/class-general.php:584
+msgid "Test"
+msgstr ""
+
+#: core/src/class-integrations.php:379
+msgid "Person"
+msgstr ""
+
+#: core/src/class-paypal.php:255
+msgid "PayPal is not set up yet."
+msgstr ""
+
+#: core/src/class-paypal.php:276
+#: core/src/class-paypal.php:319
+msgid "PayPal could not be reached. Please try again in a moment."
+msgstr ""
+
+#: core/src/class-paypal.php:280
+msgid "PayPal did not accept the Client ID and secret. Copy them again from your PayPal app, and check the mode (test or live)."
+msgstr ""
+
+#: core/src/class-paypal.php:510
+msgid "PayPal accepted the keys. Test mode: no real money moves."
+msgstr ""
+
+#: core/src/class-paypal.php:510
+msgid "PayPal accepted the keys. Live mode: payments are real."
+msgstr ""
+
+#: core/src/class-paypal.php:530
+msgid "Aluleth takes no fee on your payments. Only PayPal's own fees apply, paid to PayPal."
+msgstr ""
+
+#: core/src/class-paypal.php:532
+#: core/src/class-settings.php:113
+msgid "PayPal"
+msgstr ""
+
+#: core/src/class-paypal.php:532
+msgid "Visitors pay with PayPal, Pay Later, or a debit or credit card without a PayPal account. The money goes straight to your PayPal account."
+msgstr ""
+
+#: core/src/class-paypal.php:533
+msgid "Ready · test mode"
+msgstr ""
+
+#: core/src/class-paypal.php:533
+msgid "Ready · live"
+msgstr ""
+
+#: core/src/class-paypal.php:533
+#: core/src/class-security.php:518
+msgid "Not set up"
+msgstr ""
+
+#: core/src/class-paypal.php:534
+msgid "Mode"
+msgstr ""
+
+#: core/src/class-paypal.php:534
+msgid "Test (sandbox): no real money"
+msgstr ""
+
+#: core/src/class-paypal.php:534
+msgid "Live: real payments"
+msgstr ""
+
+#: core/src/class-paypal.php:536
+msgid "Test app (sandbox)"
+msgstr ""
+
+#: core/src/class-paypal.php:537
+msgid "Live app"
+msgstr ""
+
+#: core/src/class-paypal.php:539
+#: core/src/class-security.php:524
+msgid "Where to find the keys"
+msgstr ""
+
+#: core/src/class-paypal.php:540
+msgid "Client ID"
+msgstr ""
+
+#. translators: %s: last 4 characters of the saved secret.
+#. translators: %s: last 4 characters of the saved key.
+#: core/src/class-paypal.php:542
+#: core/src/class-security.php:579
+#, php-format
+msgid "Saved, ending in %s"
+msgstr ""
+
+#: core/src/class-paypal.php:543
+msgid "Secret"
+msgstr ""
+
+#: core/src/class-paypal.php:545
+#: core/src/class-security.php:554
+msgid "Remove these keys"
+msgstr ""
+
+#: core/src/class-paypal.php:549
+#: core/src/class-security.php:552
+msgid "Save and check the keys"
+msgstr ""
+
+#: core/src/class-paypal.php:549
+msgid "Checks the keys of the mode chosen above."
+msgstr ""
+
+#: core/src/class-paypal.php:551
+#: core/src/class-settings.php:114
+msgid "Payment options"
+msgstr ""
+
+#: core/src/class-paypal.php:552
+#: includes/class-admin.php:414
+msgid "Currency"
+msgstr ""
+
+#: core/src/class-paypal.php:557
+msgid "Button colour"
+msgstr ""
+
+#: core/src/class-paypal.php:559
+msgid "Gold (PayPal's own)"
+msgstr ""
+
+#: core/src/class-paypal.php:560
+msgid "Blue"
+msgstr ""
+
+#: core/src/class-paypal.php:561
+msgid "Black"
+msgstr ""
+
+#: core/src/class-paypal.php:562
+msgid "White"
+msgstr ""
+
+#: core/src/class-paypal.php:563
+msgid "Silver"
+msgstr ""
+
+#: core/src/class-paypal.php:567
+msgid "Button shape"
+msgstr ""
+
+#: core/src/class-paypal.php:567
+msgid "Rounded corners"
+msgstr ""
+
+#: core/src/class-paypal.php:567
+#: assets/builder.js:756
+msgid "Pill"
+msgstr ""
+
+#: core/src/class-paypal.php:569
+msgid "Card without a PayPal account"
+msgstr ""
+
+#: core/src/class-paypal.php:569
+msgid "A \"Debit or credit card\" button, filled in on PayPal's side."
+msgstr ""
+
+#: core/src/class-paypal.php:570
+msgid "Pay Later"
+msgstr ""
+
+#: core/src/class-paypal.php:570
+msgid "Shown by PayPal where it is offered (amount and country rules apply)."
+msgstr ""
+
+#: core/src/class-paypal.php:571
+msgid "Email a receipt to the payer"
+msgstr ""
+
+#: core/src/class-paypal.php:571
+msgid "Sent when the form has an email field and no confirmation email of its own."
+msgstr ""
+
+#: core/src/class-paypal.php:586
+msgid "PayPal receives the amount, the items, the visitor's IP address and browser details, and the payment details the visitor types in PayPal's window. Mention it in your privacy policy."
+msgstr ""
+
+#: core/src/class-privacy.php:35
+#: core/src/class-privacy.php:49
+msgid "Aluleth contacts"
+msgstr ""
+
+#: core/src/class-privacy.php:95
+#: includes/class-start.php:128
+#: includes/class-templates.php:96
+#: assets/builder.js:948
+#: assets/builder.js:996
+msgid "Contact"
+msgstr ""
+
+#: core/src/class-privacy.php:103
+#: includes/class-board.php:299
+msgid "Contact history"
+msgstr ""
+
+#: core/src/class-privacy.php:107
+msgid "Event"
+msgstr ""
+
+#: core/src/class-privacy.php:111
+msgid "Date (UTC)"
+msgstr ""
+
+#: core/src/class-queue.php:267
+msgid "The plugin that runs this task is not active."
+msgstr ""
+
+#: core/src/class-queue.php:475
+msgid "Sent"
+msgstr ""
+
+#: core/src/class-queue.php:477
+msgid "Not sent"
+msgstr ""
+
+#: core/src/class-queue.php:479
+msgid "Failed"
+msgstr ""
+
+#: core/src/class-queue.php:481
+#: includes/class-plugin.php:225
+#: assets/builder.js:880
+msgid "Sending…"
+msgstr ""
+
+#: core/src/class-queue.php:483
+msgid "Will try again"
+msgstr ""
+
+#: core/src/class-queue.php:483
+msgid "Waiting"
+msgstr ""
+
+#. translators: 1: error message, 2: time of the next attempt.
+#: core/src/class-queue.php:497
+#, php-format
+msgid "%1$s Next try at %2$s."
+msgstr ""
+
+#: core/src/class-security.php:36
+msgid "Free, usually invisible"
+msgstr ""
+
+#: core/src/class-security.php:42
+msgid "Privacy focused"
+msgstr ""
+
+#: core/src/class-security.php:48
+msgid "v2 checkbox or v3 invisible"
+msgstr ""
+
+#: core/src/class-security.php:54
+msgid "Checks entries in the background"
+msgstr ""
+
+#: core/src/class-security.php:187
+#: includes/class-plugin.php:227
+msgid "Please complete the anti-spam check, then send the form again."
+msgstr ""
+
+#: core/src/class-security.php:195
+#: core/src/class-security.php:198
+msgid "The anti-spam check failed. Please try again."
+msgstr ""
+
+#: core/src/class-security.php:219
+msgid "Unknown anti-spam service."
+msgstr ""
+
+#: core/src/class-security.php:252
+msgid "Paste the keys first."
+msgstr ""
+
+#: core/src/class-security.php:271
+msgid "CleanTalk did not accept this access key, or the account is not active."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-security.php:274
+#, php-format
+msgid "Keys accepted by %s."
+msgstr ""
+
+#: core/src/class-security.php:279
+#: core/src/class-security.php:316
+#: core/src/class-security.php:319
+msgid "The service could not be reached. Please try again in a moment."
+msgstr ""
+
+#: core/src/class-security.php:283
+msgid "The service did not accept the secret key. Copy it again from your account."
+msgstr ""
+
+#: core/src/class-security.php:287
+msgid "The test check did not pass. Check that the site key and the secret key come from the same site in your account, and that this domain is allowed there."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-security.php:290
+#, php-format
+msgid "Keys confirmed by %s: the test check passed on this site."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-security.php:294
+#, php-format
+msgid "Secret key accepted by %s. Complete the test check and click again to confirm the site key too."
+msgstr ""
+
+#: core/src/class-security.php:296
+msgid "Saved. To confirm the keys, complete the test check below and click \"Save and check the keys\" again."
+msgstr ""
+
+#: core/src/class-security.php:349
+msgid "Blocked email address or domain"
+msgstr ""
+
+#: core/src/class-security.php:356
+msgid "Blocked word"
+msgstr ""
+
+#: core/src/class-security.php:462
+msgid "Saved. The default service has no keys yet, so forms do not show it until you add them."
+msgstr ""
+
+#: core/src/class-security.php:502
+#: core/src/class-settings.php:81
+msgid "Built-in protection"
+msgstr ""
+
+#: core/src/class-security.php:502
+msgid "Always on, invisible to visitors. No cookie and no outside service."
+msgstr ""
+
+#: core/src/class-security.php:503
+msgid "Hidden trap field"
+msgstr ""
+
+#: core/src/class-security.php:503
+msgid "Robots fill it, people never see it."
+msgstr ""
+
+#: core/src/class-security.php:504
+msgid "Minimum time to fill a form"
+msgstr ""
+
+#: core/src/class-security.php:504
+msgid "seconds"
+msgstr ""
+
+#: core/src/class-security.php:505
+msgid "Entries per visitor and per form"
+msgstr ""
+
+#: core/src/class-security.php:505
+msgid "per hour"
+msgstr ""
+
+#: core/src/class-security.php:506
+msgid "A form can set its own minimum time in its Settings › Spam protection."
+msgstr ""
+
+#: core/src/class-security.php:508
+msgid "Captcha and anti-spam services"
+msgstr ""
+
+#: core/src/class-security.php:508
+msgid "Set up as many as you like. New forms use the default one; each form can pick another one, or none, in its Settings › Spam protection."
+msgstr ""
+
+#: core/src/class-security.php:509
+msgid "Default for forms"
+msgstr ""
+
+#: core/src/class-security.php:509
+#: assets/builder.js:1010
+msgid "None (built-in protection only)"
+msgstr ""
+
+#: core/src/class-security.php:515
+msgid "Services"
+msgstr ""
+
+#: core/src/class-security.php:527
+msgid "Access key"
+msgstr ""
+
+#: core/src/class-security.php:529
+msgid "Site key"
+msgstr ""
+
+#: core/src/class-security.php:530
+msgid "Secret key"
+msgstr ""
+
+#: core/src/class-security.php:534
+msgid "Appearance"
+msgstr ""
+
+#: core/src/class-security.php:534
+msgid "Only when needed"
+msgstr ""
+
+#: core/src/class-security.php:534
+msgid "Always visible"
+msgstr ""
+
+#: core/src/class-security.php:536
+msgid "Version"
+msgstr ""
+
+#: core/src/class-security.php:536
+msgid "v3, invisible"
+msgstr ""
+
+#: core/src/class-security.php:536
+msgid "v2, checkbox"
+msgstr ""
+
+#: core/src/class-security.php:537
+msgid "Lowest score accepted (v3)"
+msgstr ""
+
+#: core/src/class-security.php:538
+msgid "The keys of a v2 site do not work for v3, and the other way round: create them for the version you choose."
+msgstr ""
+
+#: core/src/class-security.php:540
+msgid "CleanTalk is a paid service. It checks each entry in the background, with nothing shown to the visitor. Entries it flags go to Spam."
+msgstr ""
+
+#: core/src/class-security.php:549
+msgid "Test check"
+msgstr ""
+
+#: core/src/class-security.php:549
+msgid "reCAPTCHA v3 runs invisibly when you click \"Save and check the keys\": it confirms both keys and this domain."
+msgstr ""
+
+#: core/src/class-security.php:549
+msgid "Complete the check here, then click \"Save and check the keys\": it confirms both keys and this domain."
+msgstr ""
+
+#: core/src/class-security.php:560
+#: core/src/class-settings.php:83
+msgid "Blocklist and Akismet"
+msgstr ""
+
+#: core/src/class-security.php:560
+msgid "Entries that match are kept aside in Spam instead of reaching your inbox and your tools. Nothing is lost."
+msgstr ""
+
+#: core/src/class-security.php:561
+msgid "Email addresses and domains"
+msgstr ""
+
+#: core/src/class-security.php:561
+msgid "One per line: a full address, or a domain starting with @."
+msgstr ""
+
+#: core/src/class-security.php:562
+msgid "Words in the answers"
+msgstr ""
+
+#: core/src/class-security.php:562
+msgid "One per line. Not case sensitive."
+msgstr ""
+
+#: core/src/class-security.php:564
+msgid "Check entries with Akismet"
+msgstr ""
+
+#: core/src/class-security.php:564
+msgid "Uses the key of the Akismet plugin set up on this site. The answers, the email and the visitor's IP address are sent to Akismet."
+msgstr ""
+
+#: core/src/class-security.php:564
+msgid "Install and set up the Akismet plugin to use it."
+msgstr ""
+
+#: core/src/class-security.php:608
+msgid "Cloudflare receives the visitor's IP address and browser details to run the check. Mention it in your privacy policy."
+msgstr ""
+
+#: core/src/class-security.php:609
+msgid "hCaptcha (Intuition Machines) receives the visitor's IP address and browser details to run the check. Mention it in your privacy policy."
+msgstr ""
+
+#: core/src/class-security.php:610
+msgid "Google receives the visitor's IP address, browser details and how they use the page to run the check. Mention it in your privacy policy."
+msgstr ""
+
+#: core/src/class-security.php:611
+msgid "CleanTalk receives the answers, the email address and the visitor's IP address for each entry. Mention it in your privacy policy."
+msgstr ""
+
+#. translators: %s: service name, e.g. Mailchimp.
+#: core/src/class-service-api.php:42
+#, php-format
+msgid "Connect your %s account in Aluleth › Connections first."
+msgstr ""
+
+#: core/src/class-service-api.php:53
+msgid "API key"
+msgstr ""
+
+#: core/src/class-service-api.php:82
+#: core/src/class-service-fluentcrm.php:155
+#: core/src/class-service-kit.php:189
+#: core/src/class-service-mailpoet.php:158
+#: core/src/class-service-mautic.php:199
+msgid "No email address in this entry."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-service-api.php:87
+#, php-format
+msgid "No %s list is chosen for this form."
+msgstr ""
+
+#: core/src/class-service-brevo.php:46
+msgid "Create or update Brevo contacts and add them to your lists."
+msgstr ""
+
+#: core/src/class-service-brevo.php:55
+msgid "In Brevo: your name (top right) › SMTP & API › API Keys › Generate a new API key."
+msgstr ""
+
+#: core/src/class-service-brevo.php:204
+msgid "This person unsubscribed in Brevo, so they were not added again."
+msgstr ""
+
+#. translators: %s: names of the lists, groups, forms or tags.
+#: core/src/class-service-brevo.php:250
+#, php-format
+msgid "Contact created and added to %s."
+msgstr ""
+
+#. translators: %s: names of the lists, groups, forms or tags.
+#: core/src/class-service-brevo.php:252
+#, php-format
+msgid "Contact updated and added to %s."
+msgstr ""
+
+#: core/src/class-service-brevo.php:261
+msgid "The phone is sent only in international format (for example +33 6 12 34 56 78). People who unsubscribed in Brevo are not added again."
+msgstr ""
+
+#: core/src/class-service-discord.php:41
+msgid "A message in a Discord channel for each entry."
+msgstr ""
+
+#: core/src/class-service-discord.php:87
+msgid "Discord webhook address"
+msgstr ""
+
+#: core/src/class-service-discord.php:89
+msgid "In Discord: the channel’s settings › Integrations › Webhooks › New Webhook › Copy Webhook URL."
+msgstr ""
+
+#: core/src/class-service-discord.php:100
+#: core/src/class-service-slack.php:100
+msgid "No account to connect here: paste the channel’s webhook address in the form’s Settings › Integrations."
+msgstr ""
+
+#: core/src/class-service-discord.php:109
+#: core/src/class-service-slack.php:109
+msgid "Each entry is posted with its answers and a link to it. Answers can hold personal data: post them only in a private channel."
+msgstr ""
+
+#: core/src/class-service-discord.php:166
+msgid "The Discord webhook address is missing or not valid (it starts with https://discord.com/api/webhooks/)."
+msgstr ""
+
+#: core/src/class-service-discord.php:173
+msgid "Posted in Discord."
+msgstr ""
+
+#: core/src/class-service-discord.php:176
+msgid "Discord refused the address: the webhook may have been deleted. Create a new one and paste it in the form."
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:41
+msgid "Create or update FluentCRM contacts with lists and tags, on this site."
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:68
+msgid "Install and activate the FluentCRM plugin to use it."
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:191
+msgid "FluentCRM did not accept the contact."
+msgstr ""
+
+#. translators: %s: error message from FluentCRM.
+#: core/src/class-service-fluentcrm.php:198
+#, php-format
+msgid "FluentCRM refused the contact: %s"
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:202
+msgid "subscribed"
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:203
+msgid "waiting for the email confirmation"
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:204
+msgid "not subscribed to emails"
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:205
+msgid "still unsubscribed"
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:206
+msgid "still bounced"
+msgstr ""
+
+#: core/src/class-service-fluentcrm.php:207
+msgid "still marked as spam"
+msgstr ""
+
+#. translators: %s: contact status, e.g. "subscribed".
+#: core/src/class-service-fluentcrm.php:212
+#, php-format
+msgid "Contact updated (%s)."
+msgstr ""
+
+#. translators: %s: contact status, e.g. "subscribed".
+#: core/src/class-service-fluentcrm.php:214
+#, php-format
+msgid "Contact created (%s)."
+msgstr ""
+
+#: core/src/class-service-kit.php:46
+msgid "Add subscribers to your Kit (ConvertKit) forms and tags."
+msgstr ""
+
+#: core/src/class-service-kit.php:55
+msgid "In Kit: Settings › Developer › Add a new key (a v4 API key)."
+msgstr ""
+
+#: core/src/class-service-kit.php:194
+msgid "Choose at least one Kit form or tag for this form."
+msgstr ""
+
+#: core/src/class-service-kit.php:206
+msgid "This person unsubscribed or bounced in Kit, so they were not added again."
+msgstr ""
+
+#: core/src/class-service-kit.php:239
+msgid "a chosen form no longer exists"
+msgstr ""
+
+#: core/src/class-service-kit.php:248
+msgid "a chosen tag no longer exists"
+msgstr ""
+
+#. translators: %s: problems.
+#: core/src/class-service-kit.php:253
+#, php-format
+msgid "The subscriber is saved in Kit, but: %s."
+msgstr ""
+
+#. translators: %s: names of the lists, groups, forms or tags.
+#: core/src/class-service-kit.php:260
+#: core/src/class-service-mailerlite.php:220
+#: core/src/class-service-mailpoet.php:228
+#, php-format
+msgid "Added to %s, waiting for the person to confirm by email."
+msgstr ""
+
+#. translators: %s: names of the lists, groups, forms or tags.
+#: core/src/class-service-kit.php:263
+#: core/src/class-service-mailerlite.php:223
+#: core/src/class-service-mailpoet.php:231
+#, php-format
+msgid "Subscribed to %s."
+msgstr ""
+
+#: core/src/class-service-kit.php:281
+msgid "With double opt-in, choose a Kit form that has double opt-in turned on: Kit sends its confirmation email. People who unsubscribed in Kit are not added again."
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:41
+msgid "Add subscribers to your Mailchimp audiences, with tags and double opt-in."
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:50
+msgid "In Mailchimp: Profile › Extras › API keys › Create A Key. It ends with your data centre, for example -us21."
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:86
+msgid "This does not look like a Mailchimp API key: it should end with your data centre, for example -us21."
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:238
+msgid "Mailchimp keeps this person unsubscribed (they unsubscribed or asked to be forgotten), so they were not added again."
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:241
+msgid "The chosen Mailchimp audience no longer exists. Choose another one in the form’s Integrations."
+msgstr ""
+
+#. translators: %s: audience name.
+#: core/src/class-service-mailchimp.php:273
+#, php-format
+msgid "%s: waiting for the email confirmation"
+msgstr ""
+
+#. translators: %s: audience name.
+#: core/src/class-service-mailchimp.php:278
+#, php-format
+msgid "%s: still unsubscribed"
+msgstr ""
+
+#. translators: %s: audience name.
+#: core/src/class-service-mailchimp.php:282
+#, php-format
+msgid "%s: subscribed"
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:294
+msgid "Audiences"
+msgstr ""
+
+#: core/src/class-service-mailchimp.php:303
+msgid "First name, last name and phone go to FNAME, LNAME and PHONE. People who unsubscribed in Mailchimp stay unsubscribed."
+msgstr ""
+
+#: core/src/class-service-mailerlite.php:46
+msgid "Add subscribers to your MailerLite groups."
+msgstr ""
+
+#: core/src/class-service-mailerlite.php:55
+msgid "In MailerLite: Integrations › API › Generate new token."
+msgstr ""
+
+#: core/src/class-service-mailerlite.php:183
+msgid "This person unsubscribed or bounced in MailerLite, so they were not added again."
+msgstr ""
+
+#: core/src/class-service-mailerlite.php:211
+msgid "MailerLite refused the subscriber."
+msgstr ""
+
+#: core/src/class-service-mailerlite.php:232
+msgid "Groups"
+msgstr ""
+
+#: core/src/class-service-mailerlite.php:241
+msgid "MailerLite’s own double opt-in setting for API subscribers decides whether they confirm by email. People who unsubscribed are not added again."
+msgstr ""
+
+#: core/src/class-service-mailpoet.php:41
+msgid "Add newsletter subscribers to your MailPoet lists, on this site."
+msgstr ""
+
+#: core/src/class-service-mailpoet.php:68
+msgid "Install and activate the MailPoet plugin to use it."
+msgstr ""
+
+#: core/src/class-service-mailpoet.php:162
+msgid "No MailPoet list is chosen, or the chosen list was deleted."
+msgstr ""
+
+#: core/src/class-service-mailpoet.php:189
+msgid "This person unsubscribed or bounced in MailPoet, so they were not subscribed again."
+msgstr ""
+
+#. translators: %s: names of the lists, groups, forms or tags.
+#: core/src/class-service-mailpoet.php:214
+#, php-format
+msgid "Added to %s, but MailPoet could not send its confirmation email, so the person cannot confirm yet. Check how MailPoet sends emails (MailPoet › Settings › Send with…)."
+msgstr ""
+
+#. translators: %s: names of the lists, groups, forms or tags.
+#: core/src/class-service-mailpoet.php:218
+#, php-format
+msgid "Subscribed to %s (MailPoet could not send its welcome email)."
+msgstr ""
+
+#. translators: %s: error message from MailPoet.
+#: core/src/class-service-mailpoet.php:221
+#, php-format
+msgid "MailPoet refused the subscriber: %s"
+msgstr ""
+
+#: core/src/class-service-mailpoet.php:240
+msgid "MailPoet’s own “sign-up confirmation” setting decides whether people confirm by email. People who unsubscribed in MailPoet are never added again."
+msgstr ""
+
+#: core/src/class-service-mautic.php:47
+msgid "Create or update Mautic contacts, with tags and segments."
+msgstr ""
+
+#: core/src/class-service-mautic.php:65
+msgid "Segments (optional)"
+msgstr ""
+
+#: core/src/class-service-mautic.php:76
+msgid "Mautic address"
+msgstr ""
+
+#: core/src/class-service-mautic.php:77
+msgid "For example https://mautic.example.com. In Mautic › Settings › Configuration › API Settings, turn on \"API enabled\" and \"Enable HTTP basic auth\"."
+msgstr ""
+
+#: core/src/class-service-mautic.php:81
+msgid "Mautic username"
+msgstr ""
+
+#: core/src/class-service-mautic.php:82
+msgid "A Mautic user that may create contacts. A user made just for this is best."
+msgstr ""
+
+#: core/src/class-service-mautic.php:86
+msgid "Password"
+msgstr ""
+
+#: core/src/class-service-mautic.php:107
+msgid "The Mautic address is not valid."
+msgstr ""
+
+#: core/src/class-service-mautic.php:132
+msgid "Mautic refused the username or password, or HTTP basic auth is off (Mautic › Settings › Configuration › API Settings)."
+msgstr ""
+
+#: core/src/class-service-mautic.php:134
+msgid "No Mautic API answered at this address. Check the address, and that \"API enabled\" is on in Mautic › Settings › Configuration › API Settings."
+msgstr ""
+
+#. translators: 1: Mautic contact id, 2: number of segments.
+#: core/src/class-service-mautic.php:241
+#, php-format
+msgid "Mautic contact #%1$d saved, added to %2$d segment."
+msgid_plural "Mautic contact #%1$d saved, added to %2$d segments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-service-slack.php:41
+msgid "A message in a Slack channel for each entry."
+msgstr ""
+
+#: core/src/class-service-slack.php:87
+msgid "Slack webhook address"
+msgstr ""
+
+#: core/src/class-service-slack.php:89
+msgid "In Slack: Tools › Apps › Incoming Webhooks (or api.slack.com/apps › your app › Incoming Webhooks › Add New Webhook), choose the channel, then copy the address."
+msgstr ""
+
+#: core/src/class-service-slack.php:162
+#: core/src/class-service-telegram.php:201
+#: includes/class-submission.php:675
+msgid "Open the entry"
+msgstr ""
+
+#: core/src/class-service-slack.php:189
+msgid "The Slack webhook address is missing or not valid (it starts with https://hooks.slack.com/)."
+msgstr ""
+
+#: core/src/class-service-slack.php:196
+msgid "Posted in Slack."
+msgstr ""
+
+#: core/src/class-service-slack.php:199
+msgid "Slack refused the address: the webhook may have been removed. Create a new one and paste it in the form."
+msgstr ""
+
+#: core/src/class-service-telegram.php:46
+msgid "A message from your own Telegram bot to you, a group or a channel, for each entry."
+msgstr ""
+
+#: core/src/class-service-telegram.php:82
+#: includes/class-admin.php:492
+#: includes/class-general.php:336
+#: assets/builder.js:986
+msgid "Send to"
+msgstr ""
+
+#: core/src/class-service-telegram.php:91
+msgid "A chat appears here once someone wrote to your bot (send it /start) or once the bot was added to the group or channel. Then click Refresh."
+msgstr ""
+
+#: core/src/class-service-telegram.php:102
+msgid "Bot token"
+msgstr ""
+
+#: core/src/class-service-telegram.php:103
+msgid "In Telegram, write to @BotFather: /newbot, choose a name, then copy the token it gives you. Then send /start to your new bot (or add it to your group)."
+msgstr ""
+
+#: core/src/class-service-telegram.php:119
+msgid "This does not look like a bot token (numbers, a colon, then letters)."
+msgstr ""
+
+#: core/src/class-service-telegram.php:136
+msgid "Telegram did not accept this bot token. Copy it again from @BotFather."
+msgstr ""
+
+#. translators: %s: person's name in Telegram.
+#: core/src/class-service-telegram.php:163
+#, php-format
+msgid "%s (private chat)"
+msgstr ""
+
+#: core/src/class-service-telegram.php:219
+msgid "No Telegram chat is chosen for this form."
+msgstr ""
+
+#. translators: %d: number of chats.
+#: core/src/class-service-telegram.php:242
+#, php-format
+msgid "Sent to %d Telegram chat."
+msgid_plural "Sent to %d Telegram chats."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/src/class-service-webhook.php:33
+msgid "Webhook"
+msgstr ""
+
+#: core/src/class-service-webhook.php:42
+msgid "Send the data to any address: Zapier, Make, n8n, your CRM or your own code."
+msgstr ""
+
+#: core/src/class-service-webhook.php:88
+msgid "Address (URL)"
+msgstr ""
+
+#: core/src/class-service-webhook.php:90
+msgid "Each entry is posted to this address. Addresses on a local or private network are refused for safety."
+msgstr ""
+
+#: core/src/class-service-webhook.php:101
+msgid "Add the address in the form’s Settings › Integrations. Works with Zapier, Make and n8n."
+msgstr ""
+
+#: core/src/class-service-webhook.php:171
+msgid "The webhook address is missing or not valid."
+msgstr ""
+
+#. translators: %s: error message.
+#: core/src/class-service-webhook.php:213
+#, php-format
+msgid "The address did not answer (%s)."
+msgstr ""
+
+#. translators: %d: HTTP status code, e.g. 200.
+#: core/src/class-service-webhook.php:218
+#, php-format
+msgid "Delivered (HTTP %d)."
+msgstr ""
+
+#. translators: %d: HTTP status code, e.g. 500.
+#: core/src/class-service-webhook.php:221
+#, php-format
+msgid "The address answered with an error (HTTP %d)."
+msgstr ""
+
+#: core/src/class-service.php:161
+#: assets/builder.js:855
+msgid "Lists"
+msgstr ""
+
+#. translators: %s: error message.
+#: core/src/class-service.php:292
+#, php-format
+msgid "The service did not answer (%s)."
+msgstr ""
+
+#. translators: %s: service name.
+#: core/src/class-service.php:312
+#, php-format
+msgid "%s refused the key. Check the connection in Aluleth › Connections."
+msgstr ""
+
+#. translators: 1: service name, 2: HTTP status code, 3: error detail.
+#: core/src/class-service.php:315
+#, php-format
+msgid "%1$s answered with an error (HTTP %2$d). %3$s"
+msgstr ""
+
+#. translators: %s: amount.
+#: core/src/class-service.php:420
+#, php-format
+msgid "Paid: %s"
+msgstr ""
+
+#. translators: %s: form name.
+#: core/src/class-service.php:424
+#, php-format
+msgid "New entry: %s"
+msgstr ""
+
+#: core/src/class-settings.php:45
+#: core/src/class-settings.php:195
+#: core/src/class-settings.php:212
+#: includes/class-admin.php:453
+#: includes/class-plugin.php:127
+#: assets/builder.js:413
+msgid "Settings"
+msgstr ""
+
+#: core/src/class-settings.php:76
+msgid "Security"
+msgstr ""
+
+#: core/src/class-settings.php:77
+msgid "Keep spam out of your entries. These settings apply to every form."
+msgstr ""
+
+#: core/src/class-settings.php:82
+msgid "Captcha"
+msgstr ""
+
+#: core/src/class-settings.php:101
+msgid "Payments"
+msgstr ""
+
+#: core/src/class-settings.php:102
+msgid "Take payments in your forms with your own PayPal account."
+msgstr ""
+
+#: core/src/class-settings.php:121
+msgid "Access"
+msgstr ""
+
+#: core/src/class-settings.php:122
+msgid "Choose what each WordPress role can do. Administrators can always do everything."
+msgstr ""
+
+#: core/src/class-settings.php:125
+msgid "Roles"
+msgstr ""
+
+#: core/src/class-settings.php:139
+msgid "Data and privacy"
+msgstr ""
+
+#: core/src/class-settings.php:140
+msgid "What happens to your data when you delete a plugin."
+msgstr ""
+
+#: core/src/class-settings.php:146
+msgid "Licences"
+msgstr ""
+
+#: core/src/class-settings.php:147
+msgid "Licences of your Aluleth Pro add-ons."
+msgstr ""
+
+#: core/src/class-settings.php:195
+#: assets/builder.js:1033
+msgid "Settings sections"
+msgstr ""
+
+#: core/src/class-settings.php:231
+msgid "Save changes"
+msgstr ""
+
+#: core/src/class-settings.php:245
+msgid "Sorry, you are not allowed to change these settings."
+msgstr ""
+
+#: core/src/class-settings.php:255
+msgid "Settings saved."
+msgstr ""
+
+#: core/src/class-settings.php:289
+msgid "Contacts, consents, connections and send log"
+msgstr ""
+
+#: core/src/class-settings.php:290
+msgid "Shared by every Aluleth plugin, so they are deleted only with the last one."
+msgstr ""
+
+#: core/src/class-settings.php:301
+msgid "When you delete a plugin"
+msgstr ""
+
+#: core/src/class-settings.php:302
+msgid "By default your data is kept, so nothing is lost if you delete a plugin and install it again. Tick what should be erased for good when you delete the plugin from the Plugins screen. Deactivating a plugin never deletes anything."
+msgstr ""
+
+#: core/src/class-settings.php:303
+msgid "Delete on uninstall"
+msgstr ""
+
+#: core/src/class-settings.php:324
+msgid "Akismet (Automattic) receives the answers, the email address and the visitor's IP address of each entry to check it for spam."
+msgstr ""
+
+#: core/src/class-settings.php:333
+msgid "For your privacy policy"
+msgstr ""
+
+#: core/src/class-settings.php:333
+msgid "The outside services you turned on receive some visitor data:"
+msgstr ""
+
+#: core/src/class-site-style.php:87
+#: core/src/class-site-style.php:101
+msgid "Theme"
+msgstr ""
+
+#: includes/class-admin.php:43
+#: includes/class-admin.php:107
+#: includes/class-admin.php:556
+#: includes/class-stats.php:206
+#: includes/class-stats.php:340
+#: assets/builder.js:416
+msgid "Entries"
+msgstr ""
+
+#: includes/class-admin.php:53
+msgid "Sorry, you are not allowed to see entries."
+msgstr ""
+
+#: includes/class-admin.php:79
+msgid "Board"
+msgstr ""
+
+#: includes/class-admin.php:112
+msgid "View"
+msgstr ""
+
+#: includes/class-admin.php:119
+msgid "Entry deleted."
+msgstr ""
+
+#: includes/class-admin.php:122
+msgid "Entry moved to Spam."
+msgstr ""
+
+#: includes/class-admin.php:128
+#: includes/class-admin.php:146
+#: includes/class-admin.php:235
+#: includes/class-elementor-widget.php:132
+#: includes/class-elementor-widget.php:151
+#: includes/class-plugin.php:171
+#: includes/class-stats.php:340
+#: assets/block.js:33
+#: assets/block.js:43
+msgid "Form"
+msgstr ""
+
+#: includes/class-admin.php:132
+msgid "Show"
+msgstr ""
+
+#: includes/class-admin.php:148
+#: includes/class-stats.php:371
+msgid "All forms"
+msgstr ""
+
+#: includes/class-admin.php:155
+msgid "All statuses"
+msgstr ""
+
+#: includes/class-admin.php:159
+#: includes/class-entries.php:59
+msgid "Spam"
+msgstr ""
+
+#: includes/class-admin.php:162
+msgid "Search entries"
+msgstr ""
+
+#: includes/class-admin.php:175
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class-admin.php:187
+msgid "Edit the columns"
+msgstr ""
+
+#. translators: %s: number of entries kept aside as spam.
+#: includes/class-admin.php:201
+#, php-format
+msgid "Spam (%s)"
+msgstr ""
+
+#: includes/class-admin.php:206
+msgid "Create a form first: its entries will appear here."
+msgstr ""
+
+#: includes/class-admin.php:226
+msgid "No entry matches these filters."
+msgstr ""
+
+#: includes/class-admin.php:226
+msgid "No entries yet. They appear here as soon as someone sends one of your forms."
+msgstr ""
+
+#: includes/class-admin.php:235
+msgid "Entry"
+msgstr ""
+
+#: includes/class-admin.php:235
+msgid "Received"
+msgstr ""
+
+#: includes/class-admin.php:282
+msgid "This change could not be saved. Please try again."
+msgstr ""
+
+#: includes/class-admin.php:283
+msgid "Loading…"
+msgstr ""
+
+#. translators: %d: number of notes.
+#: includes/class-admin.php:285
+#: includes/class-board.php:159
+#, php-format
+msgid "%d note"
+msgid_plural "%d notes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: status name.
+#: includes/class-admin.php:287
+#, php-format
+msgid "Moved to %s"
+msgstr ""
+
+#: includes/class-admin.php:303
+msgid "It failed again. Open the entry to see why."
+msgstr ""
+
+#: includes/class-admin.php:315
+msgid "All entries"
+msgstr ""
+
+#: includes/class-admin.php:317
+#: includes/class-ai.php:484
+msgid "This entry does not exist."
+msgstr ""
+
+#: includes/class-admin.php:333
+#: includes/class-admin.php:369
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: includes/class-admin.php:346
+msgid "Marked as spam."
+msgstr ""
+
+#: includes/class-admin.php:352
+msgid "Marked as not spam. Emails and connections were not sent for this entry."
+msgstr ""
+
+#: includes/class-admin.php:408
+msgid "Received (UTC)"
+msgstr ""
+
+#: includes/class-admin.php:414
+msgid "Amount paid"
+msgstr ""
+
+#: includes/class-admin.php:414
+#: includes/class-board.php:367
+msgid "PayPal transaction"
+msgstr ""
+
+#: includes/class-admin.php:414
+#: includes/class-board.php:351
+msgid "Test payment"
+msgstr ""
+
+#: includes/class-admin.php:414
+#: includes/class-board.php:361
+#: includes/class-templates.php:372
+msgid "Order"
+msgstr ""
+
+#: includes/class-admin.php:414
+#: includes/class-board.php:369
+msgid "Paid with"
+msgstr ""
+
+#: includes/class-admin.php:452
+msgid "Show this form"
+msgstr ""
+
+#: includes/class-admin.php:454
+#: includes/class-admin.php:508
+#: includes/class-elementor-widget.php:238
+#: assets/builder.js:443
+msgid "Fields"
+msgstr ""
+
+#: includes/class-admin.php:464
+msgid "Add the \"Aluleth Form\" block to any page, or paste this shortcode:"
+msgstr ""
+
+#: includes/class-admin.php:465
+#: includes/class-admin.php:555
+msgid "Shortcode"
+msgstr ""
+
+#: includes/class-admin.php:479
+#: includes/class-elementor-widget.php:165
+#: includes/class-general.php:295
+#: assets/builder.js:68
+msgid "Clean"
+msgstr ""
+
+#: includes/class-admin.php:480
+#: includes/class-elementor-widget.php:166
+#: includes/class-general.php:296
+#: assets/builder.js:69
+msgid "Soft"
+msgstr ""
+
+#: includes/class-admin.php:481
+#: includes/class-elementor-widget.php:167
+#: includes/class-general.php:297
+#: assets/builder.js:70
+msgid "Dark"
+msgstr ""
+
+#: includes/class-admin.php:484
+#: includes/class-elementor-widget.php:161
+#: assets/builder.js:735
+#: assets/builder.js:736
+#: assets/builder.js:744
+#: assets/builder.js:756
+msgid "Style"
+msgstr ""
+
+#: includes/class-admin.php:489
+#: includes/class-elementor-widget.php:203
+#: assets/builder.js:770
+#: assets/builder.js:1026
+msgid "Button text"
+msgstr ""
+
+#: includes/class-admin.php:490
+msgid "Message after sending"
+msgstr ""
+
+#: includes/class-admin.php:491
+msgid "Or go to this page"
+msgstr ""
+
+#: includes/class-admin.php:492
+#: assets/builder.js:984
+msgid "Email to your team"
+msgstr ""
+
+#: includes/class-admin.php:492
+#: assets/builder.js:985
+msgid "Send each new entry by email"
+msgstr ""
+
+#: includes/class-admin.php:492
+#: assets/builder.js:986
+msgid "Several addresses: separate them with commas. Empty: the site admin email."
+msgstr ""
+
+#: includes/class-admin.php:493
+#: assets/builder.js:988
+msgid "Email to the visitor"
+msgstr ""
+
+#: includes/class-admin.php:493
+#: assets/builder.js:989
+msgid "Send a confirmation with a copy of their answers"
+msgstr ""
+
+#: includes/class-admin.php:493
+#: assets/builder.js:987
+#: assets/builder.js:990
+msgid "Subject"
+msgstr ""
+
+#: includes/class-admin.php:493
+#: includes/class-schema.php:248
+#: includes/class-templates.php:105
+#: assets/builder.js:28
+#: assets/builder.js:991
+msgid "Message"
+msgstr ""
+
+#: includes/class-admin.php:494
+msgid "Tags for the contact"
+msgstr ""
+
+#: includes/class-admin.php:494
+msgid "Separated by commas. Shared with every Aluleth plugin."
+msgstr ""
+
+#: includes/class-admin.php:507
+msgid "The visual builder is coming. Until then, the fields are edited here as JSON."
+msgstr ""
+
+#: includes/class-ai.php:83
+msgid "AI agents"
+msgstr ""
+
+#: includes/class-ai.php:100
+msgid "Forms, their numbers and their entries."
+msgstr ""
+
+#: includes/class-ai.php:139
+msgid "Get forms and their numbers"
+msgstr ""
+
+#: includes/class-ai.php:140
+msgid "Lists the Aluleth forms of the site with, for the chosen period, their entries, views and conversion, plus the entries waiting in the first column of each board. Use it to answer questions such as \"how many quote requests this week?\". Contains no personal data."
+msgstr ""
+
+#: includes/class-ai.php:147
+msgid "Number of days to count, ending today (1 to 365). Default 30."
+msgstr ""
+
+#: includes/class-ai.php:176
+msgid "Create a draft form"
+msgstr ""
+
+#: includes/class-ai.php:177
+msgid "Creates an Aluleth form as a draft, from a title and a list of fields. Nothing is published: the site owner reviews it in the builder (the answer gives its address). Field types: text, email, phone, number, date, textarea, select, radio, checkboxes, consent, heading, paragraph, step."
+msgstr ""
+
+#: includes/class-ai.php:240
+msgid "Get form entries"
+msgstr ""
+
+#: includes/class-ai.php:241
+msgid "Returns the latest entries of the forms, with their answers, status and notes. Entries hold personal data: only use them for the site owner's request. Spam is left out unless asked for."
+msgstr ""
+
+#: includes/class-ai.php:249
+msgid "A status key of the form (see the statuses in the answer), or \"spam\"."
+msgstr ""
+
+#: includes/class-ai.php:281
+msgid "Change an entry's status or add a note"
+msgstr ""
+
+#: includes/class-ai.php:282
+msgid "Moves an entry to another status (a column of its board) and/or adds a note for the team. Does not delete anything and sends nothing to the visitor."
+msgstr ""
+
+#: includes/class-ai.php:391
+msgid "A title and at least one field are needed."
+msgstr ""
+
+#. translators: %s: list of status keys.
+#: includes/class-ai.php:489
+#, php-format
+msgid "Unknown status. Use one of: %s."
+msgstr ""
+
+#: includes/class-ai.php:511
+msgid "AI agents (MCP)"
+msgstr ""
+
+#: includes/class-ai.php:511
+msgid "Let an AI assistant you connect to WordPress work with your forms, using the abilities built into WordPress. It acts with the rights of the WordPress user it signs in with, never more."
+msgstr ""
+
+#: includes/class-ai.php:512
+msgid "On"
+msgstr ""
+
+#: includes/class-ai.php:514
+msgid "This needs the Abilities API of WordPress 6.9 or later."
+msgstr ""
+
+#: includes/class-ai.php:517
+msgid "Read forms and statistics"
+msgstr ""
+
+#: includes/class-ai.php:517
+msgid "\"How many quote requests this week?\" No personal data."
+msgstr ""
+
+#: includes/class-ai.php:518
+msgid "Create forms as drafts"
+msgstr ""
+
+#: includes/class-ai.php:518
+msgid "Nothing is published without you."
+msgstr ""
+
+#: includes/class-ai.php:519
+msgid "Read entries"
+msgstr ""
+
+#: includes/class-ai.php:519
+msgid "Personal data: off by default. The user also needs \"See entries\" in the table above."
+msgstr ""
+
+#: includes/class-ai.php:520
+msgid "Change entry status and add notes"
+msgstr ""
+
+#: includes/class-ai.php:520
+msgid "Never deletes and never writes to visitors."
+msgstr ""
+
+#: includes/class-ai.php:526
+msgid "To connect an assistant such as Claude, install the MCP Adapter plugin and sign the assistant in with a WordPress user (an application password works). Abilities: aluleth-forms/get-forms, create-form, get-entries, update-entry."
+msgstr ""
+
+#: includes/class-board.php:80
+msgid "Drop an entry here"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: includes/class-board.php:93
+#, php-format
+msgid "See all %s"
+msgstr ""
+
+#: includes/class-board.php:98
+msgid "Entry details"
+msgstr ""
+
+#. translators: %s: order number.
+#: includes/class-board.php:151
+#, php-format
+msgid "Order #%s"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-board.php:176
+#, php-format
+msgid "Refunded · %s"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-board.php:180
+#, php-format
+msgid "Paid, to check · %s"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-board.php:183
+#, php-format
+msgid "Paid · %s"
+msgstr ""
+
+#. translators: %s: time span, e.g. 3 days.
+#: includes/class-board.php:205
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. translators: 1: entry summary (name or email), 2: form title.
+#: includes/class-board.php:240
+#: includes/class-plugin.php:317
+msgid "Deleted form"
+msgstr ""
+
+#: includes/class-board.php:243
+msgid "Close"
+msgstr ""
+
+#: includes/class-board.php:252
+msgid "This entry was kept aside as spam: no email was sent and it was not passed to your connections."
+msgstr ""
+
+#: includes/class-board.php:252
+msgid "Not spam"
+msgstr ""
+
+#: includes/class-board.php:267
+#: assets/builder.js:437
+msgid "Save"
+msgstr ""
+
+#: includes/class-board.php:286
+msgid "Sent from"
+msgstr ""
+
+#: includes/class-board.php:299
+msgid "Open contact"
+msgstr ""
+
+#: includes/class-board.php:323
+msgid "Sent to your tools"
+msgstr ""
+
+#: includes/class-board.php:349
+#: includes/class-templates.php:372
+#: assets/builder.js:22
+msgid "Payment"
+msgstr ""
+
+#. translators: 1: order number, 2: store name (WooCommerce…).
+#: includes/class-board.php:360
+#, php-format
+msgid "#%1$s in %2$s"
+msgstr ""
+
+#: includes/class-board.php:363
+msgid "Order status"
+msgstr ""
+
+#: includes/class-board.php:372
+msgid "Paid by"
+msgstr ""
+
+#: includes/class-board.php:374
+msgid "Paid on"
+msgstr ""
+
+#: includes/class-board.php:375
+msgid "Refunds are made in your PayPal account."
+msgstr ""
+
+#: includes/class-board.php:386
+msgid "Notes"
+msgstr ""
+
+#: includes/class-board.php:394
+msgid "Add a note"
+msgstr ""
+
+#: includes/class-board.php:394
+msgid "Add a note for your team…"
+msgstr ""
+
+#: includes/class-board.php:394
+msgid "Add note"
+msgstr ""
+
+#: includes/class-board.php:400
+msgid "Open on its own page"
+msgstr ""
+
+#: includes/class-board.php:405
+msgid "Mark as spam"
+msgstr ""
+
+#: includes/class-board.php:410
+msgid "Click again to delete"
+msgstr ""
+
+#: includes/class-board.php:410
+msgid "Delete this entry"
+msgstr ""
+
+#: includes/class-board.php:424
+msgid "No note yet. Notes are only visible to your team."
+msgstr ""
+
+#: includes/class-board.php:447
+msgid "This entry no longer exists."
+msgstr ""
+
+#: includes/class-board.php:461
+msgid "The status could not be changed."
+msgstr ""
+
+#: includes/class-builder.php:64
+msgid "Form builder"
+msgstr ""
+
+#: includes/class-builder.php:104
+#: includes/class-plugin.php:172
+#: includes/class-plugin.php:173
+#: includes/class-start.php:119
+#: includes/class-start.php:403
+#: includes/class-stats.php:429
+msgid "New form"
+msgstr ""
+
+#: includes/class-builder.php:191
+msgid "Not saved to the contact"
+msgstr ""
+
+#: includes/class-builder.php:194
+msgid "Full name (split into first and last name)"
+msgstr ""
+
+#: includes/class-builder.php:253
+msgid "This form does not exist."
+msgstr ""
+
+#: includes/class-builder.php:253
+#: assets/builder.js:405
+msgid "Back to forms"
+msgstr ""
+
+#: includes/class-builder.php:256
+#: assets/builder.js:396
+msgid "Loading the builder…"
+msgstr ""
+
+#: includes/class-builder.php:317
+msgid "Untitled form"
+msgstr ""
+
+#: includes/class-builder.php:321
+msgid "You are not allowed to publish forms."
+msgstr ""
+
+#: includes/class-elementor-widget.php:42
+#: assets/block.js:46
+msgid "Aluleth Form"
+msgstr ""
+
+#: includes/class-elementor-widget.php:142
+msgid "You have no published form yet."
+msgstr ""
+
+#: includes/class-elementor-widget.php:142
+#: includes/class-import-screen.php:104
+#: includes/class-start.php:65
+#: includes/class-start.php:119
+msgid "Create a form"
+msgstr ""
+
+#: includes/class-elementor-widget.php:153
+msgid "— Choose a form —"
+msgstr ""
+
+#: includes/class-elementor-widget.php:164
+msgid "Style chosen in the form"
+msgstr ""
+
+#: includes/class-elementor-widget.php:170
+msgid "Fine-tune colours, fields and the button in the Style tab."
+msgstr ""
+
+#: includes/class-elementor-widget.php:178
+msgid "Fields, emails and entries are managed in Aluleth › Forms."
+msgstr ""
+
+#: includes/class-elementor-widget.php:178
+msgid "Open your forms"
+msgstr ""
+
+#: includes/class-elementor-widget.php:196
+msgid "Colours"
+msgstr ""
+
+#: includes/class-elementor-widget.php:202
+msgid "Accent (button, choices)"
+msgstr ""
+
+#: includes/class-elementor-widget.php:204
+msgid "Text and labels"
+msgstr ""
+
+#: includes/class-elementor-widget.php:205
+msgid "Help text and placeholders"
+msgstr ""
+
+#: includes/class-elementor-widget.php:206
+msgid "Field background"
+msgstr ""
+
+#: includes/class-elementor-widget.php:207
+msgid "Field text"
+msgstr ""
+
+#: includes/class-elementor-widget.php:208
+msgid "Field border"
+msgstr ""
+
+#: includes/class-elementor-widget.php:209
+msgid "Focus ring"
+msgstr ""
+
+#: includes/class-elementor-widget.php:210
+msgid "Errors"
+msgstr ""
+
+#: includes/class-elementor-widget.php:211
+msgid "Form background"
+msgstr ""
+
+#: includes/class-elementor-widget.php:247
+msgid "Label typography"
+msgstr ""
+
+#: includes/class-elementor-widget.php:256
+msgid "Field typography"
+msgstr ""
+
+#: includes/class-elementor-widget.php:264
+msgid "Space between fields"
+msgstr ""
+
+#: includes/class-elementor-widget.php:282
+#: includes/class-elementor-widget.php:404
+#: includes/class-elementor-widget.php:471
+msgid "Corner radius"
+msgstr ""
+
+#: includes/class-elementor-widget.php:300
+msgid "Border width"
+msgstr ""
+
+#: includes/class-elementor-widget.php:319
+msgid "Field padding"
+msgstr ""
+
+#: includes/class-elementor-widget.php:340
+msgid "Button"
+msgstr ""
+
+#: includes/class-elementor-widget.php:356
+msgid "Alignment"
+msgstr ""
+
+#: includes/class-elementor-widget.php:360
+msgid "Left"
+msgstr ""
+
+#: includes/class-elementor-widget.php:364
+msgid "Centre"
+msgstr ""
+
+#: includes/class-elementor-widget.php:368
+msgid "Right"
+msgstr ""
+
+#: includes/class-elementor-widget.php:381
+msgid "Full width"
+msgstr ""
+
+#: includes/class-elementor-widget.php:393
+msgid "Background on hover"
+msgstr ""
+
+#: includes/class-elementor-widget.php:422
+#: includes/class-elementor-widget.php:451
+msgid "Padding"
+msgstr ""
+
+#: includes/class-elementor-widget.php:443
+msgid "Form box"
+msgstr ""
+
+#: includes/class-elementor-widget.php:509
+msgid "Choose a form in the panel on the left."
+msgstr ""
+
+#. translators: %d: form id.
+#: includes/class-elementor.php:86
+#, php-format
+msgid "Form #%d"
+msgstr ""
+
+#: includes/class-entries.php:406
+msgid "(empty entry)"
+msgstr ""
+
+#: includes/class-entries.php:431
+#: includes/class-submission.php:438
+#: includes/class-submission.php:634
+#: includes/class-templates.php:341
+msgid "Yes"
+msgstr ""
+
+#: includes/class-entries.php:431
+#: includes/class-submission.php:438
+#: includes/class-submission.php:634
+#: includes/class-templates.php:341
+msgid "No"
+msgstr ""
+
+#: includes/class-general.php:91
+msgid "Required field"
+msgstr ""
+
+#: includes/class-general.php:92
+#: includes/class-plugin.php:219
+#: includes/class-validator.php:132
+#: includes/class-validator.php:165
+msgid "This field is required."
+msgstr ""
+
+#: includes/class-general.php:95
+msgid "Choice not made"
+msgstr ""
+
+#: includes/class-general.php:96
+#: includes/class-plugin.php:221
+#: includes/class-validator.php:123
+msgid "Please choose an option."
+msgstr ""
+
+#: includes/class-general.php:99
+msgid "Box to tick"
+msgstr ""
+
+#: includes/class-general.php:100
+#: includes/class-plugin.php:222
+#: includes/class-validator.php:152
+msgid "Please tick this box to continue."
+msgstr ""
+
+#: includes/class-general.php:103
+msgid "Email address"
+msgstr ""
+
+#: includes/class-general.php:104
+#: includes/class-general.php:307
+#: includes/class-plugin.php:220
+#: includes/class-validator.php:173
+#: includes/class-validator.php:177
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/class-general.php:107
+msgid "Phone number"
+msgstr ""
+
+#: includes/class-general.php:108
+#: includes/class-validator.php:183
+msgid "Please enter a valid phone number."
+msgstr ""
+
+#: includes/class-general.php:111
+msgid "Not a number"
+msgstr ""
+
+#: includes/class-general.php:112
+#: includes/class-validator.php:135
+#: includes/class-validator.php:190
+msgid "Please enter a number."
+msgstr ""
+
+#: includes/class-general.php:115
+msgid "Number too small"
+msgstr ""
+
+#. translators: {value} is replaced by the field's minimum. Keep it as it is.
+#: includes/class-general.php:117
+msgid "Please enter {value} or more."
+msgstr ""
+
+#: includes/class-general.php:118
+msgid "{value} is replaced by the lowest number allowed."
+msgstr ""
+
+#: includes/class-general.php:121
+msgid "Number too big"
+msgstr ""
+
+#. translators: {value} is replaced by the field's maximum. Keep it as it is.
+#: includes/class-general.php:123
+msgid "Please enter {value} or less."
+msgstr ""
+
+#: includes/class-general.php:124
+msgid "{value} is replaced by the highest number allowed."
+msgstr ""
+
+#: includes/class-general.php:128
+#: includes/class-validator.php:206
+msgid "Please enter a valid date."
+msgstr ""
+
+#: includes/class-general.php:131
+msgid "Answer too long"
+msgstr ""
+
+#. translators: {max} is replaced by the maximum number of characters. Keep it as it is.
+#: includes/class-general.php:133
+msgid "Please use {max} characters or fewer."
+msgstr ""
+
+#: includes/class-general.php:134
+msgid "{max} is replaced by the number of characters allowed."
+msgstr ""
+
+#: includes/class-general.php:181
+msgid "General"
+msgstr ""
+
+#: includes/class-general.php:182
+msgid "Defaults for new forms. Each form can still change them in its Design tab."
+msgstr ""
+
+#: includes/class-general.php:186
+#: includes/class-general.php:260
+msgid "Layout and style"
+msgstr ""
+
+#: includes/class-general.php:187
+#: includes/class-general.php:312
+msgid "Validation messages"
+msgstr ""
+
+#: includes/class-general.php:188
+#: includes/class-general.php:334
+msgid "Email summaries"
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-general.php:240
+#, php-format
+msgid "Saved. A summary was sent to %s."
+msgstr ""
+
+#. translators: %s: email address.
+#: includes/class-general.php:240
+msgid "Saved, but the summary could not be sent. Check that your site can send emails."
+msgstr ""
+
+#: includes/class-general.php:243
+msgid "Saved. The summary goes to the site administrator email, because the address you typed is not valid."
+msgstr ""
+
+#: includes/class-general.php:260
+msgid "Used by the forms you create from now on. Your existing forms keep their own design."
+msgstr ""
+
+#: includes/class-general.php:264
+#: assets/builder.js:765
+msgid "Labels"
+msgstr ""
+
+#: includes/class-general.php:267
+msgid "Above the field"
+msgstr ""
+
+#: includes/class-general.php:268
+msgid "Beside the field"
+msgstr ""
+
+#: includes/class-general.php:269
+msgid "Inside the field"
+msgstr ""
+
+#: includes/class-general.php:274
+#: assets/builder.js:570
+#: assets/builder.js:767
+msgid "Help text"
+msgstr ""
+
+#: includes/class-general.php:277
+#: includes/class-general.php:286
+#: assets/builder.js:767
+#: assets/builder.js:769
+msgid "Under the field"
+msgstr ""
+
+#: includes/class-general.php:278
+#: assets/builder.js:767
+msgid "Under the label"
+msgstr ""
+
+#: includes/class-general.php:283
+#: assets/builder.js:769
+msgid "Error messages"
+msgstr ""
+
+#: includes/class-general.php:287
+msgid "Under the field and listed at the top"
+msgstr ""
+
+#: includes/class-general.php:292
+msgid "Style for new forms"
+msgstr ""
+
+#: includes/class-general.php:300
+msgid "Button colour and font come from your site (theme or Elementor kit) unless a form picks its own."
+msgstr ""
+
+#: includes/class-general.php:303
+msgid "Preview"
+msgstr ""
+
+#: includes/class-general.php:305
+#: includes/class-plugin.php:224
+#: includes/class-renderer.php:115
+msgid "Please check these fields:"
+msgstr ""
+
+#: includes/class-general.php:306
+#: includes/class-schema.php:232
+#: includes/class-templates.php:45
+#: includes/class-templates.php:251
+#: assets/builder.js:32
+msgid "Your name"
+msgstr ""
+
+#: includes/class-general.php:306
+msgid "As you would like us to call you."
+msgstr ""
+
+#: includes/class-general.php:306
+msgid "Camille"
+msgstr ""
+
+#: includes/class-general.php:308
+#: includes/class-schema.php:130
+#: assets/builder.js:532
+msgid "Send"
+msgstr ""
+
+#: includes/class-general.php:312
+msgid "Already translated into your site's language. Change them only if you want your own words; leave a box empty to keep the default."
+msgstr ""
+
+#: includes/class-general.php:325
+msgid "Monday"
+msgstr ""
+
+#: includes/class-general.php:326
+msgid "Tuesday"
+msgstr ""
+
+#: includes/class-general.php:327
+msgid "Wednesday"
+msgstr ""
+
+#: includes/class-general.php:328
+msgid "Thursday"
+msgstr ""
+
+#: includes/class-general.php:329
+msgid "Friday"
+msgstr ""
+
+#: includes/class-general.php:330
+msgid "Saturday"
+msgstr ""
+
+#: includes/class-general.php:331
+msgid "Sunday"
+msgstr ""
+
+#: includes/class-general.php:334
+msgid "One short email a week with what happened on your forms."
+msgstr ""
+
+#: includes/class-general.php:335
+msgid "Send me a weekly summary of my forms"
+msgstr ""
+
+#: includes/class-general.php:335
+msgid "Entries and the change from the week before, new contacts and subscribers, your best form, what is waiting for you, spam kept aside and sends that failed."
+msgstr ""
+
+#: includes/class-general.php:336
+msgid "Site administrator email"
+msgstr ""
+
+#: includes/class-general.php:336
+msgid "Another address"
+msgstr ""
+
+#: includes/class-general.php:337
+msgid "Other address"
+msgstr ""
+
+#: includes/class-general.php:338
+msgid "Every"
+msgstr ""
+
+#. translators: %s: day of the week.
+#: includes/class-general.php:341
+#, php-format
+msgid "%s morning"
+msgstr ""
+
+#: includes/class-general.php:344
+msgid "Save and send a summary now"
+msgstr ""
+
+#: includes/class-general.php:348
+msgid "Keep entries for"
+msgstr ""
+
+#: includes/class-general.php:350
+msgid "Forever"
+msgstr ""
+
+#: includes/class-general.php:351
+msgid "1 month"
+msgstr ""
+
+#: includes/class-general.php:352
+msgid "3 months"
+msgstr ""
+
+#: includes/class-general.php:353
+msgid "6 months"
+msgstr ""
+
+#: includes/class-general.php:355
+msgid "24 months"
+msgstr ""
+
+#: includes/class-general.php:360
+msgid "Older entries are deleted for good once a day, with their notes. Contacts are kept."
+msgstr ""
+
+#: includes/class-general.php:361
+msgid "Delete spam after 30 days"
+msgstr ""
+
+#: includes/class-general.php:361
+msgid "Entries kept aside as spam are deleted for good 30 days after they arrived."
+msgstr ""
+
+#: includes/class-general.php:362
+msgid "Notifications sent from (name)"
+msgstr ""
+
+#: includes/class-general.php:363
+msgid "Notifications sent from (email)"
+msgstr ""
+
+#: includes/class-general.php:363
+msgid "Use an address of your own domain, so the emails are not taken for spam. An SMTP plugin may replace it."
+msgstr ""
+
+#. translators: %s: default sender address.
+#: includes/class-general.php:363
+#, php-format
+msgid "Not set: emails leave from %s, an address that usually does not exist. Some mailboxes then refuse your notifications and receipts."
+msgstr ""
+
+#. translators: %s: default sender address.
+#: includes/class-general.php:364
+msgid "Do not save entries, only send the notification email"
+msgstr ""
+
+#. translators: %s: default sender address.
+#: includes/class-general.php:364
+msgid "The answers are emailed, passed to your connections, then deleted from your site. The entries board stays empty. Contacts and consent are still saved."
+msgstr ""
+
+#. translators: %s: change in percent, with its sign.
+#: includes/class-general.php:550
+#, php-format
+msgid "%s vs the week before"
+msgstr ""
+
+#: includes/class-general.php:552
+msgid "none the week before"
+msgstr ""
+
+#: includes/class-general.php:555
+msgid "Entries this week"
+msgstr ""
+
+#. translators: %s: number of new newsletter subscribers.
+#: includes/class-general.php:556
+#, php-format
+msgid "%s new subscriber"
+msgid_plural "%s new subscribers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-general.php:559
+msgid "Best form"
+msgstr ""
+
+#. translators: %s: conversion rate in percent.
+#: includes/class-general.php:559
+#, php-format
+msgid "%s conversion"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: includes/class-general.php:559
+#: includes/class-general.php:568
+#, php-format
+msgid "%s entry"
+msgid_plural "%s entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-general.php:566
+msgid "Payments received"
+msgstr ""
+
+#: includes/class-general.php:566
+msgid "with PayPal, test payments left out"
+msgstr ""
+
+#: includes/class-general.php:568
+msgid "Waiting for you"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: includes/class-general.php:568
+msgid "in the first column of your boards"
+msgstr ""
+
+#. translators: %s: number of entries.
+#: includes/class-general.php:569
+msgid "Spam kept aside"
+msgstr ""
+
+#: includes/class-general.php:570
+msgid "Sends that failed"
+msgstr ""
+
+#: includes/class-general.php:570
+msgid "see Aluleth › Connections"
+msgstr ""
+
+#: includes/class-general.php:572
+msgid "Your forms this week"
+msgstr ""
+
+#: includes/class-general.php:577
+msgid "Open the entries"
+msgstr ""
+
+#: includes/class-general.php:578
+msgid "You get this email because the weekly summary is on in Aluleth › Settings › General."
+msgstr ""
+
+#: includes/class-general.php:578
+msgid "Change it"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-general.php:582
+#, php-format
+msgid "Your forms this week – %s"
+msgstr ""
+
+#: includes/class-import-screen.php:43
+msgid "Import forms"
+msgstr ""
+
+#: includes/class-import-screen.php:96
+#: includes/class-import-screen.php:195
+msgid "Sorry, you are not allowed to import forms."
+msgstr ""
+
+#: includes/class-import-screen.php:105
+msgid "Bring your forms and entries"
+msgstr ""
+
+#: includes/class-import-screen.php:106
+msgid "From Contact Form 7 (entries saved by Flamingo), WPForms, Elementor Forms and MetForm, even if the plugin is already deactivated. Your old forms are not changed: replace their shortcode or widget by the Aluleth form when you are ready."
+msgstr ""
+
+#: includes/class-import-screen.php:109
+msgid "Import done"
+msgstr ""
+
+#. translators: %d: number of fields.
+#: includes/class-import-screen.php:117
+#, php-format
+msgid "%d field"
+msgid_plural "%d fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of entries.
+#: includes/class-import-screen.php:119
+#, php-format
+msgid "%d entry."
+msgid_plural "%d entries."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-import-screen.php:120
+msgid "Open the form"
+msgstr ""
+
+#: includes/class-import-screen.php:122
+msgid "See the entries"
+msgstr ""
+
+#. translators: %s: field labels.
+#: includes/class-import-screen.php:126
+#, php-format
+msgid "Not imported (no matching field type yet): %s."
+msgstr ""
+
+#: includes/class-import-screen.php:134
+msgid "No form from Contact Form 7, WPForms, Elementor Forms or MetForm was found on this site."
+msgstr ""
+
+#. translators: %s: page title.
+#: includes/class-import-screen.php:163
+#, php-format
+msgid "on “%s”"
+msgstr ""
+
+#. translators: %d: number of entries.
+#: includes/class-import-screen.php:166
+#, php-format
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-import-screen.php:169
+msgid "Already imported: open"
+msgstr ""
+
+#: includes/class-import-screen.php:175
+msgid "WPForms Lite does not keep entries on your site; WPForms Pro entries are imported."
+msgstr ""
+
+#: includes/class-import-screen.php:179
+#: assets/builder.js:577
+msgid "Options"
+msgstr ""
+
+#: includes/class-import-screen.php:180
+msgid "Import the entries too"
+msgstr ""
+
+#: includes/class-import-screen.php:181
+msgid "Link entries to contacts (created as not subscribed: an old consent cannot be proven, so nobody is added to your newsletter)"
+msgstr ""
+
+#: includes/class-import-screen.php:182
+msgid "Put the imported entries in"
+msgstr ""
+
+#: includes/class-import-screen.php:182
+msgid "the last column (handled)"
+msgstr ""
+
+#: includes/class-import-screen.php:182
+msgid "the first column (to handle)"
+msgstr ""
+
+#: includes/class-import-screen.php:183
+msgid "Imported forms are published so their shortcode works right away; they are not placed on any page."
+msgstr ""
+
+#: includes/class-import-screen.php:183
+msgid "Import the selected forms"
+msgstr ""
+
+#: includes/class-importer.php:145
+msgid "This form was already imported."
+msgstr ""
+
+#: includes/class-importer.php:166
+msgid "This form could not be read."
+msgstr ""
+
+#: includes/class-importer.php:177
+#: includes/class-start.php:293
+msgid "The form could not be created."
+msgstr ""
+
+#: includes/class-importer.php:639
+msgid "Step 1"
+msgstr ""
+
+#: includes/class-importer.php:875
+#: assets/builder.js:38
+#: assets/builder.js:52
+msgid "Step"
+msgstr ""
+
+#: includes/class-installer.php:124
+msgid "Contact form"
+msgstr ""
+
+#. translators: 1: item name, 2: quantity.
+#: includes/class-payments.php:131
+#, php-format
+msgid "%1$s × %2$d"
+msgstr ""
+
+#: includes/class-payments.php:137
+msgid "Discount"
+msgstr ""
+
+#: includes/class-payments.php:143
+msgid "Tax"
+msgstr ""
+
+#. translators: 1: payment method (PayPal…), 2: transaction id.
+#: includes/class-payments.php:159
+#, php-format
+msgid "Paid with %1$s · transaction %2$s"
+msgstr ""
+
+#. translators: %s: payment method (PayPal, card…).
+#: includes/class-payments.php:161
+#, php-format
+msgid "Paid with %s"
+msgstr ""
+
+#. translators: %s: order number.
+#: includes/class-payments.php:164
+#, php-format
+msgid "order #%s"
+msgstr ""
+
+#: includes/class-payments.php:166
+msgid "test payment"
+msgstr ""
+
+#: includes/class-payments.php:278
+#: includes/class-payments.php:309
+msgid "Payments are not available at the moment. Please try again later."
+msgstr ""
+
+#: includes/class-payments.php:283
+msgid "Your payment could not be started. Please reload the page and try again."
+msgstr ""
+
+#: includes/class-payments.php:286
+#: includes/class-payments.php:299
+msgid "This form takes no payment."
+msgstr ""
+
+#: includes/class-payments.php:289
+msgid "Your payment could not be started. Please contact us another way."
+msgstr ""
+
+#: includes/class-payments.php:306
+#: includes/class-plugin.php:228
+msgid "Please choose what you want to pay for."
+msgstr ""
+
+#: includes/class-payments.php:325
+msgid "PayPal could not start the payment. Please try again in a moment."
+msgstr ""
+
+#: includes/class-payments.php:372
+msgid "This payment could not be found."
+msgstr ""
+
+#: includes/class-payments.php:388
+msgid "This payment could not be found. If money was taken, please contact us."
+msgstr ""
+
+#: includes/class-payments.php:392
+#: includes/class-submission.php:216
+msgid "This form is no longer available."
+msgstr ""
+
+#: includes/class-payments.php:406
+msgid "Your payment is being confirmed. Please wait a moment."
+msgstr ""
+
+#: includes/class-payments.php:415
+msgid "The payment was declined. Please choose another way to pay."
+msgstr ""
+
+#: includes/class-payments.php:417
+msgid "PayPal could not confirm the payment. You have not been charged; please try again."
+msgstr ""
+
+#: includes/class-payments.php:422
+msgid "PayPal is still checking this payment. You will get an email once it is confirmed."
+msgstr ""
+
+#: includes/class-payments.php:422
+msgid "The payment was not completed."
+msgstr ""
+
+#. translators: 1: amount paid, 2: amount expected.
+#: includes/class-payments.php:449
+#, php-format
+msgid "Check this payment in PayPal: %1$s received, %2$s expected."
+msgstr ""
+
+#: includes/class-plugin.php:86
+msgid "Create and edit forms"
+msgstr ""
+
+#: includes/class-plugin.php:90
+msgid "See entries"
+msgstr ""
+
+#: includes/class-plugin.php:92
+msgid "Entries hold personal data."
+msgstr ""
+
+#: includes/class-plugin.php:95
+msgid "Change status, add notes, delete and export entries"
+msgstr ""
+
+#: includes/class-plugin.php:110
+msgid "Aluleth Forms: forms, entries and statistics"
+msgstr ""
+
+#: includes/class-plugin.php:111
+msgid "Deleted with the plugin. Pages that show a form keep their shortcode or block, which then shows nothing."
+msgstr ""
+
+#: includes/class-plugin.php:144
+msgid "Sorry, you are not allowed to see the forms."
+msgstr ""
+
+#: includes/class-plugin.php:174
+msgid "Edit form"
+msgstr ""
+
+#: includes/class-plugin.php:175
+msgid "Search forms"
+msgstr ""
+
+#: includes/class-plugin.php:176
+msgid "No forms yet."
+msgstr ""
+
+#: includes/class-plugin.php:177
+msgid "No forms in the trash."
+msgstr ""
+
+#: includes/class-plugin.php:223
+#: includes/class-submission.php:298
+msgid "Please check the highlighted fields."
+msgstr ""
+
+#: includes/class-plugin.php:226
+msgid "Your message could not be sent. Please try again."
+msgstr ""
+
+#: includes/class-plugin.php:229
+msgid "Confirming your payment…"
+msgstr ""
+
+#: includes/class-plugin.php:230
+msgid "Payment cancelled. Nothing was charged; you can try again."
+msgstr ""
+
+#: includes/class-plugin.php:231
+msgid "The payment could not be completed. Please try again."
+msgstr ""
+
+#: includes/class-plugin.php:232
+msgid "We could not confirm your payment right away. If money was taken, your answers are safe and we will confirm by email."
+msgstr ""
+
+#. translators: 1: entry summary (name or email), 2: form title.
+#: includes/class-plugin.php:317
+#, php-format
+msgid "%1$s · %2$s"
+msgstr ""
+
+#. translators: %d: entry id.
+#: includes/class-plugin.php:319
+#, php-format
+msgid "Deleted entry #%d"
+msgstr ""
+
+#. translators: %s: form title.
+#: includes/class-plugin.php:334
+#, php-format
+msgid "Sent the form \"%s\""
+msgstr ""
+
+#: includes/class-renderer.php:56
+msgid "This form does not exist or is not published."
+msgstr ""
+
+#: includes/class-renderer.php:127
+msgid "Form steps"
+msgstr ""
+
+#. translators: %d: step number.
+#: includes/class-renderer.php:129
+#, php-format
+msgid "Step %d"
+msgstr ""
+
+#: includes/class-renderer.php:143
+msgid "Leave this field empty"
+msgstr ""
+
+#: includes/class-renderer.php:153
+msgid "Back"
+msgstr ""
+
+#: includes/class-renderer.php:154
+#: assets/builder.js:38
+msgid "Next step"
+msgstr ""
+
+#: includes/class-renderer.php:290
+#: assets/builder.js:195
+msgid "Choose…"
+msgstr ""
+
+#: includes/class-renderer.php:409
+#: assets/builder.js:530
+msgid "PayPal buttons: PayPal, Pay Later, card"
+msgstr ""
+
+#: includes/class-renderer.php:415
+msgid "Payments are not available at the moment."
+msgstr ""
+
+#: includes/class-renderer.php:417
+msgid "Set up PayPal (only you see this link)"
+msgstr ""
+
+#: includes/class-renderer.php:424
+msgid "Test mode: no real money is taken."
+msgstr ""
+
+#: includes/class-renderer.php:424
+msgid "Secure payment with PayPal. Your card details never reach this site."
+msgstr ""
+
+#: includes/class-renderer.php:424
+msgid "Payments need JavaScript. Please turn it on."
+msgstr ""
+
+#. translators: %s: anti-spam service name.
+#: includes/class-renderer.php:461
+#: assets/builder.js:527
+#, php-format,js-format
+msgid "Anti-spam check (%s)"
+msgstr ""
+
+#: includes/class-renderer.php:472
+msgid "This form needs JavaScript for its anti-spam check."
+msgstr ""
+
+#: includes/class-renderer.php:491
+msgid "Your message could not be sent: the page may be too old, or too many messages were sent. Please reload the page and try again in a few minutes."
+msgstr ""
+
+#: includes/class-schema.php:131
+msgid "Thank you! Your message has been sent."
+msgstr ""
+
+#: includes/class-schema.php:136
+msgid "New entry: {form_title}"
+msgstr ""
+
+#: includes/class-schema.php:138
+msgid "We received your message"
+msgstr ""
+
+#: includes/class-schema.php:139
+msgid ""
+"Hello,\n"
+"\n"
+"Thank you for your message. We will get back to you soon."
+msgstr ""
+
+#: includes/class-schema.php:169
+#: includes/class-templates.php:390
+msgid "In progress"
+msgstr ""
+
+#: includes/class-schema.php:173
+#: includes/class-templates.php:206
+#: includes/class-templates.php:280
+msgid "Done"
+msgstr ""
+
+#: includes/class-schema.php:254
+#: includes/class-templates.php:27
+#: assets/builder.js:37
+msgid "Send me news and offers by email. I can unsubscribe at any time."
+msgstr ""
+
+#: includes/class-start.php:111
+#: includes/class-start.php:238
+#: includes/class-start.php:256
+msgid "Sorry, you are not allowed to create forms."
+msgstr ""
+
+#: includes/class-start.php:120
+msgid "Start from one of our designs, or from a blank form."
+msgstr ""
+
+#: includes/class-start.php:120
+msgid "Describe what you need and AI Writer builds it, or start from one of our designs."
+msgstr ""
+
+#: includes/class-start.php:128
+msgid "A contact form for my business: name, email, phone and message."
+msgstr ""
+
+#: includes/class-start.php:129
+msgid "Booking"
+msgstr ""
+
+#: includes/class-start.php:129
+msgid "A booking form: the service, a preferred day and time, then name, phone and email."
+msgstr ""
+
+#: includes/class-start.php:130
+#: includes/class-templates.php:114
+msgid "Quote request"
+msgstr ""
+
+#: includes/class-start.php:130
+msgid "A quote request: the service needed, budget, deadline and project details."
+msgstr ""
+
+#: includes/class-start.php:131
+msgid "Survey"
+msgstr ""
+
+#: includes/class-start.php:131
+msgid "A short customer survey: satisfaction, what they liked, what to improve."
+msgstr ""
+
+#: includes/class-start.php:132
+msgid "Registration"
+msgstr ""
+
+#: includes/class-start.php:132
+msgid "An event registration: name, email, number of people and dietary needs."
+msgstr ""
+
+#: includes/class-start.php:137
+msgid "Describe the form you need"
+msgstr ""
+
+#: includes/class-start.php:138
+msgid "For example: a booking form for my bike repair workshop: name, phone, type of bike, the repair needed and a preferred day."
+msgstr ""
+
+#: includes/class-start.php:143
+msgid "Write my form"
+msgstr ""
+
+#: includes/class-start.php:145
+msgid "Uses AI Writer with your own AI key. The form opens as a draft in the builder: you review every field before publishing."
+msgstr ""
+
+#: includes/class-start.php:147
+msgid "AI Writer needs an AI provider first."
+msgstr ""
+
+#: includes/class-start.php:147
+msgid "Connect one in Settings › Connectors"
+msgstr ""
+
+#: includes/class-start.php:149
+msgid "AI Writer is writing your form. This takes about 10 to 30 seconds…"
+msgstr ""
+
+#: includes/class-start.php:160
+msgid "Start from a design"
+msgstr ""
+
+#: includes/class-start.php:160
+msgid "Or start from a design"
+msgstr ""
+
+#: includes/class-start.php:170
+msgid "Blank form"
+msgstr ""
+
+#. translators: %d: number of forms.
+#: includes/class-start.php:182
+#, php-format
+msgid "%d form from another plugin was found on this site."
+msgid_plural "%d forms from other plugins were found on this site."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of forms.
+#: includes/class-start.php:182
+msgid "Import them with their entries"
+msgstr ""
+
+#: includes/class-start.php:184
+msgid "Moving from another plugin?"
+msgstr ""
+
+#: includes/class-start.php:184
+msgid "Import your forms and entries"
+msgstr ""
+
+#: includes/class-start.php:184
+msgid "from Contact Form 7, WPForms, Elementor Forms or MetForm."
+msgstr ""
+
+#: includes/class-start.php:260
+msgid "Describe the form you need first."
+msgstr ""
+
+#: includes/class-start.php:308
+msgid "AI Writer is not ready: connect an AI provider in Settings › Connectors."
+msgstr ""
+
+#: includes/class-start.php:385
+msgid "AI Writer did not return any field. Try again with a few more details."
+msgstr ""
+
+#: includes/class-stats.php:156
+msgid "Form entries"
+msgstr ""
+
+#: includes/class-stats.php:165
+#: includes/class-stats.php:174
+msgid "Form conversion"
+msgstr ""
+
+#. translators: 1: number of form views, 2: number of entries.
+#: includes/class-stats.php:168
+#, php-format
+msgid "%1$s form views → %2$s entries"
+msgstr ""
+
+#: includes/class-stats.php:176
+msgid "No form view yet in this period."
+msgstr ""
+
+#: includes/class-stats.php:176
+msgid "Form views are counted from today."
+msgstr ""
+
+#: includes/class-stats.php:291
+msgid "Open the board"
+msgstr ""
+
+#: includes/class-stats.php:340
+msgid "Views"
+msgstr ""
+
+#: includes/class-stats.php:340
+msgid "Conversion"
+msgstr ""
+
+#: includes/class-stats.php:340
+msgid "Trend"
+msgstr ""
+
+#. translators: %d: number of steps.
+#: includes/class-stats.php:359
+#, php-format
+msgid "%d steps"
+msgstr ""
+
+#. translators: %d: number of steps.
+#: includes/class-stats.php:359
+msgid "One step"
+msgstr ""
+
+#: includes/class-stats.php:369
+msgid "Your forms"
+msgstr ""
+
+#. translators: 1: number of forms, 2: number of entries.
+#: includes/class-stats.php:406
+#, php-format
+msgid "%1$s forms · %2$s entries"
+msgstr ""
+
+#: includes/class-submission.php:138
+msgid "This form takes a payment: please pay with the buttons at the bottom of the form. They need JavaScript."
+msgstr ""
+
+#. translators: %s: why the entry was kept aside (blocked word, Akismet…).
+#: includes/class-submission.php:151
+#, php-format
+msgid "Kept aside as spam: %s."
+msgstr ""
+
+#: includes/class-submission.php:167
+msgid "Your message could not be saved. Please try again."
+msgstr ""
+
+#: includes/class-submission.php:244
+msgid "This page is too old. Please reload it and send the form again."
+msgstr ""
+
+#: includes/class-submission.php:253
+msgid "Too many messages in a short time. Please try again later."
+msgstr ""
+
+#: includes/class-submission.php:261
+msgid "This form uses an anti-spam check that needs JavaScript. Please turn JavaScript on and send it again."
+msgstr ""
+
+#: includes/class-submission.php:644
+msgid "Total paid"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-submission.php:725
+#, php-format
+msgid "Your payment to %s"
+msgstr ""
+
+#: includes/class-submission.php:726
+msgid "Thank you, your payment was received."
+msgstr ""
+
+#: includes/class-templates.php:97
+msgid "Name, email and a message."
+msgstr ""
+
+#: includes/class-templates.php:115
+msgid "Service, budget, deadline and project details."
+msgstr ""
+
+#: includes/class-templates.php:123
+msgid "Company"
+msgstr ""
+
+#: includes/class-templates.php:128
+msgid "What do you need?"
+msgstr ""
+
+#: includes/class-templates.php:130
+msgid "Website"
+msgstr ""
+
+#: includes/class-templates.php:130
+msgid "Branding"
+msgstr ""
+
+#: includes/class-templates.php:130
+msgid "Marketing"
+msgstr ""
+
+#: includes/class-templates.php:130
+msgid "Something else"
+msgstr ""
+
+#: includes/class-templates.php:135
+msgid "Budget"
+msgstr ""
+
+#: includes/class-templates.php:136
+msgid "Under 1,000"
+msgstr ""
+
+#: includes/class-templates.php:136
+msgid "1,000 to 5,000"
+msgstr ""
+
+#: includes/class-templates.php:136
+msgid "5,000 to 15,000"
+msgstr ""
+
+#: includes/class-templates.php:136
+msgid "Over 15,000"
+msgstr ""
+
+#: includes/class-templates.php:141
+msgid "Ideal deadline"
+msgstr ""
+
+#: includes/class-templates.php:146
+msgid "Tell us about your project"
+msgstr ""
+
+#: includes/class-templates.php:153
+msgid "Thank you! We will send you a quote within two working days."
+msgstr ""
+
+#: includes/class-templates.php:154
+msgid "Quote sent"
+msgstr ""
+
+#: includes/class-templates.php:154
+msgid "Won"
+msgstr ""
+
+#: includes/class-templates.php:154
+msgid "Lost"
+msgstr ""
+
+#: includes/class-templates.php:158
+msgid "Appointment booking"
+msgstr ""
+
+#: includes/class-templates.php:159
+msgid "Two steps: the appointment, then the person."
+msgstr ""
+
+#: includes/class-templates.php:166
+msgid "Your appointment"
+msgstr ""
+
+#: includes/class-templates.php:171
+msgid "Service"
+msgstr ""
+
+#: includes/class-templates.php:173
+msgid "First visit"
+msgstr ""
+
+#: includes/class-templates.php:173
+msgid "Follow-up"
+msgstr ""
+
+#: includes/class-templates.php:173
+msgid "Consultation"
+msgstr ""
+
+#: includes/class-templates.php:178
+msgid "Preferred day"
+msgstr ""
+
+#: includes/class-templates.php:185
+msgid "Preferred time"
+msgstr ""
+
+#: includes/class-templates.php:186
+#: includes/class-templates.php:269
+msgid "Morning"
+msgstr ""
+
+#: includes/class-templates.php:186
+#: includes/class-templates.php:269
+msgid "Afternoon"
+msgstr ""
+
+#: includes/class-templates.php:186
+#: includes/class-templates.php:269
+msgid "Evening"
+msgstr ""
+
+#: includes/class-templates.php:191
+msgid "Your details"
+msgstr ""
+
+#: includes/class-templates.php:199
+msgid "Anything we should know?"
+msgstr ""
+
+#: includes/class-templates.php:204
+msgid "Thank you! We will confirm your appointment shortly."
+msgstr ""
+
+#: includes/class-templates.php:205
+msgid "Book"
+msgstr ""
+
+#: includes/class-templates.php:206
+#: includes/class-templates.php:312
+msgid "Confirmed"
+msgstr ""
+
+#: includes/class-templates.php:206
+msgid "Cancelled"
+msgstr ""
+
+#: includes/class-templates.php:210
+msgid "Newsletter"
+msgstr ""
+
+#: includes/class-templates.php:211
+msgid "First name, email and consent."
+msgstr ""
+
+#: includes/class-templates.php:217
+msgid "Get our news first"
+msgstr ""
+
+#: includes/class-templates.php:237
+msgid "Subscribe"
+msgstr ""
+
+#: includes/class-templates.php:238
+msgid "Thank you! You are on the list."
+msgstr ""
+
+#: includes/class-templates.php:244
+#: includes/class-templates.php:278
+msgid "Call me back"
+msgstr ""
+
+#: includes/class-templates.php:245
+msgid "Phone number and the best time to call."
+msgstr ""
+
+#: includes/class-templates.php:268
+msgid "Best time to call"
+msgstr ""
+
+#: includes/class-templates.php:269
+msgid "Lunchtime"
+msgstr ""
+
+#: includes/class-templates.php:274
+msgid "What is it about?"
+msgstr ""
+
+#: includes/class-templates.php:279
+msgid "Thank you! We will call you back soon."
+msgstr ""
+
+#: includes/class-templates.php:280
+msgid "To call"
+msgstr ""
+
+#: includes/class-templates.php:280
+msgid "Called"
+msgstr ""
+
+#: includes/class-templates.php:284
+msgid "Event registration"
+msgstr ""
+
+#: includes/class-templates.php:285
+msgid "Attendees, number of seats and diet."
+msgstr ""
+
+#: includes/class-templates.php:293
+msgid "Number of people"
+msgstr ""
+
+#: includes/class-templates.php:303
+msgid "Dietary needs"
+msgstr ""
+
+#: includes/class-templates.php:304
+msgid "Vegetarian"
+msgstr ""
+
+#: includes/class-templates.php:304
+msgid "Vegan"
+msgstr ""
+
+#: includes/class-templates.php:304
+msgid "Gluten-free"
+msgstr ""
+
+#: includes/class-templates.php:310
+msgid "Register"
+msgstr ""
+
+#: includes/class-templates.php:311
+msgid "You are registered! We look forward to seeing you."
+msgstr ""
+
+#: includes/class-templates.php:312
+msgid "Registered"
+msgstr ""
+
+#: includes/class-templates.php:312
+msgid "Attended"
+msgstr ""
+
+#: includes/class-templates.php:316
+msgid "Customer feedback"
+msgstr ""
+
+#: includes/class-templates.php:317
+msgid "Satisfaction, what went well, what to improve."
+msgstr ""
+
+#: includes/class-templates.php:323
+msgid "How satisfied are you?"
+msgstr ""
+
+#: includes/class-templates.php:325
+msgid "Very satisfied"
+msgstr ""
+
+#: includes/class-templates.php:325
+msgid "Satisfied"
+msgstr ""
+
+#: includes/class-templates.php:325
+msgid "Neutral"
+msgstr ""
+
+#: includes/class-templates.php:325
+msgid "Not satisfied"
+msgstr ""
+
+#: includes/class-templates.php:330
+msgid "What did you like?"
+msgstr ""
+
+#: includes/class-templates.php:335
+msgid "What could we do better?"
+msgstr ""
+
+#: includes/class-templates.php:340
+msgid "Would you recommend us?"
+msgstr ""
+
+#: includes/class-templates.php:341
+msgid "Maybe"
+msgstr ""
+
+#: includes/class-templates.php:346
+msgid "Email (if you would like an answer)"
+msgstr ""
+
+#: includes/class-templates.php:350
+msgid "Thank you for your feedback!"
+msgstr ""
+
+#: includes/class-templates.php:354
+msgid "Support request"
+msgstr ""
+
+#: includes/class-templates.php:355
+msgid "Topic, priority and order number."
+msgstr ""
+
+#: includes/class-templates.php:363
+msgid "Order or reference number"
+msgstr ""
+
+#: includes/class-templates.php:369
+msgid "Topic"
+msgstr ""
+
+#: includes/class-templates.php:372
+msgid "Technical problem"
+msgstr ""
+
+#: includes/class-templates.php:377
+msgid "Priority"
+msgstr ""
+
+#: includes/class-templates.php:378
+msgid "Normal"
+msgstr ""
+
+#: includes/class-templates.php:378
+msgid "Urgent"
+msgstr ""
+
+#: includes/class-templates.php:383
+msgid "Describe the problem"
+msgstr ""
+
+#: includes/class-templates.php:389
+msgid "Thank you! Our team will get back to you shortly."
+msgstr ""
+
+#: includes/class-templates.php:390
+msgid "Waiting for the customer"
+msgstr ""
+
+#: includes/class-templates.php:390
+msgid "Solved"
+msgstr ""
+
+#: includes/class-templates.php:394
+msgid "Waitlist"
+msgstr ""
+
+#: includes/class-templates.php:395
+msgid "Early access or launch list."
+msgstr ""
+
+#: includes/class-templates.php:407
+msgid "How did you hear about us?"
+msgstr ""
+
+#: includes/class-templates.php:408
+msgid "Search engine"
+msgstr ""
+
+#: includes/class-templates.php:408
+msgid "Social media"
+msgstr ""
+
+#: includes/class-templates.php:408
+msgid "A friend"
+msgstr ""
+
+#: includes/class-templates.php:413
+msgid "Join the list"
+msgstr ""
+
+#: includes/class-templates.php:414
+msgid "You are on the list. We will email you first."
+msgstr ""
+
+#: includes/class-validator.php:84
+msgid "This field is not available."
+msgstr ""
+
+#: includes/class-validator.php:100
+msgid "Please choose at least one option."
+msgstr ""
+
+#. translators: %s: minimum value.
+#: includes/class-validator.php:140
+#: includes/class-validator.php:195
+#, php-format
+msgid "Please enter %s or more."
+msgstr ""
+
+#. translators: %s: maximum value.
+#: includes/class-validator.php:144
+#: includes/class-validator.php:199
+#, php-format
+msgid "Please enter %s or less."
+msgstr ""
+
+#: includes/class-validator.php:213
+msgid "Please choose one of the options."
+msgstr ""
+
+#. translators: %d: maximum number of characters.
+#: includes/class-validator.php:222
+#, php-format
+msgid "Please use %d characters or fewer."
+msgstr ""
+
+#: assets/block.js:26
+msgid "Choose a form…"
+msgstr ""
+
+#: assets/block.js:47
+msgid "No published form yet. Create one in Aluleth › Forms."
+msgstr ""
+
+#: assets/builder.js:20
+#: assets/builder.js:561
+msgid "Text"
+msgstr ""
+
+#: assets/builder.js:21
+msgid "Choice"
+msgstr ""
+
+#: assets/builder.js:23
+msgid "Layout and more"
+msgstr ""
+
+#: assets/builder.js:27
+#: assets/builder.js:50
+msgid "Short text"
+msgstr ""
+
+#: assets/builder.js:28
+#: assets/builder.js:50
+msgid "Paragraph"
+msgstr ""
+
+#: assets/builder.js:31
+#: assets/builder.js:50
+msgid "Number"
+msgstr ""
+
+#: assets/builder.js:33
+#: assets/builder.js:51
+msgid "Dropdown"
+msgstr ""
+
+#: assets/builder.js:33
+#: assets/builder.js:35
+msgid "Choose one"
+msgstr ""
+
+#: assets/builder.js:34
+#: assets/builder.js:51
+msgid "Checkboxes"
+msgstr ""
+
+#: assets/builder.js:34
+msgid "Choose one or more"
+msgstr ""
+
+#: assets/builder.js:35
+#: assets/builder.js:51
+msgid "Single choice"
+msgstr ""
+
+#: assets/builder.js:37
+#: assets/builder.js:51
+msgid "Consent"
+msgstr ""
+
+#: assets/builder.js:39
+#: assets/builder.js:52
+#: assets/builder.js:563
+msgid "Heading"
+msgstr ""
+
+#: assets/builder.js:40
+#: assets/builder.js:52
+msgid "Text block"
+msgstr ""
+
+#: assets/builder.js:40
+msgid "Write a short explanation here."
+msgstr ""
+
+#: assets/builder.js:41
+#: assets/builder.js:61
+msgid "Choice with prices"
+msgstr ""
+
+#: assets/builder.js:41
+msgid "Choose a service"
+msgstr ""
+
+#: assets/builder.js:41
+msgid "Basic"
+msgstr ""
+
+#: assets/builder.js:41
+msgid "Complete"
+msgstr ""
+
+#: assets/builder.js:42
+#: assets/builder.js:61
+msgid "Extras with prices"
+msgstr ""
+
+#: assets/builder.js:42
+#: assets/builder.js:590
+msgid "Extras"
+msgstr ""
+
+#: assets/builder.js:42
+msgid "Extra option"
+msgstr ""
+
+#: assets/builder.js:43
+#: assets/builder.js:61
+msgid "Fixed price"
+msgstr ""
+
+#: assets/builder.js:43
+#: assets/builder.js:53
+msgid "Price"
+msgstr ""
+
+#: assets/builder.js:43
+msgid "Deposit"
+msgstr ""
+
+#: assets/builder.js:44
+#: assets/builder.js:53
+msgid "Free amount"
+msgstr ""
+
+#: assets/builder.js:44
+msgid "Amount"
+msgstr ""
+
+#: assets/builder.js:45
+#: assets/builder.js:53
+msgid "Total"
+msgstr ""
+
+#: assets/builder.js:46
+#: assets/builder.js:52
+msgid "Hidden"
+msgstr ""
+
+#: assets/builder.js:46
+msgid "Hidden value"
+msgstr ""
+
+#: assets/builder.js:68
+msgid "White fields with a fine border."
+msgstr ""
+
+#: assets/builder.js:69
+msgid "Tinted fields, round corners."
+msgstr ""
+
+#: assets/builder.js:70
+msgid "A dark card with a bright button."
+msgstr ""
+
+#: assets/builder.js:74
+#: assets/builder.js:116
+msgid "Option 1"
+msgstr ""
+
+#: assets/builder.js:74
+msgid "Option 2"
+msgstr ""
+
+#: assets/builder.js:74
+msgid "Option 3"
+msgstr ""
+
+#. translators: %s: step title.
+#: assets/builder.js:190
+#, js-format
+msgid "New step: %s"
+msgstr ""
+
+#. translators: 1: field label, 2: its value.
+#: assets/builder.js:191
+#, js-format
+msgid "Hidden field “%1$s”%2$s"
+msgstr ""
+
+#: assets/builder.js:216
+msgid "dd / mm / yyyy"
+msgstr ""
+
+#: assets/builder.js:270
+msgid "The form could not be loaded."
+msgstr ""
+
+#: assets/builder.js:361
+msgid "Saving…"
+msgstr ""
+
+#: assets/builder.js:372
+msgid "Published. Your form can now be added to any page."
+msgstr ""
+
+#: assets/builder.js:372
+msgid "Saved."
+msgstr ""
+
+#. translators: %s: error message.
+#: assets/builder.js:374
+#, js-format
+msgid "Not saved: %s"
+msgstr ""
+
+#: assets/builder.js:374
+msgid "unknown error"
+msgstr ""
+
+#: assets/builder.js:407
+msgid "Form name"
+msgstr ""
+
+#: assets/builder.js:409
+msgid "Published"
+msgstr ""
+
+#: assets/builder.js:409
+msgid "Draft"
+msgstr ""
+
+#: assets/builder.js:409
+msgid "Unsaved changes"
+msgstr ""
+
+#: assets/builder.js:412
+msgid "Builder sections"
+msgstr ""
+
+#: assets/builder.js:413
+msgid "Build"
+msgstr ""
+
+#: assets/builder.js:413
+msgid "Design"
+msgstr ""
+
+#: assets/builder.js:419
+msgid "Undo (Ctrl+Z)"
+msgstr ""
+
+#: assets/builder.js:420
+msgid "Redo (Ctrl+Shift+Z)"
+msgstr ""
+
+#: assets/builder.js:421
+msgid "Preview size"
+msgstr ""
+
+#: assets/builder.js:422
+msgid "Desktop preview"
+msgstr ""
+
+#: assets/builder.js:423
+msgid "Phone preview"
+msgstr ""
+
+#: assets/builder.js:426
+msgid "Embed"
+msgstr ""
+
+#: assets/builder.js:427
+msgid "Embed this form"
+msgstr ""
+
+#: assets/builder.js:428
+msgid "Add the “Aluleth Form” block to any page and choose this form, or paste this shortcode:"
+msgstr ""
+
+#: assets/builder.js:431
+msgid "Shortcode copied."
+msgstr ""
+
+#: assets/builder.js:431
+msgid "Copy"
+msgstr ""
+
+#: assets/builder.js:433
+msgid "Publish the form first: drafts are only visible to you."
+msgstr ""
+
+#: assets/builder.js:436
+msgid "Save draft"
+msgstr ""
+
+#: assets/builder.js:437
+msgid "Saved"
+msgstr ""
+
+#: assets/builder.js:437
+msgid "Publish"
+msgstr ""
+
+#: assets/builder.js:446
+msgid "Search fields"
+msgstr ""
+
+#: assets/builder.js:447
+msgid "Search fields ( / )"
+msgstr ""
+
+#: assets/builder.js:464
+msgid "Click a field to add it after the selected one, or drag it into the form."
+msgstr ""
+
+#. translators: %s: field label.
+#: assets/builder.js:501
+#, js-format
+msgid "Edit field: %s"
+msgstr ""
+
+#: assets/builder.js:510
+msgid "Shown if…"
+msgstr ""
+
+#: assets/builder.js:513
+#: assets/builder.js:973
+msgid "Move up"
+msgstr ""
+
+#: assets/builder.js:514
+#: assets/builder.js:974
+msgid "Move down"
+msgstr ""
+
+#: assets/builder.js:515
+#: assets/builder.js:719
+msgid "Duplicate"
+msgstr ""
+
+#: assets/builder.js:516
+msgid "Delete"
+msgstr ""
+
+#: assets/builder.js:520
+msgid "Your form is empty. Add a field from the left, or drag one here."
+msgstr ""
+
+#: assets/builder.js:531
+msgid "Set up PayPal so visitors can pay"
+msgstr ""
+
+#: assets/builder.js:547
+msgid "Select a field"
+msgstr ""
+
+#: assets/builder.js:548
+msgid "Click a field in the form to change its label, make it required or save it to the contact."
+msgstr ""
+
+#: assets/builder.js:549
+msgid "Shortcuts: Ctrl+S save · Ctrl+Z undo · Delete removes the selected field · / search fields"
+msgstr ""
+
+#: assets/builder.js:563
+msgid "Step name"
+msgstr ""
+
+#: assets/builder.js:563
+msgid "Text next to the box"
+msgstr ""
+
+#: assets/builder.js:563
+msgid "Name (only you see it)"
+msgstr ""
+
+#: assets/builder.js:563
+msgid "Label"
+msgstr ""
+
+#: assets/builder.js:567
+msgid "Text before a choice is made"
+msgstr ""
+
+#: assets/builder.js:567
+msgid "Placeholder"
+msgstr ""
+
+#: assets/builder.js:573
+msgid "Required"
+msgstr ""
+
+#. translators: %d: option number.
+#: assets/builder.js:580
+#: assets/builder.js:586
+#, js-format
+msgid "Option %d"
+msgstr ""
+
+#: assets/builder.js:582
+msgid "Move option up"
+msgstr ""
+
+#: assets/builder.js:583
+msgid "Remove option"
+msgstr ""
+
+#: assets/builder.js:586
+msgid "Add an option"
+msgstr ""
+
+#: assets/builder.js:590
+msgid "Kind"
+msgstr ""
+
+#: assets/builder.js:590
+msgid "One choice"
+msgstr ""
+
+#: assets/builder.js:590
+msgid "Fixed"
+msgstr ""
+
+#: assets/builder.js:592
+msgid "Item and price"
+msgstr ""
+
+#: assets/builder.js:592
+msgid "Items and prices"
+msgstr ""
+
+#. translators: %d: item number.
+#: assets/builder.js:596
+#: assets/builder.js:603
+#, js-format
+msgid "Item %d"
+msgstr ""
+
+#. translators: %d: item number.
+#: assets/builder.js:598
+#, js-format
+msgid "Price of item %d"
+msgstr ""
+
+#: assets/builder.js:600
+msgid "Remove item"
+msgstr ""
+
+#: assets/builder.js:603
+msgid "Add an item"
+msgstr ""
+
+#. translators: %s: currency code.
+#: assets/builder.js:604
+#, js-format
+msgid "Prices in %s (Aluleth › Settings › Payments)."
+msgstr ""
+
+#: assets/builder.js:609
+#: assets/builder.js:618
+msgid "Minimum"
+msgstr ""
+
+#: assets/builder.js:610
+#: assets/builder.js:619
+msgid "Maximum"
+msgstr ""
+
+#: assets/builder.js:614
+msgid "Shows the items chosen and the total, updated as the visitor fills the form. The amount paid is always computed again on your site."
+msgstr ""
+
+#: assets/builder.js:623
+msgid "Maximum characters (0 = no limit)"
+msgstr ""
+
+#: assets/builder.js:626
+msgid "Value sent with the form"
+msgstr ""
+
+#: assets/builder.js:626
+msgid "For example the name of the campaign or of the page."
+msgstr ""
+
+#: assets/builder.js:629
+msgid "This is a newsletter consent"
+msgstr ""
+
+#: assets/builder.js:629
+msgid "When ticked, the contact is subscribed and the consent is recorded with its date and text."
+msgstr ""
+
+#: assets/builder.js:632
+msgid "Width"
+msgstr ""
+
+#: assets/builder.js:632
+msgid "One third"
+msgstr ""
+
+#: assets/builder.js:632
+msgid "Half"
+msgstr ""
+
+#: assets/builder.js:632
+msgid "Full"
+msgstr ""
+
+#: assets/builder.js:635
+msgid "Saved as the contact’s phone number."
+msgstr ""
+
+#: assets/builder.js:639
+msgid "Save to the contact"
+msgstr ""
+
+#: assets/builder.js:642
+msgid "Contacts are shared by every Aluleth plugin on this site."
+msgstr ""
+
+#: assets/builder.js:658
+msgid "is"
+msgstr ""
+
+#: assets/builder.js:658
+msgid "is not"
+msgstr ""
+
+#: assets/builder.js:658
+msgid "contains"
+msgstr ""
+
+#: assets/builder.js:658
+msgid "does not contain"
+msgstr ""
+
+#: assets/builder.js:659
+msgid "is empty"
+msgstr ""
+
+#: assets/builder.js:659
+msgid "is filled in"
+msgstr ""
+
+#: assets/builder.js:659
+msgid "is more than"
+msgstr ""
+
+#: assets/builder.js:659
+msgid "is less than"
+msgstr ""
+
+#: assets/builder.js:661
+msgid "is ticked"
+msgstr ""
+
+#: assets/builder.js:661
+msgid "is not ticked"
+msgstr ""
+
+#: assets/builder.js:664
+msgid "Show this field only when…"
+msgstr ""
+
+#: assets/builder.js:664
+msgid "Add another field first."
+msgstr ""
+
+#: assets/builder.js:672
+msgid "Show it when"
+msgstr ""
+
+#: assets/builder.js:674
+msgid "all these rules are true"
+msgstr ""
+
+#: assets/builder.js:675
+msgid "any of these rules is true"
+msgstr ""
+
+#: assets/builder.js:686
+msgid "Field"
+msgstr ""
+
+#: assets/builder.js:689
+msgid "Condition"
+msgstr ""
+
+#: assets/builder.js:692
+#: assets/builder.js:694
+msgid "Value"
+msgstr ""
+
+#: assets/builder.js:695
+msgid "Remove rule"
+msgstr ""
+
+#: assets/builder.js:704
+msgid "Add a rule"
+msgstr ""
+
+#: assets/builder.js:705
+msgid "Hidden fields are not required and are not saved."
+msgstr ""
+
+#: assets/builder.js:710
+msgid "The first email field creates or updates the contact."
+msgstr ""
+
+#: assets/builder.js:713
+msgid "Field key"
+msgstr ""
+
+#: assets/builder.js:713
+msgid "Used in exports and integrations. Letters, numbers and underscores."
+msgstr ""
+
+#: assets/builder.js:720
+msgid "Delete field"
+msgstr ""
+
+#: assets/builder.js:742
+#: assets/builder.js:743
+msgid "Button and accent colour"
+msgstr ""
+
+#: assets/builder.js:744
+msgid "The style’s own colour"
+msgstr ""
+
+#: assets/builder.js:750
+msgid "Or your own colour"
+msgstr ""
+
+#: assets/builder.js:753
+msgid "style colour"
+msgstr ""
+
+#: assets/builder.js:755
+msgid "Colours from your site follow it: if you change them in your theme or Elementor, the form changes too."
+msgstr ""
+
+#: assets/builder.js:755
+msgid "No site colours found (theme.json or Elementor kit). Pick your own colour."
+msgstr ""
+
+#: assets/builder.js:756
+msgid "Corners"
+msgstr ""
+
+#: assets/builder.js:756
+msgid "Square"
+msgstr ""
+
+#: assets/builder.js:756
+msgid "Rounded"
+msgstr ""
+
+#: assets/builder.js:758
+msgid "Font"
+msgstr ""
+
+#: assets/builder.js:760
+msgid "Same as the page"
+msgstr ""
+
+#: assets/builder.js:762
+msgid "“Same as the page” uses the text font around the form. Fonts listed here are the ones your site already uses."
+msgstr ""
+
+#: assets/builder.js:764
+msgid "Layout"
+msgstr ""
+
+#: assets/builder.js:765
+msgid "Above"
+msgstr ""
+
+#: assets/builder.js:765
+msgid "Beside"
+msgstr ""
+
+#: assets/builder.js:765
+msgid "Inside"
+msgstr ""
+
+#: assets/builder.js:766
+msgid "On phones and narrow columns, labels go back above the fields."
+msgstr ""
+
+#: assets/builder.js:768
+msgid "With labels inside the fields, help texts stay under the field."
+msgstr ""
+
+#: assets/builder.js:769
+msgid "Also at the top"
+msgstr ""
+
+#: assets/builder.js:771
+msgid "Every style and setting is free. In Elementor, the widget’s Style tab can still change each colour."
+msgstr ""
+
+#: assets/builder.js:822
+msgid "The test could not be sent."
+msgstr ""
+
+#: assets/builder.js:833
+msgid "This tool is not available on this site."
+msgstr ""
+
+#. translators: %s: start of a valid address.
+#: assets/builder.js:840
+#, js-format
+msgid "This address should start with %s."
+msgstr ""
+
+#: assets/builder.js:844
+msgid "Format"
+msgstr ""
+
+#: assets/builder.js:844
+msgid "Form fields"
+msgstr ""
+
+#: assets/builder.js:845
+#: assets/builder.js:869
+msgid "Who is sent"
+msgstr ""
+
+#: assets/builder.js:845
+#: assets/builder.js:867
+msgid "Every entry"
+msgstr ""
+
+#: assets/builder.js:845
+#: assets/builder.js:867
+#: assets/builder.js:869
+msgid "Only with newsletter consent"
+msgstr ""
+
+#: assets/builder.js:847
+msgid "Signing secret (optional)"
+msgstr ""
+
+#: assets/builder.js:850
+msgid "Generate"
+msgstr ""
+
+#: assets/builder.js:851
+msgid "With a secret, each request carries an X-Aluleth-Signature header (HMAC-SHA256 of the X-Aluleth-Timestamp value, a dot and the body), so your receiver can check it comes from this site."
+msgstr ""
+
+#. translators: %s: tool name, e.g. MailPoet.
+#: assets/builder.js:855
+#, js-format
+msgid "Nothing found in %s yet. Create it there, then click “Refresh”."
+msgstr ""
+
+#. translators: %s: tool name, e.g. FluentCRM.
+#: assets/builder.js:858
+#, js-format
+msgid "No tag in %s yet (optional)."
+msgstr ""
+
+#: assets/builder.js:861
+msgid "Tags (optional)"
+msgstr ""
+
+#: assets/builder.js:861
+msgid "Separated by commas. Missing tags are created."
+msgstr ""
+
+#: assets/builder.js:864
+msgid "Double opt-in"
+msgstr ""
+
+#. translators: %s: tool name, e.g. FluentCRM.
+#: assets/builder.js:864
+#, js-format
+msgid "%s emails a confirmation link; the person is subscribed once they click it."
+msgstr ""
+
+#: assets/builder.js:867
+msgid "Which entries"
+msgstr ""
+
+#: assets/builder.js:869
+msgid "Everyone"
+msgstr ""
+
+#: assets/builder.js:871
+msgid "People without newsletter consent are saved as contacts who do not receive marketing emails."
+msgstr ""
+
+#: assets/builder.js:880
+msgid "Send a test"
+msgstr ""
+
+#: assets/builder.js:881
+msgid "Sends example answers to the address now, without saving the form."
+msgstr ""
+
+#: assets/builder.js:881
+msgid "Sends a message with example answers now, without saving the form."
+msgstr ""
+
+#: assets/builder.js:886
+msgid "Refreshing…"
+msgstr ""
+
+#: assets/builder.js:886
+msgid "Refresh"
+msgstr ""
+
+#. translators: %s: tool name, e.g. Telegram.
+#: assets/builder.js:887
+#, js-format
+msgid "Reloads the chats from %s."
+msgstr ""
+
+#. translators: %s: tool name, e.g. Mailchimp.
+#: assets/builder.js:887
+#, js-format
+msgid "Reloads the lists, tags and fields from %s."
+msgstr ""
+
+#: assets/builder.js:890
+msgid "This form has no newsletter consent field, so nobody will be sent. Add a Consent field and keep “This is a newsletter consent” on."
+msgstr ""
+
+#. translators: %s: tool name, e.g. MailPoet.
+#: assets/builder.js:894
+#, js-format
+msgid "%s custom fields"
+msgstr ""
+
+#: assets/builder.js:900
+msgid "Not filled"
+msgstr ""
+
+#: assets/builder.js:903
+#: assets/builder.js:906
+msgid "Email, name and phone are sent automatically from the fields saved to the contact."
+msgstr ""
+
+#: assets/builder.js:913
+msgid "Name (optional)"
+msgstr ""
+
+#. translators: %s: tool name, e.g. MailPoet.
+#: assets/builder.js:913
+#, js-format
+msgid "Name of this %s integration"
+msgstr ""
+
+#: assets/builder.js:914
+msgid "Paused"
+msgstr ""
+
+#: assets/builder.js:915
+msgid "Remove this integration"
+msgstr ""
+
+#: assets/builder.js:922
+#: assets/builder.js:949
+msgid "Integrations"
+msgstr ""
+
+#: assets/builder.js:923
+msgid "Send each entry to the tools you use. Sending happens in the background after the visitor sees your message, so a slow tool never slows down the form. Each send is listed on the entry."
+msgstr ""
+
+#: assets/builder.js:924
+msgid "This form has no Email field: newsletter and CRM tools need one."
+msgstr ""
+
+#: assets/builder.js:927
+msgid "Add another integration"
+msgstr ""
+
+#: assets/builder.js:927
+msgid "Add an integration"
+msgstr ""
+
+#: assets/builder.js:932
+msgid "Not connected yet: connect it in Aluleth › Connections."
+msgstr ""
+
+#: assets/builder.js:939
+msgid "Connections and recent sends"
+msgstr ""
+
+#: assets/builder.js:944
+msgid "Only an administrator can change this."
+msgstr ""
+
+#: assets/builder.js:946
+#: assets/builder.js:1023
+msgid "After sending"
+msgstr ""
+
+#: assets/builder.js:947
+msgid "Email notifications"
+msgstr ""
+
+#: assets/builder.js:950
+#: assets/builder.js:967
+msgid "Entry statuses"
+msgstr ""
+
+#: assets/builder.js:951
+#: assets/builder.js:1003
+msgid "Spam protection"
+msgstr ""
+
+#: assets/builder.js:968
+msgid "They are the columns of your entries board. New entries arrive in the first one."
+msgstr ""
+
+#. translators: %d: status number.
+#: assets/builder.js:972
+#, js-format
+msgid "Name of status %d"
+msgstr ""
+
+#: assets/builder.js:975
+msgid "Remove this status"
+msgstr ""
+
+#: assets/builder.js:978
+msgid "New status"
+msgstr ""
+
+#: assets/builder.js:978
+msgid "Add a status"
+msgstr ""
+
+#: assets/builder.js:979
+msgid "Renaming a status keeps its entries. Entries of a removed status go back to the first column."
+msgstr ""
+
+#: assets/builder.js:987
+msgid "{form_title} and {site_name} are replaced automatically."
+msgstr ""
+
+#: assets/builder.js:997
+msgid "Each entry with an email creates or updates a contact, shared by every Aluleth plugin."
+msgstr ""
+
+#: assets/builder.js:998
+msgid "Tags added to the contact"
+msgstr ""
+
+#: assets/builder.js:998
+msgid "Separated by commas."
+msgstr ""
+
+#: assets/builder.js:1004
+msgid "Always on, with no outside service: a hidden field that only robots fill in, a check of how fast the form was sent, and a limit of sends per visitor (Aluleth › Settings › Security)."
+msgstr ""
+
+#: assets/builder.js:1005
+msgid "Minimum seconds before sending"
+msgstr ""
+
+#: assets/builder.js:1005
+msgid "Forms sent faster than this are treated as robots. 3 seconds suits most forms."
+msgstr ""
+
+#: assets/builder.js:1009
+msgid "none"
+msgstr ""
+
+#. translators: %s: anti-spam service name.
+#: assets/builder.js:1010
+#, js-format
+msgid "Default (%s)"
+msgstr ""
+
+#: assets/builder.js:1012
+msgid "not set up"
+msgstr ""
+
+#: assets/builder.js:1015
+msgid "Captcha or anti-spam service"
+msgstr ""
+
+#: assets/builder.js:1017
+msgid "Services are set up once for every form in Aluleth › Settings › Security."
+msgstr ""
+
+#: assets/builder.js:1017
+msgid "Open the security settings"
+msgstr ""
+
+#: assets/builder.js:1024
+msgid "Message shown after sending"
+msgstr ""
+
+#: assets/builder.js:1025
+msgid "Or go to this page instead"
+msgstr ""
+
+#: assets/builder.js:1025
+msgid "Leave empty to show the message."
+msgstr ""
+
+#: assets/builder.js:1040
+msgid "Field settings"
+msgstr ""
