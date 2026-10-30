@@ -4,7 +4,7 @@ Tags: form, contact form, form builder, payment form, paypal
 Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.19.3
+Stable tag: 0.19.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -215,6 +215,10 @@ In Aluleth › Entries, on a board (one column per status) or in a list. Each en
 7. Import your forms and entries from Contact Form 7, WPForms, Elementor Forms and MetForm.
 
 == Changelog ==
+
+= 0.19.4 =
+* Contact import: the files being imported (and the list of rows not imported) can no longer be opened from their address on Nginx or any other server: each one is saved under a random .php name behind a line that stops PHP, and only the import screen reads it. Files of imports started with an earlier version are moved to this form automatically.
+* Texts sent to PayPal, Slack, Discord and Telegram are shortened without the PHP mbstring extension.
 
 = 0.19.3 =
 * The dashboard period, the entries view and a new blank form are only saved or created from links that carry a nonce.

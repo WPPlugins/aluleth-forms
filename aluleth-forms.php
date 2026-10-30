@@ -1,13 +1,12 @@
 <?php
 /**
  * Plugin Name:       Aluleth Forms
- * Plugin URI:        https://market.alulethmarketing.com/
  * Description:       Fast, beautiful forms that match your site. Entries, contacts and email notifications included, with no payment fees and nothing locked.
- * Version:           0.19.3
+ * Version:           0.19.4
  * Requires at least: 7.0
  * Requires PHP:      7.4
  * Author:            Aluleth
- * Author URI:        https://alulethmarketing.com/
+ * Author URI:        https://profiles.wordpress.org/aluleth/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       aluleth-forms
@@ -18,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'ALULETH_FORMS_VERSION', '0.19.3' );
+define( 'ALULETH_FORMS_VERSION', '0.19.4' );
 define( 'ALULETH_FORMS_FILE', __FILE__ );
 define( 'ALULETH_FORMS_DIR', __DIR__ );
 define( 'ALULETH_FORMS_CORE_MIN', '0.18.0' );
