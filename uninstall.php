@@ -14,12 +14,28 @@ defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
 require_once __DIR__ . '/core/uninstall.php';
 
 /**
+ * Whether the data stays because the complete Aluleth Forms Pro, which includes
+ * this plugin, is still installed (only when this plugin is deleted on its own,
+ * not when Aluleth Forms Pro deletes its included copy).
+ *
+ * @return bool
+ */
+function aluleth_forms_uninstall_kept() {
+	return 'free' !== basename( __DIR__ ) && is_readable( WP_PLUGIN_DIR . '/aluleth-forms-pro/free/includes/class-plugin.php' );
+}
+
+/**
  * Cleans the current site.
  *
  * @return void
  */
 function aluleth_forms_uninstall_site() {
 	global $wpdb;
+	if ( aluleth_forms_uninstall_kept() ) {
+		// Aluleth Forms Pro (complete copy) includes this plugin: its forms, entries and settings keep being used.
+		aluleth_core_uninstall( __DIR__ );
+		return;
+	}
 	if ( get_option( 'aluleth_forms_delete_data' ) ) {
 		$ids = get_posts(
 			array(

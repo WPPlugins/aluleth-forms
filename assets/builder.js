@@ -399,6 +399,17 @@
 		var fields = form.schema.fields;
 		var settings = form.schema.settings;
 
+		/* ----- who gets each new entry by email (shown in the top bar and the Embed box) ----- */
+		var mailTo = ! settings.notify ? [] : ( String( settings.notify_to || '' ).trim() ? String( settings.notify_to ).split( ',' ) : [ cfg.adminEmail ] ).map( function ( a ) { return a.trim().replace( '{admin_email}', cfg.adminEmail ); } ).filter( Boolean );
+		var mailText = mailTo.length ? sprintf( /* translators: %s: email addresses. */ __( 'New entries emailed to %s', 'aluleth-forms' ), mailTo.join( ', ' ) ) : __( 'New entries are not emailed', 'aluleth-forms' );
+		var openEmails = function () { setEmbed( false ); setTab( 'settings' ); setSection( 'emails' ); };
+		var mailLine = function ( cls ) {
+			return el( 'span', { className: cls, title: mailText },
+				el( 'span', { className: 'alf-b-mailto-text' }, mailText ),
+				el( 'button', { type: 'button', className: 'alf-b-link', onClick: openEmails, 'aria-label': __( 'Change who gets each new entry by email', 'aluleth-forms' ) }, __( 'Change', 'aluleth-forms' ) )
+			);
+		};
+
 		/* ----- top bar ----- */
 		var top = el( 'header', { className: 'alf-b-top' },
 			el( 'div', { className: 'alf-b-top-left' },
@@ -406,7 +417,8 @@
 				el( 'div', { className: 'alf-b-title' },
 					el( 'label', { className: 'screen-reader-text', htmlFor: 'alf-b-title' }, __( 'Form name', 'aluleth-forms' ) ),
 					el( 'input', { id: 'alf-b-title', value: form.title, onChange: function ( e ) { var n = clone( form ); n.title = e.target.value; commit( n, 'title' ); } } ),
-					el( 'span', { className: 'alf-b-sub' }, form.status === 'publish' ? __( 'Published', 'aluleth-forms' ) : __( 'Draft', 'aluleth-forms' ), dirty ? ' · ' + __( 'Unsaved changes', 'aluleth-forms' ) : '' )
+					el( 'span', { className: 'alf-b-sub' }, form.status === 'publish' ? __( 'Published', 'aluleth-forms' ) : __( 'Draft', 'aluleth-forms' ), dirty ? ' · ' + __( 'Unsaved changes', 'aluleth-forms' ) : '' ),
+					mailLine( 'alf-b-mailto' )
 				)
 			),
 			el( 'nav', { className: 'alf-b-tabs', 'aria-label': __( 'Builder sections', 'aluleth-forms' ) },
@@ -430,7 +442,8 @@
 							el( 'code', null, form.shortcode ),
 							el( 'button', { type: 'button', className: 'alf-b-btn', onClick: function () { if ( navigator.clipboard ) { navigator.clipboard.writeText( form.shortcode ); setStatus( { kind: 'ok', text: __( 'Shortcode copied.', 'aluleth-forms' ) } ); } } }, __( 'Copy', 'aluleth-forms' ) )
 						),
-						form.status !== 'publish' ? el( 'p', { className: 'alf-b-hint' }, __( 'Publish the form first: drafts are only visible to you.', 'aluleth-forms' ) ) : null
+						form.status !== 'publish' ? el( 'p', { className: 'alf-b-hint' }, __( 'Publish the form first: drafts are only visible to you.', 'aluleth-forms' ) ) : null,
+						el( 'p', { className: 'alf-b-hint alf-b-pop-mail' }, mailLine( 'alf-b-mailto is-wrap' ) )
 					) : null
 				),
 				form.status !== 'publish' ? el( 'button', { type: 'button', className: 'alf-b-btn', onClick: function () { save( false ); }, disabled: busy }, __( 'Save draft', 'aluleth-forms' ) ) : null,
@@ -983,7 +996,7 @@
 				return [
 					el( 'h2', { key: 'h1', className: 'alf-b-h' }, __( 'Email to your team', 'aluleth-forms' ) ),
 					el( Toggle, { key: 'n', name: 'notify', label: __( 'Send each new entry by email', 'aluleth-forms' ), checked: settings.notify, onChange: function ( v ) { setSetting( 'notify', v ); } } ),
-					settings.notify ? el( Field, { key: 'to', name: 'notify_to', label: __( 'Send to', 'aluleth-forms' ), placeholder: cfg.adminEmail, value: settings.notify_to, disabled: ! cfg.canManage, help: cfg.canManage ? __( 'Several addresses: separate them with commas. Empty: the site admin email.', 'aluleth-forms' ) : ADMIN_ONLY, onChange: function ( v ) { setSetting( 'notify_to', v ); } } ) : null,
+					settings.notify ? el( Field, { key: 'to', name: 'notify_to', label: __( 'Send to', 'aluleth-forms' ), placeholder: cfg.adminEmail, value: settings.notify_to, disabled: ! cfg.canManage, help: cfg.canManage ? sprintf( /* translators: %s: the site admin email. */ __( 'Who gets each new entry. Several addresses: separate them with commas. Left empty, entries go to the site admin email (%s).', 'aluleth-forms' ), cfg.adminEmail ) : ADMIN_ONLY, onChange: function ( v ) { setSetting( 'notify_to', v ); } } ) : null,
 					settings.notify ? el( Field, { key: 'su', name: 'notify_subject', label: __( 'Subject', 'aluleth-forms' ), value: settings.notify_subject, help: __( '{form_title} and {site_name} are replaced automatically.', 'aluleth-forms' ), onChange: function ( v ) { setSetting( 'notify_subject', v ); } } ) : null,
 					el( 'h2', { key: 'h2', className: 'alf-b-h' }, __( 'Email to the visitor', 'aluleth-forms' ) ),
 					el( Toggle, { key: 'c', name: 'confirm', label: __( 'Send a confirmation with a copy of their answers', 'aluleth-forms' ), checked: settings.confirm, onChange: function ( v ) { setSetting( 'confirm', v ); } } ),

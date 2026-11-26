@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Aluleth Forms
  * Description:       Fast, beautiful forms that match your site. Entries, contacts and email notifications included, with no payment fees and nothing locked.
- * Version:           0.19.4
+ * Version:           0.19.6
  * Requires at least: 7.0
  * Requires PHP:      7.4
  * Author:            Aluleth
@@ -17,7 +17,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'ALULETH_FORMS_VERSION', '0.19.4' );
+// Already running (the copy inside the complete Aluleth Forms Pro): nothing to load twice.
+if ( defined( 'ALULETH_FORMS_VERSION' ) ) {
+	return;
+}
+
+define( 'ALULETH_FORMS_VERSION', '0.19.6' );
 define( 'ALULETH_FORMS_FILE', __FILE__ );
 define( 'ALULETH_FORMS_DIR', __DIR__ );
 define( 'ALULETH_FORMS_CORE_MIN', '0.18.0' );

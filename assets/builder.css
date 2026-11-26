@@ -16,6 +16,13 @@ html.wp-toolbar:has(body.alf-builder-screen){padding-top:0}
 .alf-b-title input:hover{border-color:var(--b-line)}
 .alf-b-title input:focus{border-color:#2f5bea;box-shadow:none;outline:none;background:#fff}
 .alf-b-sub{font-size:12px;color:#5b6370}
+.alf-b-mailto{display:flex;align-items:baseline;gap:6px;max-width:420px;font-size:12px;color:#5b6370;min-width:0}
+.alf-b-mailto-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.alf-b-mailto.is-wrap{display:block;max-width:none}
+.alf-b-mailto.is-wrap .alf-b-mailto-text{white-space:normal;overflow-wrap:anywhere}
+.alf-b-mailto.is-wrap .alf-b-link{margin-left:6px}
+.alf-b-link{background:none;border:0;padding:0;font:inherit;color:#2f5bea;text-decoration:underline;cursor:pointer;flex:none}
+.alf-b-link:hover,.alf-b-link:focus{color:#1d3fb8}
 .alf-b-tabs{display:flex;gap:4px;background:var(--b-soft);padding:4px;border-radius:12px}
 .alf-b-tabs button,.alf-b-tabs a{border:0;background:transparent;padding:8px 15px;border-radius:9px;font-weight:700;color:var(--b-muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
 .alf-b-tabs .is-on{background:#fff;color:var(--b-ink);box-shadow:0 1px 2px rgba(14,17,22,.08)}

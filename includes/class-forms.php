@@ -84,6 +84,24 @@ final class Forms {
 	}
 
 	/**
+	 * Who gets the email of each new entry: the addresses of "Send to", or the site admin email when it is
+	 * empty. None when the email is off.
+	 *
+	 * @param array $settings Form settings.
+	 * @return string[]
+	 */
+	public static function recipients( array $settings ) {
+		if ( empty( $settings['notify'] ) ) {
+			return array();
+		}
+		$admin = (string) get_option( 'admin_email' );
+		$to    = isset( $settings['notify_to'] ) ? trim( (string) $settings['notify_to'] ) : '';
+		$list  = '' !== $to ? array_map( 'trim', explode( ',', $to ) ) : array( $admin );
+		$list  = str_replace( '{admin_email}', $admin, $list );
+		return array_values( array_filter( $list, 'strlen' ) );
+	}
+
+	/**
 	 * Returns a published form, or null.
 	 *
 	 * @param int  $form_id      Form id.

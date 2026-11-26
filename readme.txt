@@ -1,14 +1,14 @@
-=== Aluleth Forms ===
+=== Aluleth Forms – Form Builder for Contact & Payment Forms ===
 Contributors: aluleth
-Tags: form, contact form, form builder, payment form, paypal
+Tags: form builder, contact form, payment form, paypal, forms
 Requires at least: 7.0
-Tested up to: 7.1
+Tested up to: 7.2
 Requires PHP: 7.4
-Stable tag: 0.19.4
+Stable tag: 0.19.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Light, beautiful forms that match your site, with entries on a board, contacts, consent and sending to your email tools.
+Form builder for contact forms and PayPal payment forms, with entries on a board, contacts, consent and sending to your email tools.
 
 == Description ==
 
@@ -215,6 +215,16 @@ In Aluleth › Entries, on a board (one column per status) or in a list. Each en
 7. Import your forms and entries from Contact Form 7, WPForms, Elementor Forms and MetForm.
 
 == Changelog ==
+
+= 0.19.6 =
+* Who gets each new entry by email is now shown where you work: under the form name in the builder ("New entries emailed to … Change"), in the Embed box, and in a new "New entries emailed to" column of the forms list. "Change" opens the form's email settings directly.
+* The "Send to" help says who gets the entries when it is left empty, with the site admin email written out.
+* Empty addresses (a comma at the end of "Send to") are no longer passed to the mailer.
+
+= 0.19.5 =
+* For extensions that save an entry in steps (an order paid on a store checkout, a crypto payment): the contact, the team email, the confirmation, the receipt, the outside tools and the "entry created" action can be recorded one by one once done, so an interrupted save goes on where it stopped without sending anything twice. An email the mail server refused is then tried again with the save.
+* The confirmation email counts toward its limit (3 per address and per hour) once it is sent.
+* Works inside the complete Aluleth Forms Pro: when it is included there, the separate plugin is not loaded twice, and deleting the separate plugin keeps the forms and entries that Aluleth Forms Pro still uses.
 
 = 0.19.4 =
 * Contact import: the files being imported (and the list of rows not imported) can no longer be opened from their address on Nginx or any other server: each one is saved under a random .php name behind a line that stops PHP, and only the import screen reads it. Files of imports started with an earlier version are moved to this form automatically.

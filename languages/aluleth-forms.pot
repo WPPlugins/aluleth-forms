@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Aluleth Forms 0.19.2\n"
+"Project-Id-Version: Aluleth Forms 0.19.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aluleth-forms\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-07T01:47:41+00:00\n"
+"POT-Creation-Date: 2026-11-06T06:58:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: aluleth-forms\n"
@@ -18,11 +18,6 @@ msgstr ""
 #: aluleth-forms.php
 #: includes/class-ai.php:99
 msgid "Aluleth Forms"
-msgstr ""
-
-#. Plugin URI of the plugin
-#: aluleth-forms.php
-msgid "https://market.alulethmarketing.com/"
 msgstr ""
 
 #. Description of the plugin
@@ -38,10 +33,10 @@ msgstr ""
 
 #. Author URI of the plugin
 #: aluleth-forms.php
-msgid "https://alulethmarketing.com/"
+msgid "https://profiles.wordpress.org/aluleth/"
 msgstr ""
 
-#: aluleth-forms.php:62
+#: aluleth-forms.php:66
 msgid "Aluleth Forms needs a newer version of your other Aluleth plugins. Please update them."
 msgstr ""
 
@@ -87,7 +82,7 @@ msgstr ""
 
 #: core/src/class-admin.php:95
 #: core/src/class-connections.php:134
-#: core/src/class-settings.php:186
+#: core/src/class-settings.php:191
 msgid "Sorry, you are not allowed to see this page."
 msgstr ""
 
@@ -97,7 +92,7 @@ msgstr ""
 
 #: core/src/class-admin.php:131
 #: core/src/class-admin.php:135
-#: core/src/class-dashboard.php:350
+#: core/src/class-dashboard.php:351
 #: core/src/class-import-admin.php:237
 msgid "Import contacts"
 msgstr ""
@@ -129,7 +124,7 @@ msgstr ""
 
 #: core/src/class-admin.php:139
 #: core/src/class-admin.php:190
-#: core/src/class-import.php:47
+#: core/src/class-import.php:56
 #: includes/class-builder.php:116
 #: includes/class-general.php:305
 #: includes/class-general.php:307
@@ -145,9 +140,9 @@ msgstr ""
 #: core/src/class-admin.php:139
 #: core/src/class-admin.php:192
 #: core/src/class-connections.php:240
-#: includes/class-admin.php:155
-#: includes/class-admin.php:235
-#: includes/class-admin.php:408
+#: includes/class-admin.php:158
+#: includes/class-admin.php:238
+#: includes/class-admin.php:411
 #: includes/class-board.php:257
 #: includes/class-board.php:263
 msgid "Status"
@@ -162,7 +157,7 @@ msgid "(no name)"
 msgstr ""
 
 #: core/src/class-admin.php:181
-#: core/src/class-dashboard.php:644
+#: core/src/class-dashboard.php:645
 #: core/src/class-import-admin.php:236
 msgid "All contacts"
 msgstr ""
@@ -172,7 +167,7 @@ msgid "This contact does not exist."
 msgstr ""
 
 #: core/src/class-admin.php:191
-#: core/src/class-import.php:51
+#: core/src/class-import.php:60
 #: includes/class-builder.php:195
 #: includes/class-templates.php:63
 #: includes/class-templates.php:260
@@ -245,7 +240,7 @@ msgstr ""
 
 #: core/src/class-connections.php:110
 #: core/src/class-connections.php:142
-#: core/src/class-settings.php:135
+#: core/src/class-settings.php:140
 msgid "Connections"
 msgstr ""
 
@@ -254,7 +249,7 @@ msgid "Send your contacts to the tools you already use. Each form chooses where 
 msgstr ""
 
 #: core/src/class-connections.php:146
-#: includes/class-admin.php:301
+#: includes/class-admin.php:304
 msgid "Sent again successfully."
 msgstr ""
 
@@ -299,7 +294,7 @@ msgid "Recent sends"
 msgstr ""
 
 #: core/src/class-connections.php:230
-#: includes/class-admin.php:162
+#: includes/class-admin.php:165
 msgid "Filter"
 msgstr ""
 
@@ -377,103 +372,103 @@ msgid "%1$s #%2$d"
 msgstr ""
 
 #. translators: %s: change in percent, e.g. +18%.
-#: core/src/class-dashboard.php:178
+#: core/src/class-dashboard.php:179
 #, php-format
 msgid "%s vs the 12 months before"
 msgstr ""
 
 #. translators: 1: change in percent, e.g. +18%, 2: number of days.
-#: core/src/class-dashboard.php:181
+#: core/src/class-dashboard.php:182
 #, php-format
 msgid "%1$s vs the %2$d days before"
 msgstr ""
 
 #. translators: %s: number of contacts.
-#: core/src/class-dashboard.php:210
+#: core/src/class-dashboard.php:211
 #, php-format
 msgid "%s from an import"
 msgid_plural "%s from an import"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/src/class-dashboard.php:216
-#: core/src/class-dashboard.php:249
+#: core/src/class-dashboard.php:217
+#: core/src/class-dashboard.php:250
 #: core/src/class-import-admin.php:452
 #: includes/class-general.php:556
 msgid "New contacts"
 msgstr ""
 
-#: core/src/class-dashboard.php:223
+#: core/src/class-dashboard.php:224
 msgid "Newsletter subscribers"
 msgstr ""
 
 #. translators: %s: percentage of contacts.
-#: core/src/class-dashboard.php:226
+#: core/src/class-dashboard.php:227
 #, php-format
 msgid "%s of your contacts"
 msgstr ""
 
-#: core/src/class-dashboard.php:289
+#: core/src/class-dashboard.php:290
 msgid "Writes your pages, forms and emails"
 msgstr ""
 
-#: core/src/class-dashboard.php:302
+#: core/src/class-dashboard.php:303
 msgid "Show your forms at the right moment"
 msgstr ""
 
-#: core/src/class-dashboard.php:303
+#: core/src/class-dashboard.php:304
 msgid "Emails that land in the inbox"
 msgstr ""
 
 #. translators: %s: first name of the user.
-#: core/src/class-dashboard.php:323
+#: core/src/class-dashboard.php:324
 #, php-format
 msgid "Good morning, %s"
 msgstr ""
 
 #. translators: %s: first name of the user.
-#: core/src/class-dashboard.php:326
+#: core/src/class-dashboard.php:327
 #, php-format
 msgid "Good afternoon, %s"
 msgstr ""
 
 #. translators: %s: first name of the user.
-#: core/src/class-dashboard.php:329
+#: core/src/class-dashboard.php:330
 #, php-format
 msgid "Good evening, %s"
 msgstr ""
 
 #. translators: %s: number of entries.
-#: core/src/class-dashboard.php:338
+#: core/src/class-dashboard.php:339
 #, php-format
 msgid "%s new entry is waiting for you."
 msgid_plural "%s new entries are waiting for you."
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/src/class-dashboard.php:340
+#: core/src/class-dashboard.php:341
 msgid "Everything is handled. Here is how your site is doing."
 msgstr ""
 
-#: core/src/class-dashboard.php:342
+#: core/src/class-dashboard.php:343
 msgid "Period"
 msgstr ""
 
-#: core/src/class-dashboard.php:344
+#: core/src/class-dashboard.php:345
 msgid "7 days"
 msgstr ""
 
-#: core/src/class-dashboard.php:345
+#: core/src/class-dashboard.php:346
 msgid "30 days"
 msgstr ""
 
-#: core/src/class-dashboard.php:346
+#: core/src/class-dashboard.php:347
 #: includes/class-general.php:354
 msgid "12 months"
 msgstr ""
 
 #. translators: %s: number of failed sends.
-#: core/src/class-dashboard.php:367
+#: core/src/class-dashboard.php:368
 #, php-format
 msgid "%s send to one of your tools failed this week."
 msgid_plural "%s sends to your tools failed this week."
@@ -481,40 +476,40 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: number of failed sends.
-#: core/src/class-dashboard.php:367
+#: core/src/class-dashboard.php:368
 msgid "See what happened"
 msgstr ""
 
-#: core/src/class-dashboard.php:371
+#: core/src/class-dashboard.php:372
 msgid "Key numbers"
 msgstr ""
 
-#: core/src/class-dashboard.php:387
-#: includes/class-stats.php:281
+#: core/src/class-dashboard.php:388
+#: includes/class-stats.php:292
 msgid "To handle"
 msgstr ""
 
 #. translators: %s: number of entries.
-#: core/src/class-dashboard.php:402
+#: core/src/class-dashboard.php:403
 #, php-format
 msgid "+%s more"
 msgid_plural "+%s more"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/src/class-dashboard.php:405
+#: core/src/class-dashboard.php:406
 msgid "Nothing to handle right now."
 msgstr ""
 
-#: core/src/class-dashboard.php:510
+#: core/src/class-dashboard.php:511
 msgid "Chart of the period, the same numbers are in the table below."
 msgstr ""
 
-#: core/src/class-dashboard.php:537
+#: core/src/class-dashboard.php:538
 msgid "Your first entries and contacts will draw this chart."
 msgstr ""
 
-#: core/src/class-dashboard.php:541
+#: core/src/class-dashboard.php:542
 #: core/src/class-import-admin.php:322
 #: includes/class-general.php:127
 #: assets/builder.js:36
@@ -522,7 +517,7 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: core/src/class-dashboard.php:565
+#: core/src/class-dashboard.php:566
 #: core/src/class-service-kit.php:272
 #: includes/class-plugin.php:124
 #: includes/class-plugin.php:170
@@ -530,22 +525,22 @@ msgstr ""
 msgid "Forms"
 msgstr ""
 
-#: core/src/class-dashboard.php:566
+#: core/src/class-dashboard.php:567
 #: core/src/class-import-admin.php:242
 #: includes/class-import-screen.php:105
 msgid "Import"
 msgstr ""
 
-#: core/src/class-dashboard.php:567
 #: core/src/class-dashboard.php:568
+#: core/src/class-dashboard.php:569
 msgid "Shop customers"
 msgstr ""
 
-#: core/src/class-dashboard.php:569
+#: core/src/class-dashboard.php:570
 msgid "New user accounts"
 msgstr ""
 
-#: core/src/class-dashboard.php:573
+#: core/src/class-dashboard.php:574
 #: includes/class-general.php:189
 #: includes/class-general.php:347
 #: includes/class-templates.php:372
@@ -553,46 +548,46 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: core/src/class-dashboard.php:585
+#: core/src/class-dashboard.php:586
 msgid "Where new contacts come from"
 msgstr ""
 
-#: core/src/class-dashboard.php:587
+#: core/src/class-dashboard.php:588
 msgid "No new contact in this period."
 msgstr ""
 
 #. translators: 1: number of contacts, 2: list name.
-#: core/src/class-dashboard.php:634
+#: core/src/class-dashboard.php:635
 #, php-format
 msgid "%1$s contact imported from %2$s"
 msgid_plural "%1$s contacts imported from %2$s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/src/class-dashboard.php:644
+#: core/src/class-dashboard.php:645
 msgid "Recent activity"
 msgstr ""
 
-#: core/src/class-dashboard.php:646
+#: core/src/class-dashboard.php:647
 msgid "Nothing yet."
 msgstr ""
 
-#: core/src/class-dashboard.php:668
+#: core/src/class-dashboard.php:669
 #: includes/class-board.php:202
 msgid "Yesterday"
 msgstr ""
 
-#: core/src/class-dashboard.php:680
+#: core/src/class-dashboard.php:681
 msgid "Your Aluleth tools"
 msgstr ""
 
-#: core/src/class-dashboard.php:683
+#: core/src/class-dashboard.php:684
 #: core/src/class-security.php:502
-#: assets/builder.js:914
+#: assets/builder.js:927
 msgid "Active"
 msgstr ""
 
-#: core/src/class-dashboard.php:683
+#: core/src/class-dashboard.php:684
 msgid "Soon"
 msgstr ""
 
@@ -693,7 +688,7 @@ msgid "A few addresses copied from an email or a document."
 msgstr ""
 
 #: core/src/class-import-admin.php:285
-#: core/src/class-import.php:280
+#: core/src/class-import.php:378
 msgid "WordPress users"
 msgstr ""
 
@@ -920,156 +915,156 @@ msgstr ""
 msgid "Download the rows not imported"
 msgstr ""
 
-#: core/src/class-import.php:46
+#: core/src/class-import.php:55
 msgid "Do not import"
 msgstr ""
 
-#: core/src/class-import.php:48
+#: core/src/class-import.php:57
 #: includes/class-builder.php:192
 #: includes/class-templates.php:222
 msgid "First name"
 msgstr ""
 
-#: core/src/class-import.php:49
+#: core/src/class-import.php:58
 #: includes/class-builder.php:193
 msgid "Last name"
 msgstr ""
 
-#: core/src/class-import.php:50
+#: core/src/class-import.php:59
 msgid "Full name (split in two)"
 msgstr ""
 
-#: core/src/class-import.php:52
+#: core/src/class-import.php:61
 #: core/src/class-privacy.php:88
-#: assets/builder.js:858
+#: assets/builder.js:871
 msgid "Tags"
 msgstr ""
 
-#: core/src/class-import.php:53
+#: core/src/class-import.php:62
 msgid "Status in the old tool"
 msgstr ""
 
-#: core/src/class-import.php:54
+#: core/src/class-import.php:63
 msgid "Unsubscribed (yes / no)"
 msgstr ""
 
-#: core/src/class-import.php:55
+#: core/src/class-import.php:64
 msgid "Country"
 msgstr ""
 
-#: core/src/class-import.php:56
+#: core/src/class-import.php:65
 msgid "Language"
 msgstr ""
 
-#: core/src/class-import.php:57
+#: core/src/class-import.php:66
 msgid "Custom field"
 msgstr ""
 
-#: core/src/class-import.php:211
+#: core/src/class-import.php:309
 msgid "The file could not be uploaded. It may be bigger than your server allows."
 msgstr ""
 
-#: core/src/class-import.php:216
+#: core/src/class-import.php:314
 msgid "Please choose a CSV, TXT or ZIP file. In Excel or Google Sheets, use \"Save as\" or \"Download\" › CSV."
 msgstr ""
 
-#: core/src/class-import.php:219
+#: core/src/class-import.php:317
 msgid "The file could not be uploaded."
 msgstr ""
 
-#: core/src/class-import.php:223
+#: core/src/class-import.php:321
 msgid "The uploads folder is not writable."
 msgstr ""
 
-#: core/src/class-import.php:265
+#: core/src/class-import.php:363
 msgid "Paste at least one email address."
 msgstr ""
 
-#: core/src/class-import.php:267
+#: core/src/class-import.php:365
 msgid "Pasted addresses"
 msgstr ""
 
-#: core/src/class-import.php:307
-#: core/src/class-import.php:316
+#: core/src/class-import.php:405
+#: core/src/class-import.php:414
 msgid "This file is empty."
 msgstr ""
 
 #. translators: %d: column number.
-#: core/src/class-import.php:327
+#: core/src/class-import.php:425
 #, php-format
 msgid "Column %d"
 msgstr ""
 
-#: core/src/class-import.php:504
+#: core/src/class-import.php:602
 msgid "Choose which column holds the email addresses."
 msgstr ""
 
-#: core/src/class-import.php:511
+#: core/src/class-import.php:609
 msgid "To import people as subscribed, confirm that they agreed to receive your emails."
 msgstr ""
 
-#: core/src/class-import.php:671
+#: core/src/class-import.php:769
 msgid "No email address"
 msgstr ""
 
-#: core/src/class-import.php:671
+#: core/src/class-import.php:769
 msgid "Not a valid email address"
 msgstr ""
 
-#: core/src/class-import.php:731
+#: core/src/class-import.php:829
 msgid "Could not be saved"
 msgstr ""
 
-#: core/src/class-import.php:764
+#: core/src/class-import.php:862
 msgid "These people agreed to receive my marketing emails (for example they subscribed to my newsletter) and I can prove it."
 msgstr ""
 
-#: core/src/class-import.php:790
+#: core/src/class-import.php:889
 msgid "Reason"
 msgstr ""
 
-#: core/src/class-import.php:830
+#: core/src/class-import.php:929
 msgid "Your server cannot open ZIP files. Unzip the file on your computer and import the CSV files one by one."
 msgstr ""
 
-#: core/src/class-import.php:834
+#: core/src/class-import.php:933
 msgid "This ZIP file could not be opened."
 msgstr ""
 
-#: core/src/class-import.php:879
+#: core/src/class-import.php:978
 msgid "No CSV file was found in this ZIP file."
 msgstr ""
 
-#: core/src/class-integrations.php:232
-#: core/src/class-integrations.php:269
+#: core/src/class-integrations.php:233
+#: core/src/class-integrations.php:270
 msgid "No newsletter consent was given, so nothing was sent."
 msgstr ""
 
-#: core/src/class-integrations.php:263
+#: core/src/class-integrations.php:264
 msgid "This tool is no longer available on this site."
 msgstr ""
 
 #. translators: %s: tool name, e.g. "MailPoet".
-#: core/src/class-integrations.php:308
+#: core/src/class-integrations.php:309
 #, php-format
 msgid "Sent to %s"
 msgstr ""
 
 #. translators: %s: tool name, e.g. "MailPoet".
-#: core/src/class-integrations.php:312
+#: core/src/class-integrations.php:313
 #, php-format
 msgid "Could not be sent to %s"
 msgstr ""
 
-#: core/src/class-integrations.php:363
+#: core/src/class-integrations.php:364
 msgid "This tool cannot be tested this way."
 msgstr ""
 
-#: core/src/class-integrations.php:371
+#: core/src/class-integrations.php:372
 msgid "Example answer"
 msgstr ""
 
-#: core/src/class-integrations.php:378
+#: core/src/class-integrations.php:379
 #: core/src/class-service-discord.php:139
 #: core/src/class-service-slack.php:139
 #: core/src/class-service-telegram.php:193
@@ -1077,7 +1072,7 @@ msgstr ""
 msgid "Test"
 msgstr ""
 
-#: core/src/class-integrations.php:379
+#: core/src/class-integrations.php:380
 msgid "Person"
 msgstr ""
 
@@ -1189,7 +1184,7 @@ msgid "Payment options"
 msgstr ""
 
 #: core/src/class-paypal.php:552
-#: includes/class-admin.php:414
+#: includes/class-admin.php:417
 msgid "Currency"
 msgstr ""
 
@@ -1226,7 +1221,7 @@ msgid "Rounded corners"
 msgstr ""
 
 #: core/src/class-paypal.php:567
-#: assets/builder.js:756
+#: assets/builder.js:769
 msgid "Pill"
 msgstr ""
 
@@ -1266,8 +1261,8 @@ msgstr ""
 #: core/src/class-privacy.php:95
 #: includes/class-start.php:128
 #: includes/class-templates.php:96
-#: assets/builder.js:948
-#: assets/builder.js:996
+#: assets/builder.js:961
+#: assets/builder.js:1009
 msgid "Contact"
 msgstr ""
 
@@ -1302,7 +1297,7 @@ msgstr ""
 
 #: core/src/class-queue.php:481
 #: includes/class-plugin.php:225
-#: assets/builder.js:880
+#: assets/builder.js:893
 msgid "Sending…"
 msgstr ""
 
@@ -1456,7 +1451,7 @@ msgid "Default for forms"
 msgstr ""
 
 #: core/src/class-security.php:509
-#: assets/builder.js:1010
+#: assets/builder.js:1023
 msgid "None (built-in protection only)"
 msgstr ""
 
@@ -1937,7 +1932,7 @@ msgstr ""
 
 #: core/src/class-service-slack.php:162
 #: core/src/class-service-telegram.php:201
-#: includes/class-submission.php:675
+#: includes/class-submission.php:736
 msgid "Open the entry"
 msgstr ""
 
@@ -1958,9 +1953,9 @@ msgid "A message from your own Telegram bot to you, a group or a channel, for ea
 msgstr ""
 
 #: core/src/class-service-telegram.php:82
-#: includes/class-admin.php:492
+#: includes/class-admin.php:495
 #: includes/class-general.php:336
-#: assets/builder.js:986
+#: assets/builder.js:999
 msgid "Send to"
 msgstr ""
 
@@ -2044,47 +2039,47 @@ msgstr ""
 msgid "The address answered with an error (HTTP %d)."
 msgstr ""
 
-#: core/src/class-service.php:161
-#: assets/builder.js:855
+#: core/src/class-service.php:172
+#: assets/builder.js:868
 msgid "Lists"
 msgstr ""
 
 #. translators: %s: error message.
-#: core/src/class-service.php:292
+#: core/src/class-service.php:303
 #, php-format
 msgid "The service did not answer (%s)."
 msgstr ""
 
 #. translators: %s: service name.
-#: core/src/class-service.php:312
+#: core/src/class-service.php:323
 #, php-format
 msgid "%s refused the key. Check the connection in Aluleth › Connections."
 msgstr ""
 
 #. translators: 1: service name, 2: HTTP status code, 3: error detail.
-#: core/src/class-service.php:315
+#: core/src/class-service.php:326
 #, php-format
 msgid "%1$s answered with an error (HTTP %2$d). %3$s"
 msgstr ""
 
 #. translators: %s: amount.
-#: core/src/class-service.php:420
+#: core/src/class-service.php:431
 #, php-format
 msgid "Paid: %s"
 msgstr ""
 
 #. translators: %s: form name.
-#: core/src/class-service.php:424
+#: core/src/class-service.php:435
 #, php-format
 msgid "New entry: %s"
 msgstr ""
 
 #: core/src/class-settings.php:45
-#: core/src/class-settings.php:195
-#: core/src/class-settings.php:212
-#: includes/class-admin.php:453
+#: core/src/class-settings.php:200
+#: core/src/class-settings.php:217
+#: includes/class-admin.php:456
 #: includes/class-plugin.php:127
-#: assets/builder.js:413
+#: assets/builder.js:425
 msgid "Settings"
 msgstr ""
 
@@ -2108,80 +2103,80 @@ msgstr ""
 msgid "Take payments in your forms with your own PayPal account."
 msgstr ""
 
-#: core/src/class-settings.php:121
+#: core/src/class-settings.php:123
 msgid "Access"
 msgstr ""
 
-#: core/src/class-settings.php:122
+#: core/src/class-settings.php:124
 msgid "Choose what each WordPress role can do. Administrators can always do everything."
 msgstr ""
 
-#: core/src/class-settings.php:125
+#: core/src/class-settings.php:127
 msgid "Roles"
 msgstr ""
 
-#: core/src/class-settings.php:139
+#: core/src/class-settings.php:144
 msgid "Data and privacy"
 msgstr ""
 
-#: core/src/class-settings.php:140
+#: core/src/class-settings.php:145
 msgid "What happens to your data when you delete a plugin."
 msgstr ""
 
-#: core/src/class-settings.php:146
+#: core/src/class-settings.php:151
 msgid "Licences"
 msgstr ""
 
-#: core/src/class-settings.php:147
+#: core/src/class-settings.php:152
 msgid "Licences of your Aluleth Pro add-ons."
 msgstr ""
 
-#: core/src/class-settings.php:195
-#: assets/builder.js:1033
+#: core/src/class-settings.php:200
+#: assets/builder.js:1046
 msgid "Settings sections"
 msgstr ""
 
-#: core/src/class-settings.php:231
+#: core/src/class-settings.php:236
 msgid "Save changes"
 msgstr ""
 
-#: core/src/class-settings.php:245
+#: core/src/class-settings.php:250
 msgid "Sorry, you are not allowed to change these settings."
 msgstr ""
 
-#: core/src/class-settings.php:255
+#: core/src/class-settings.php:260
 msgid "Settings saved."
 msgstr ""
 
-#: core/src/class-settings.php:289
+#: core/src/class-settings.php:294
 msgid "Contacts, consents, connections and send log"
 msgstr ""
 
-#: core/src/class-settings.php:290
+#: core/src/class-settings.php:295
 msgid "Shared by every Aluleth plugin, so they are deleted only with the last one."
 msgstr ""
 
-#: core/src/class-settings.php:301
+#: core/src/class-settings.php:306
 msgid "When you delete a plugin"
 msgstr ""
 
-#: core/src/class-settings.php:302
+#: core/src/class-settings.php:307
 msgid "By default your data is kept, so nothing is lost if you delete a plugin and install it again. Tick what should be erased for good when you delete the plugin from the Plugins screen. Deactivating a plugin never deletes anything."
 msgstr ""
 
-#: core/src/class-settings.php:303
+#: core/src/class-settings.php:308
 msgid "Delete on uninstall"
 msgstr ""
 
-#: core/src/class-settings.php:324
+#: core/src/class-settings.php:329
 msgid "Akismet (Automattic) receives the answers, the email address and the visitor's IP address of each entry to check it for spam."
 msgstr ""
 
-#: core/src/class-settings.php:333
+#: core/src/class-settings.php:338
 msgid "For your privacy policy"
 msgstr ""
 
-#: core/src/class-settings.php:333
+#: core/src/class-settings.php:338
 msgid "The outside services you turned on receive some visitor data:"
 msgstr ""
 
@@ -2191,11 +2186,11 @@ msgid "Theme"
 msgstr ""
 
 #: includes/class-admin.php:43
-#: includes/class-admin.php:107
-#: includes/class-admin.php:556
-#: includes/class-stats.php:206
-#: includes/class-stats.php:340
-#: assets/builder.js:416
+#: includes/class-admin.php:110
+#: includes/class-admin.php:559
+#: includes/class-stats.php:217
+#: includes/class-stats.php:351
+#: assets/builder.js:428
 msgid "Entries"
 msgstr ""
 
@@ -2207,96 +2202,96 @@ msgstr ""
 msgid "Board"
 msgstr ""
 
-#: includes/class-admin.php:112
+#: includes/class-admin.php:115
 msgid "View"
 msgstr ""
 
-#: includes/class-admin.php:119
+#: includes/class-admin.php:122
 msgid "Entry deleted."
 msgstr ""
 
-#: includes/class-admin.php:122
+#: includes/class-admin.php:125
 msgid "Entry moved to Spam."
 msgstr ""
 
-#: includes/class-admin.php:128
-#: includes/class-admin.php:146
-#: includes/class-admin.php:235
+#: includes/class-admin.php:131
+#: includes/class-admin.php:149
+#: includes/class-admin.php:238
 #: includes/class-elementor-widget.php:132
 #: includes/class-elementor-widget.php:151
 #: includes/class-plugin.php:171
-#: includes/class-stats.php:340
+#: includes/class-stats.php:351
 #: assets/block.js:33
 #: assets/block.js:43
 msgid "Form"
 msgstr ""
 
-#: includes/class-admin.php:132
+#: includes/class-admin.php:135
 msgid "Show"
 msgstr ""
 
-#: includes/class-admin.php:148
-#: includes/class-stats.php:371
+#: includes/class-admin.php:151
+#: includes/class-stats.php:382
 msgid "All forms"
 msgstr ""
 
-#: includes/class-admin.php:155
+#: includes/class-admin.php:158
 msgid "All statuses"
 msgstr ""
 
-#: includes/class-admin.php:159
+#: includes/class-admin.php:162
 #: includes/class-entries.php:59
 msgid "Spam"
 msgstr ""
 
-#: includes/class-admin.php:162
+#: includes/class-admin.php:165
 msgid "Search entries"
 msgstr ""
 
-#: includes/class-admin.php:175
+#: includes/class-admin.php:178
 msgid "Export CSV"
 msgstr ""
 
-#: includes/class-admin.php:187
+#: includes/class-admin.php:190
 msgid "Edit the columns"
 msgstr ""
 
 #. translators: %s: number of entries kept aside as spam.
-#: includes/class-admin.php:201
+#: includes/class-admin.php:204
 #, php-format
 msgid "Spam (%s)"
 msgstr ""
 
-#: includes/class-admin.php:206
+#: includes/class-admin.php:209
 msgid "Create a form first: its entries will appear here."
 msgstr ""
 
-#: includes/class-admin.php:226
+#: includes/class-admin.php:229
 msgid "No entry matches these filters."
 msgstr ""
 
-#: includes/class-admin.php:226
+#: includes/class-admin.php:229
 msgid "No entries yet. They appear here as soon as someone sends one of your forms."
 msgstr ""
 
-#: includes/class-admin.php:235
+#: includes/class-admin.php:238
 msgid "Entry"
 msgstr ""
 
-#: includes/class-admin.php:235
+#: includes/class-admin.php:238
 msgid "Received"
 msgstr ""
 
-#: includes/class-admin.php:282
+#: includes/class-admin.php:285
 msgid "This change could not be saved. Please try again."
 msgstr ""
 
-#: includes/class-admin.php:283
+#: includes/class-admin.php:286
 msgid "Loading…"
 msgstr ""
 
 #. translators: %d: number of notes.
-#: includes/class-admin.php:285
+#: includes/class-admin.php:288
 #: includes/class-board.php:159
 #, php-format
 msgid "%d note"
@@ -2305,180 +2300,206 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: status name.
-#: includes/class-admin.php:287
+#: includes/class-admin.php:290
 #, php-format
 msgid "Moved to %s"
 msgstr ""
 
-#: includes/class-admin.php:303
+#: includes/class-admin.php:306
 msgid "It failed again. Open the entry to see why."
 msgstr ""
 
-#: includes/class-admin.php:315
+#: includes/class-admin.php:318
 msgid "All entries"
 msgstr ""
 
-#: includes/class-admin.php:317
+#: includes/class-admin.php:320
 #: includes/class-ai.php:484
 msgid "This entry does not exist."
 msgstr ""
 
-#: includes/class-admin.php:333
-#: includes/class-admin.php:369
+#: includes/class-admin.php:336
+#: includes/class-admin.php:372
 msgid "Sorry, you are not allowed to do that."
 msgstr ""
 
-#: includes/class-admin.php:346
+#: includes/class-admin.php:349
 msgid "Marked as spam."
 msgstr ""
 
-#: includes/class-admin.php:352
+#: includes/class-admin.php:355
 msgid "Marked as not spam. Emails and connections were not sent for this entry."
 msgstr ""
 
-#: includes/class-admin.php:408
+#: includes/class-admin.php:411
 msgid "Received (UTC)"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:417
 msgid "Amount paid"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:417
 #: includes/class-board.php:367
 msgid "PayPal transaction"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:417
 #: includes/class-board.php:351
 msgid "Test payment"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:417
 #: includes/class-board.php:361
 #: includes/class-templates.php:372
 msgid "Order"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:417
 #: includes/class-board.php:369
 msgid "Paid with"
 msgstr ""
 
-#: includes/class-admin.php:452
+#: includes/class-admin.php:455
 msgid "Show this form"
 msgstr ""
 
-#: includes/class-admin.php:454
-#: includes/class-admin.php:508
+#: includes/class-admin.php:457
+#: includes/class-admin.php:511
 #: includes/class-elementor-widget.php:238
-#: assets/builder.js:443
+#: assets/builder.js:456
 msgid "Fields"
 msgstr ""
 
-#: includes/class-admin.php:464
+#: includes/class-admin.php:467
 msgid "Add the \"Aluleth Form\" block to any page, or paste this shortcode:"
 msgstr ""
 
-#: includes/class-admin.php:465
-#: includes/class-admin.php:555
+#: includes/class-admin.php:468
+#: includes/class-admin.php:558
 msgid "Shortcode"
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:482
 #: includes/class-elementor-widget.php:165
 #: includes/class-general.php:295
 #: assets/builder.js:68
 msgid "Clean"
 msgstr ""
 
-#: includes/class-admin.php:480
+#: includes/class-admin.php:483
 #: includes/class-elementor-widget.php:166
 #: includes/class-general.php:296
 #: assets/builder.js:69
 msgid "Soft"
 msgstr ""
 
-#: includes/class-admin.php:481
+#: includes/class-admin.php:484
 #: includes/class-elementor-widget.php:167
 #: includes/class-general.php:297
 #: assets/builder.js:70
 msgid "Dark"
 msgstr ""
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:487
 #: includes/class-elementor-widget.php:161
-#: assets/builder.js:735
-#: assets/builder.js:736
-#: assets/builder.js:744
-#: assets/builder.js:756
+#: assets/builder.js:748
+#: assets/builder.js:749
+#: assets/builder.js:757
+#: assets/builder.js:769
 msgid "Style"
 msgstr ""
 
-#: includes/class-admin.php:489
+#: includes/class-admin.php:492
 #: includes/class-elementor-widget.php:203
-#: assets/builder.js:770
-#: assets/builder.js:1026
+#: assets/builder.js:783
+#: assets/builder.js:1039
 msgid "Button text"
 msgstr ""
 
-#: includes/class-admin.php:490
+#: includes/class-admin.php:493
 msgid "Message after sending"
 msgstr ""
 
-#: includes/class-admin.php:491
+#: includes/class-admin.php:494
 msgid "Or go to this page"
 msgstr ""
 
-#: includes/class-admin.php:492
-#: assets/builder.js:984
+#: includes/class-admin.php:495
+#: assets/builder.js:997
 msgid "Email to your team"
 msgstr ""
 
-#: includes/class-admin.php:492
-#: assets/builder.js:985
+#: includes/class-admin.php:495
+#: assets/builder.js:998
 msgid "Send each new entry by email"
 msgstr ""
 
-#: includes/class-admin.php:492
-#: assets/builder.js:986
-msgid "Several addresses: separate them with commas. Empty: the site admin email."
+#. translators: %s: the site admin email.
+#: includes/class-admin.php:495
+#: assets/builder.js:999
+#, php-format,js-format
+msgid "Who gets each new entry. Several addresses: separate them with commas. Left empty, entries go to the site admin email (%s)."
 msgstr ""
 
-#: includes/class-admin.php:493
-#: assets/builder.js:988
+#. translators: %s: the site admin email.
+#: includes/class-admin.php:496
+#: assets/builder.js:1001
 msgid "Email to the visitor"
 msgstr ""
 
-#: includes/class-admin.php:493
-#: assets/builder.js:989
+#. translators: %s: the site admin email.
+#: includes/class-admin.php:496
+#: assets/builder.js:1002
 msgid "Send a confirmation with a copy of their answers"
 msgstr ""
 
-#: includes/class-admin.php:493
-#: assets/builder.js:987
-#: assets/builder.js:990
+#. translators: %s: the site admin email.
+#: includes/class-admin.php:496
+#: assets/builder.js:1000
+#: assets/builder.js:1003
 msgid "Subject"
 msgstr ""
 
-#: includes/class-admin.php:493
+#. translators: %s: the site admin email.
+#: includes/class-admin.php:496
 #: includes/class-schema.php:248
 #: includes/class-templates.php:105
 #: assets/builder.js:28
-#: assets/builder.js:991
+#: assets/builder.js:1004
 msgid "Message"
 msgstr ""
 
-#: includes/class-admin.php:494
+#: includes/class-admin.php:497
 msgid "Tags for the contact"
 msgstr ""
 
-#: includes/class-admin.php:494
+#: includes/class-admin.php:497
 msgid "Separated by commas. Shared with every Aluleth plugin."
 msgstr ""
 
-#: includes/class-admin.php:507
+#: includes/class-admin.php:510
 msgid "The visual builder is coming. Until then, the fields are edited here as JSON."
+msgstr ""
+
+#: includes/class-admin.php:560
+msgid "New entries emailed to"
+msgstr ""
+
+#: includes/class-admin.php:596
+msgid "Not emailed"
+msgstr ""
+
+#. translators: %s: form title.
+#: includes/class-admin.php:597
+#, php-format
+msgid "Change who gets the entries of %s by email"
+msgstr ""
+
+#. translators: %s: form title.
+#: includes/class-admin.php:597
+#: assets/builder.js:409
+msgid "Change"
 msgstr ""
 
 #: includes/class-ai.php:83
@@ -2654,7 +2675,7 @@ msgid "Not spam"
 msgstr ""
 
 #: includes/class-board.php:267
-#: assets/builder.js:437
+#: assets/builder.js:450
 msgid "Save"
 msgstr ""
 
@@ -2751,7 +2772,7 @@ msgstr ""
 #: includes/class-plugin.php:173
 #: includes/class-start.php:119
 #: includes/class-start.php:403
-#: includes/class-stats.php:429
+#: includes/class-stats.php:440
 msgid "New form"
 msgstr ""
 
@@ -2768,7 +2789,7 @@ msgid "This form does not exist."
 msgstr ""
 
 #: includes/class-builder.php:253
-#: assets/builder.js:405
+#: assets/builder.js:416
 msgid "Back to forms"
 msgstr ""
 
@@ -2939,15 +2960,15 @@ msgid "(empty entry)"
 msgstr ""
 
 #: includes/class-entries.php:431
-#: includes/class-submission.php:438
-#: includes/class-submission.php:634
+#: includes/class-submission.php:464
+#: includes/class-submission.php:696
 #: includes/class-templates.php:341
 msgid "Yes"
 msgstr ""
 
 #: includes/class-entries.php:431
-#: includes/class-submission.php:438
-#: includes/class-submission.php:634
+#: includes/class-submission.php:464
+#: includes/class-submission.php:696
 #: includes/class-templates.php:341
 msgid "No"
 msgstr ""
@@ -3101,7 +3122,7 @@ msgid "Used by the forms you create from now on. Your existing forms keep their 
 msgstr ""
 
 #: includes/class-general.php:264
-#: assets/builder.js:765
+#: assets/builder.js:778
 msgid "Labels"
 msgstr ""
 
@@ -3118,25 +3139,25 @@ msgid "Inside the field"
 msgstr ""
 
 #: includes/class-general.php:274
-#: assets/builder.js:570
-#: assets/builder.js:767
+#: assets/builder.js:583
+#: assets/builder.js:780
 msgid "Help text"
 msgstr ""
 
 #: includes/class-general.php:277
 #: includes/class-general.php:286
-#: assets/builder.js:767
-#: assets/builder.js:769
+#: assets/builder.js:780
+#: assets/builder.js:782
 msgid "Under the field"
 msgstr ""
 
 #: includes/class-general.php:278
-#: assets/builder.js:767
+#: assets/builder.js:780
 msgid "Under the label"
 msgstr ""
 
 #: includes/class-general.php:283
-#: assets/builder.js:769
+#: assets/builder.js:782
 msgid "Error messages"
 msgstr ""
 
@@ -3180,7 +3201,7 @@ msgstr ""
 
 #: includes/class-general.php:308
 #: includes/class-schema.php:130
-#: assets/builder.js:532
+#: assets/builder.js:545
 msgid "Send"
 msgstr ""
 
@@ -3489,7 +3510,7 @@ msgid "WPForms Lite does not keep entries on your site; WPForms Pro entries are 
 msgstr ""
 
 #: includes/class-import-screen.php:179
-#: assets/builder.js:577
+#: assets/builder.js:590
 msgid "Options"
 msgstr ""
 
@@ -3770,7 +3791,7 @@ msgid "Choose…"
 msgstr ""
 
 #: includes/class-renderer.php:409
-#: assets/builder.js:530
+#: assets/builder.js:543
 msgid "PayPal buttons: PayPal, Pay Later, card"
 msgstr ""
 
@@ -3796,7 +3817,7 @@ msgstr ""
 
 #. translators: %s: anti-spam service name.
 #: includes/class-renderer.php:461
-#: assets/builder.js:527
+#: assets/builder.js:540
 #, php-format,js-format
 msgid "Anti-spam check (%s)"
 msgstr ""
@@ -3973,62 +3994,62 @@ msgstr ""
 msgid "AI Writer did not return any field. Try again with a few more details."
 msgstr ""
 
-#: includes/class-stats.php:156
+#: includes/class-stats.php:167
 msgid "Form entries"
 msgstr ""
 
-#: includes/class-stats.php:165
-#: includes/class-stats.php:174
+#: includes/class-stats.php:176
+#: includes/class-stats.php:185
 msgid "Form conversion"
 msgstr ""
 
 #. translators: 1: number of form views, 2: number of entries.
-#: includes/class-stats.php:168
+#: includes/class-stats.php:179
 #, php-format
 msgid "%1$s form views → %2$s entries"
 msgstr ""
 
-#: includes/class-stats.php:176
+#: includes/class-stats.php:187
 msgid "No form view yet in this period."
 msgstr ""
 
-#: includes/class-stats.php:176
+#: includes/class-stats.php:187
 msgid "Form views are counted from today."
 msgstr ""
 
-#: includes/class-stats.php:291
+#: includes/class-stats.php:302
 msgid "Open the board"
 msgstr ""
 
-#: includes/class-stats.php:340
+#: includes/class-stats.php:351
 msgid "Views"
 msgstr ""
 
-#: includes/class-stats.php:340
+#: includes/class-stats.php:351
 msgid "Conversion"
 msgstr ""
 
-#: includes/class-stats.php:340
+#: includes/class-stats.php:351
 msgid "Trend"
 msgstr ""
 
 #. translators: %d: number of steps.
-#: includes/class-stats.php:359
+#: includes/class-stats.php:370
 #, php-format
 msgid "%d steps"
 msgstr ""
 
 #. translators: %d: number of steps.
-#: includes/class-stats.php:359
+#: includes/class-stats.php:370
 msgid "One step"
 msgstr ""
 
-#: includes/class-stats.php:369
+#: includes/class-stats.php:380
 msgid "Your forms"
 msgstr ""
 
 #. translators: 1: number of forms, 2: number of entries.
-#: includes/class-stats.php:406
+#: includes/class-stats.php:417
 #, php-format
 msgid "%1$s forms · %2$s entries"
 msgstr ""
@@ -4059,18 +4080,30 @@ msgstr ""
 msgid "This form uses an anti-spam check that needs JavaScript. Please turn JavaScript on and send it again."
 msgstr ""
 
-#: includes/class-submission.php:644
+#: includes/class-submission.php:706
 msgid "Total paid"
 msgstr ""
 
+#: includes/class-submission.php:754
+msgid "The email to the team could not be sent."
+msgstr ""
+
+#: includes/class-submission.php:786
+msgid "The confirmation email could not be sent."
+msgstr ""
+
 #. translators: %s: site name.
-#: includes/class-submission.php:725
+#: includes/class-submission.php:805
 #, php-format
 msgid "Your payment to %s"
 msgstr ""
 
-#: includes/class-submission.php:726
+#: includes/class-submission.php:806
 msgid "Thank you, your payment was received."
+msgstr ""
+
+#: includes/class-submission.php:824
+msgid "The payment receipt could not be sent."
 msgstr ""
 
 #: includes/class-templates.php:97
@@ -4495,7 +4528,7 @@ msgid "No published form yet. Create one in Aluleth › Forms."
 msgstr ""
 
 #: assets/builder.js:20
-#: assets/builder.js:561
+#: assets/builder.js:574
 msgid "Text"
 msgstr ""
 
@@ -4553,7 +4586,7 @@ msgstr ""
 
 #: assets/builder.js:39
 #: assets/builder.js:52
-#: assets/builder.js:563
+#: assets/builder.js:576
 msgid "Heading"
 msgstr ""
 
@@ -4589,7 +4622,7 @@ msgid "Extras with prices"
 msgstr ""
 
 #: assets/builder.js:42
-#: assets/builder.js:590
+#: assets/builder.js:603
 msgid "Extras"
 msgstr ""
 
@@ -4701,794 +4734,808 @@ msgstr ""
 msgid "unknown error"
 msgstr ""
 
-#: assets/builder.js:407
+#. translators: %s: email addresses.
+#: assets/builder.js:404
+#, js-format
+msgid "New entries emailed to %s"
+msgstr ""
+
+#: assets/builder.js:404
+msgid "New entries are not emailed"
+msgstr ""
+
+#: assets/builder.js:409
+msgid "Change who gets each new entry by email"
+msgstr ""
+
+#: assets/builder.js:418
 msgid "Form name"
 msgstr ""
 
-#: assets/builder.js:409
+#: assets/builder.js:420
 msgid "Published"
 msgstr ""
 
-#: assets/builder.js:409
+#: assets/builder.js:420
 msgid "Draft"
 msgstr ""
 
-#: assets/builder.js:409
+#: assets/builder.js:420
 msgid "Unsaved changes"
 msgstr ""
 
-#: assets/builder.js:412
+#: assets/builder.js:424
 msgid "Builder sections"
 msgstr ""
 
-#: assets/builder.js:413
+#: assets/builder.js:425
 msgid "Build"
 msgstr ""
 
-#: assets/builder.js:413
+#: assets/builder.js:425
 msgid "Design"
 msgstr ""
 
-#: assets/builder.js:419
+#: assets/builder.js:431
 msgid "Undo (Ctrl+Z)"
 msgstr ""
 
-#: assets/builder.js:420
+#: assets/builder.js:432
 msgid "Redo (Ctrl+Shift+Z)"
 msgstr ""
 
-#: assets/builder.js:421
+#: assets/builder.js:433
 msgid "Preview size"
 msgstr ""
 
-#: assets/builder.js:422
+#: assets/builder.js:434
 msgid "Desktop preview"
 msgstr ""
 
-#: assets/builder.js:423
+#: assets/builder.js:435
 msgid "Phone preview"
 msgstr ""
 
-#: assets/builder.js:426
+#: assets/builder.js:438
 msgid "Embed"
 msgstr ""
 
-#: assets/builder.js:427
+#: assets/builder.js:439
 msgid "Embed this form"
 msgstr ""
 
-#: assets/builder.js:428
+#: assets/builder.js:440
 msgid "Add the “Aluleth Form” block to any page and choose this form, or paste this shortcode:"
 msgstr ""
 
-#: assets/builder.js:431
+#: assets/builder.js:443
 msgid "Shortcode copied."
 msgstr ""
 
-#: assets/builder.js:431
+#: assets/builder.js:443
 msgid "Copy"
 msgstr ""
 
-#: assets/builder.js:433
+#: assets/builder.js:445
 msgid "Publish the form first: drafts are only visible to you."
 msgstr ""
 
-#: assets/builder.js:436
+#: assets/builder.js:449
 msgid "Save draft"
 msgstr ""
 
-#: assets/builder.js:437
+#: assets/builder.js:450
 msgid "Saved"
 msgstr ""
 
-#: assets/builder.js:437
+#: assets/builder.js:450
 msgid "Publish"
 msgstr ""
 
-#: assets/builder.js:446
+#: assets/builder.js:459
 msgid "Search fields"
 msgstr ""
 
-#: assets/builder.js:447
+#: assets/builder.js:460
 msgid "Search fields ( / )"
 msgstr ""
 
-#: assets/builder.js:464
+#: assets/builder.js:477
 msgid "Click a field to add it after the selected one, or drag it into the form."
 msgstr ""
 
 #. translators: %s: field label.
-#: assets/builder.js:501
+#: assets/builder.js:514
 #, js-format
 msgid "Edit field: %s"
 msgstr ""
 
-#: assets/builder.js:510
+#: assets/builder.js:523
 msgid "Shown if…"
 msgstr ""
 
-#: assets/builder.js:513
-#: assets/builder.js:973
+#: assets/builder.js:526
+#: assets/builder.js:986
 msgid "Move up"
 msgstr ""
 
-#: assets/builder.js:514
-#: assets/builder.js:974
+#: assets/builder.js:527
+#: assets/builder.js:987
 msgid "Move down"
 msgstr ""
 
-#: assets/builder.js:515
-#: assets/builder.js:719
+#: assets/builder.js:528
+#: assets/builder.js:732
 msgid "Duplicate"
 msgstr ""
 
-#: assets/builder.js:516
+#: assets/builder.js:529
 msgid "Delete"
 msgstr ""
 
-#: assets/builder.js:520
+#: assets/builder.js:533
 msgid "Your form is empty. Add a field from the left, or drag one here."
 msgstr ""
 
-#: assets/builder.js:531
+#: assets/builder.js:544
 msgid "Set up PayPal so visitors can pay"
 msgstr ""
 
-#: assets/builder.js:547
+#: assets/builder.js:560
 msgid "Select a field"
 msgstr ""
 
-#: assets/builder.js:548
+#: assets/builder.js:561
 msgid "Click a field in the form to change its label, make it required or save it to the contact."
 msgstr ""
 
-#: assets/builder.js:549
+#: assets/builder.js:562
 msgid "Shortcuts: Ctrl+S save · Ctrl+Z undo · Delete removes the selected field · / search fields"
 msgstr ""
 
-#: assets/builder.js:563
+#: assets/builder.js:576
 msgid "Step name"
 msgstr ""
 
-#: assets/builder.js:563
+#: assets/builder.js:576
 msgid "Text next to the box"
 msgstr ""
 
-#: assets/builder.js:563
+#: assets/builder.js:576
 msgid "Name (only you see it)"
 msgstr ""
 
-#: assets/builder.js:563
+#: assets/builder.js:576
 msgid "Label"
 msgstr ""
 
-#: assets/builder.js:567
+#: assets/builder.js:580
 msgid "Text before a choice is made"
 msgstr ""
 
-#: assets/builder.js:567
+#: assets/builder.js:580
 msgid "Placeholder"
 msgstr ""
 
-#: assets/builder.js:573
+#: assets/builder.js:586
 msgid "Required"
 msgstr ""
 
 #. translators: %d: option number.
-#: assets/builder.js:580
-#: assets/builder.js:586
+#: assets/builder.js:593
+#: assets/builder.js:599
 #, js-format
 msgid "Option %d"
 msgstr ""
 
-#: assets/builder.js:582
+#: assets/builder.js:595
 msgid "Move option up"
 msgstr ""
 
-#: assets/builder.js:583
+#: assets/builder.js:596
 msgid "Remove option"
 msgstr ""
 
-#: assets/builder.js:586
+#: assets/builder.js:599
 msgid "Add an option"
 msgstr ""
 
-#: assets/builder.js:590
+#: assets/builder.js:603
 msgid "Kind"
 msgstr ""
 
-#: assets/builder.js:590
+#: assets/builder.js:603
 msgid "One choice"
 msgstr ""
 
-#: assets/builder.js:590
+#: assets/builder.js:603
 msgid "Fixed"
 msgstr ""
 
-#: assets/builder.js:592
+#: assets/builder.js:605
 msgid "Item and price"
 msgstr ""
 
-#: assets/builder.js:592
+#: assets/builder.js:605
 msgid "Items and prices"
 msgstr ""
 
 #. translators: %d: item number.
-#: assets/builder.js:596
-#: assets/builder.js:603
+#: assets/builder.js:609
+#: assets/builder.js:616
 #, js-format
 msgid "Item %d"
 msgstr ""
 
 #. translators: %d: item number.
-#: assets/builder.js:598
+#: assets/builder.js:611
 #, js-format
 msgid "Price of item %d"
 msgstr ""
 
-#: assets/builder.js:600
+#: assets/builder.js:613
 msgid "Remove item"
 msgstr ""
 
-#: assets/builder.js:603
+#: assets/builder.js:616
 msgid "Add an item"
 msgstr ""
 
 #. translators: %s: currency code.
-#: assets/builder.js:604
+#: assets/builder.js:617
 #, js-format
 msgid "Prices in %s (Aluleth › Settings › Payments)."
 msgstr ""
 
-#: assets/builder.js:609
-#: assets/builder.js:618
+#: assets/builder.js:622
+#: assets/builder.js:631
 msgid "Minimum"
 msgstr ""
 
-#: assets/builder.js:610
-#: assets/builder.js:619
+#: assets/builder.js:623
+#: assets/builder.js:632
 msgid "Maximum"
 msgstr ""
 
-#: assets/builder.js:614
+#: assets/builder.js:627
 msgid "Shows the items chosen and the total, updated as the visitor fills the form. The amount paid is always computed again on your site."
 msgstr ""
 
-#: assets/builder.js:623
+#: assets/builder.js:636
 msgid "Maximum characters (0 = no limit)"
 msgstr ""
 
-#: assets/builder.js:626
+#: assets/builder.js:639
 msgid "Value sent with the form"
 msgstr ""
 
-#: assets/builder.js:626
+#: assets/builder.js:639
 msgid "For example the name of the campaign or of the page."
 msgstr ""
 
-#: assets/builder.js:629
+#: assets/builder.js:642
 msgid "This is a newsletter consent"
 msgstr ""
 
-#: assets/builder.js:629
+#: assets/builder.js:642
 msgid "When ticked, the contact is subscribed and the consent is recorded with its date and text."
 msgstr ""
 
-#: assets/builder.js:632
+#: assets/builder.js:645
 msgid "Width"
 msgstr ""
 
-#: assets/builder.js:632
+#: assets/builder.js:645
 msgid "One third"
 msgstr ""
 
-#: assets/builder.js:632
+#: assets/builder.js:645
 msgid "Half"
 msgstr ""
 
-#: assets/builder.js:632
+#: assets/builder.js:645
 msgid "Full"
 msgstr ""
 
-#: assets/builder.js:635
+#: assets/builder.js:648
 msgid "Saved as the contact’s phone number."
 msgstr ""
 
-#: assets/builder.js:639
+#: assets/builder.js:652
 msgid "Save to the contact"
 msgstr ""
 
-#: assets/builder.js:642
+#: assets/builder.js:655
 msgid "Contacts are shared by every Aluleth plugin on this site."
 msgstr ""
 
-#: assets/builder.js:658
+#: assets/builder.js:671
 msgid "is"
 msgstr ""
 
-#: assets/builder.js:658
+#: assets/builder.js:671
 msgid "is not"
 msgstr ""
 
-#: assets/builder.js:658
+#: assets/builder.js:671
 msgid "contains"
 msgstr ""
 
-#: assets/builder.js:658
+#: assets/builder.js:671
 msgid "does not contain"
 msgstr ""
 
-#: assets/builder.js:659
+#: assets/builder.js:672
 msgid "is empty"
 msgstr ""
 
-#: assets/builder.js:659
+#: assets/builder.js:672
 msgid "is filled in"
 msgstr ""
 
-#: assets/builder.js:659
+#: assets/builder.js:672
 msgid "is more than"
 msgstr ""
 
-#: assets/builder.js:659
+#: assets/builder.js:672
 msgid "is less than"
 msgstr ""
 
-#: assets/builder.js:661
+#: assets/builder.js:674
 msgid "is ticked"
 msgstr ""
 
-#: assets/builder.js:661
+#: assets/builder.js:674
 msgid "is not ticked"
 msgstr ""
 
-#: assets/builder.js:664
+#: assets/builder.js:677
 msgid "Show this field only when…"
 msgstr ""
 
-#: assets/builder.js:664
+#: assets/builder.js:677
 msgid "Add another field first."
 msgstr ""
 
-#: assets/builder.js:672
+#: assets/builder.js:685
 msgid "Show it when"
 msgstr ""
 
-#: assets/builder.js:674
+#: assets/builder.js:687
 msgid "all these rules are true"
 msgstr ""
 
-#: assets/builder.js:675
+#: assets/builder.js:688
 msgid "any of these rules is true"
 msgstr ""
 
-#: assets/builder.js:686
+#: assets/builder.js:699
 msgid "Field"
 msgstr ""
 
-#: assets/builder.js:689
+#: assets/builder.js:702
 msgid "Condition"
 msgstr ""
 
-#: assets/builder.js:692
-#: assets/builder.js:694
+#: assets/builder.js:705
+#: assets/builder.js:707
 msgid "Value"
 msgstr ""
 
-#: assets/builder.js:695
+#: assets/builder.js:708
 msgid "Remove rule"
 msgstr ""
 
-#: assets/builder.js:704
+#: assets/builder.js:717
 msgid "Add a rule"
 msgstr ""
 
-#: assets/builder.js:705
+#: assets/builder.js:718
 msgid "Hidden fields are not required and are not saved."
 msgstr ""
 
-#: assets/builder.js:710
+#: assets/builder.js:723
 msgid "The first email field creates or updates the contact."
 msgstr ""
 
-#: assets/builder.js:713
+#: assets/builder.js:726
 msgid "Field key"
 msgstr ""
 
-#: assets/builder.js:713
+#: assets/builder.js:726
 msgid "Used in exports and integrations. Letters, numbers and underscores."
 msgstr ""
 
-#: assets/builder.js:720
+#: assets/builder.js:733
 msgid "Delete field"
 msgstr ""
 
-#: assets/builder.js:742
-#: assets/builder.js:743
+#: assets/builder.js:755
+#: assets/builder.js:756
 msgid "Button and accent colour"
 msgstr ""
 
-#: assets/builder.js:744
+#: assets/builder.js:757
 msgid "The style’s own colour"
 msgstr ""
 
-#: assets/builder.js:750
+#: assets/builder.js:763
 msgid "Or your own colour"
 msgstr ""
 
-#: assets/builder.js:753
+#: assets/builder.js:766
 msgid "style colour"
 msgstr ""
 
-#: assets/builder.js:755
+#: assets/builder.js:768
 msgid "Colours from your site follow it: if you change them in your theme or Elementor, the form changes too."
 msgstr ""
 
-#: assets/builder.js:755
+#: assets/builder.js:768
 msgid "No site colours found (theme.json or Elementor kit). Pick your own colour."
 msgstr ""
 
-#: assets/builder.js:756
+#: assets/builder.js:769
 msgid "Corners"
 msgstr ""
 
-#: assets/builder.js:756
+#: assets/builder.js:769
 msgid "Square"
 msgstr ""
 
-#: assets/builder.js:756
+#: assets/builder.js:769
 msgid "Rounded"
 msgstr ""
 
-#: assets/builder.js:758
+#: assets/builder.js:771
 msgid "Font"
 msgstr ""
 
-#: assets/builder.js:760
+#: assets/builder.js:773
 msgid "Same as the page"
 msgstr ""
 
-#: assets/builder.js:762
+#: assets/builder.js:775
 msgid "“Same as the page” uses the text font around the form. Fonts listed here are the ones your site already uses."
 msgstr ""
 
-#: assets/builder.js:764
+#: assets/builder.js:777
 msgid "Layout"
 msgstr ""
 
-#: assets/builder.js:765
+#: assets/builder.js:778
 msgid "Above"
 msgstr ""
 
-#: assets/builder.js:765
+#: assets/builder.js:778
 msgid "Beside"
 msgstr ""
 
-#: assets/builder.js:765
+#: assets/builder.js:778
 msgid "Inside"
 msgstr ""
 
-#: assets/builder.js:766
+#: assets/builder.js:779
 msgid "On phones and narrow columns, labels go back above the fields."
 msgstr ""
 
-#: assets/builder.js:768
+#: assets/builder.js:781
 msgid "With labels inside the fields, help texts stay under the field."
 msgstr ""
 
-#: assets/builder.js:769
+#: assets/builder.js:782
 msgid "Also at the top"
 msgstr ""
 
-#: assets/builder.js:771
+#: assets/builder.js:784
 msgid "Every style and setting is free. In Elementor, the widget’s Style tab can still change each colour."
 msgstr ""
 
-#: assets/builder.js:822
+#: assets/builder.js:835
 msgid "The test could not be sent."
 msgstr ""
 
-#: assets/builder.js:833
+#: assets/builder.js:846
 msgid "This tool is not available on this site."
 msgstr ""
 
 #. translators: %s: start of a valid address.
-#: assets/builder.js:840
+#: assets/builder.js:853
 #, js-format
 msgid "This address should start with %s."
 msgstr ""
 
-#: assets/builder.js:844
+#: assets/builder.js:857
 msgid "Format"
 msgstr ""
 
-#: assets/builder.js:844
+#: assets/builder.js:857
 msgid "Form fields"
 msgstr ""
 
-#: assets/builder.js:845
-#: assets/builder.js:869
+#: assets/builder.js:858
+#: assets/builder.js:882
 msgid "Who is sent"
 msgstr ""
 
-#: assets/builder.js:845
-#: assets/builder.js:867
+#: assets/builder.js:858
+#: assets/builder.js:880
 msgid "Every entry"
 msgstr ""
 
-#: assets/builder.js:845
-#: assets/builder.js:867
-#: assets/builder.js:869
+#: assets/builder.js:858
+#: assets/builder.js:880
+#: assets/builder.js:882
 msgid "Only with newsletter consent"
 msgstr ""
 
-#: assets/builder.js:847
+#: assets/builder.js:860
 msgid "Signing secret (optional)"
 msgstr ""
 
-#: assets/builder.js:850
+#: assets/builder.js:863
 msgid "Generate"
 msgstr ""
 
-#: assets/builder.js:851
+#: assets/builder.js:864
 msgid "With a secret, each request carries an X-Aluleth-Signature header (HMAC-SHA256 of the X-Aluleth-Timestamp value, a dot and the body), so your receiver can check it comes from this site."
 msgstr ""
 
 #. translators: %s: tool name, e.g. MailPoet.
-#: assets/builder.js:855
+#: assets/builder.js:868
 #, js-format
 msgid "Nothing found in %s yet. Create it there, then click “Refresh”."
 msgstr ""
 
 #. translators: %s: tool name, e.g. FluentCRM.
-#: assets/builder.js:858
+#: assets/builder.js:871
 #, js-format
 msgid "No tag in %s yet (optional)."
 msgstr ""
 
-#: assets/builder.js:861
+#: assets/builder.js:874
 msgid "Tags (optional)"
 msgstr ""
 
-#: assets/builder.js:861
+#: assets/builder.js:874
 msgid "Separated by commas. Missing tags are created."
 msgstr ""
 
-#: assets/builder.js:864
+#: assets/builder.js:877
 msgid "Double opt-in"
 msgstr ""
 
 #. translators: %s: tool name, e.g. FluentCRM.
-#: assets/builder.js:864
+#: assets/builder.js:877
 #, js-format
 msgid "%s emails a confirmation link; the person is subscribed once they click it."
 msgstr ""
 
-#: assets/builder.js:867
+#: assets/builder.js:880
 msgid "Which entries"
 msgstr ""
 
-#: assets/builder.js:869
+#: assets/builder.js:882
 msgid "Everyone"
 msgstr ""
 
-#: assets/builder.js:871
+#: assets/builder.js:884
 msgid "People without newsletter consent are saved as contacts who do not receive marketing emails."
 msgstr ""
 
-#: assets/builder.js:880
+#: assets/builder.js:893
 msgid "Send a test"
 msgstr ""
 
-#: assets/builder.js:881
+#: assets/builder.js:894
 msgid "Sends example answers to the address now, without saving the form."
 msgstr ""
 
-#: assets/builder.js:881
+#: assets/builder.js:894
 msgid "Sends a message with example answers now, without saving the form."
 msgstr ""
 
-#: assets/builder.js:886
+#: assets/builder.js:899
 msgid "Refreshing…"
 msgstr ""
 
-#: assets/builder.js:886
+#: assets/builder.js:899
 msgid "Refresh"
 msgstr ""
 
 #. translators: %s: tool name, e.g. Telegram.
-#: assets/builder.js:887
+#: assets/builder.js:900
 #, js-format
 msgid "Reloads the chats from %s."
 msgstr ""
 
 #. translators: %s: tool name, e.g. Mailchimp.
-#: assets/builder.js:887
+#: assets/builder.js:900
 #, js-format
 msgid "Reloads the lists, tags and fields from %s."
 msgstr ""
 
-#: assets/builder.js:890
+#: assets/builder.js:903
 msgid "This form has no newsletter consent field, so nobody will be sent. Add a Consent field and keep “This is a newsletter consent” on."
 msgstr ""
 
 #. translators: %s: tool name, e.g. MailPoet.
-#: assets/builder.js:894
+#: assets/builder.js:907
 #, js-format
 msgid "%s custom fields"
 msgstr ""
 
-#: assets/builder.js:900
+#: assets/builder.js:913
 msgid "Not filled"
 msgstr ""
 
-#: assets/builder.js:903
-#: assets/builder.js:906
+#: assets/builder.js:916
+#: assets/builder.js:919
 msgid "Email, name and phone are sent automatically from the fields saved to the contact."
 msgstr ""
 
-#: assets/builder.js:913
+#: assets/builder.js:926
 msgid "Name (optional)"
 msgstr ""
 
 #. translators: %s: tool name, e.g. MailPoet.
-#: assets/builder.js:913
+#: assets/builder.js:926
 #, js-format
 msgid "Name of this %s integration"
 msgstr ""
 
-#: assets/builder.js:914
+#: assets/builder.js:927
 msgid "Paused"
 msgstr ""
 
-#: assets/builder.js:915
+#: assets/builder.js:928
 msgid "Remove this integration"
 msgstr ""
 
-#: assets/builder.js:922
-#: assets/builder.js:949
+#: assets/builder.js:935
+#: assets/builder.js:962
 msgid "Integrations"
 msgstr ""
 
-#: assets/builder.js:923
+#: assets/builder.js:936
 msgid "Send each entry to the tools you use. Sending happens in the background after the visitor sees your message, so a slow tool never slows down the form. Each send is listed on the entry."
 msgstr ""
 
-#: assets/builder.js:924
+#: assets/builder.js:937
 msgid "This form has no Email field: newsletter and CRM tools need one."
 msgstr ""
 
-#: assets/builder.js:927
+#: assets/builder.js:940
 msgid "Add another integration"
 msgstr ""
 
-#: assets/builder.js:927
+#: assets/builder.js:940
 msgid "Add an integration"
 msgstr ""
 
-#: assets/builder.js:932
+#: assets/builder.js:945
 msgid "Not connected yet: connect it in Aluleth › Connections."
 msgstr ""
 
-#: assets/builder.js:939
+#: assets/builder.js:952
 msgid "Connections and recent sends"
 msgstr ""
 
-#: assets/builder.js:944
+#: assets/builder.js:957
 msgid "Only an administrator can change this."
 msgstr ""
 
-#: assets/builder.js:946
-#: assets/builder.js:1023
+#: assets/builder.js:959
+#: assets/builder.js:1036
 msgid "After sending"
 msgstr ""
 
-#: assets/builder.js:947
+#: assets/builder.js:960
 msgid "Email notifications"
 msgstr ""
 
-#: assets/builder.js:950
-#: assets/builder.js:967
+#: assets/builder.js:963
+#: assets/builder.js:980
 msgid "Entry statuses"
 msgstr ""
 
-#: assets/builder.js:951
-#: assets/builder.js:1003
+#: assets/builder.js:964
+#: assets/builder.js:1016
 msgid "Spam protection"
 msgstr ""
 
-#: assets/builder.js:968
+#: assets/builder.js:981
 msgid "They are the columns of your entries board. New entries arrive in the first one."
 msgstr ""
 
 #. translators: %d: status number.
-#: assets/builder.js:972
+#: assets/builder.js:985
 #, js-format
 msgid "Name of status %d"
 msgstr ""
 
-#: assets/builder.js:975
+#: assets/builder.js:988
 msgid "Remove this status"
 msgstr ""
 
-#: assets/builder.js:978
+#: assets/builder.js:991
 msgid "New status"
 msgstr ""
 
-#: assets/builder.js:978
+#: assets/builder.js:991
 msgid "Add a status"
 msgstr ""
 
-#: assets/builder.js:979
+#: assets/builder.js:992
 msgid "Renaming a status keeps its entries. Entries of a removed status go back to the first column."
 msgstr ""
 
-#: assets/builder.js:987
+#: assets/builder.js:1000
 msgid "{form_title} and {site_name} are replaced automatically."
 msgstr ""
 
-#: assets/builder.js:997
+#: assets/builder.js:1010
 msgid "Each entry with an email creates or updates a contact, shared by every Aluleth plugin."
 msgstr ""
 
-#: assets/builder.js:998
+#: assets/builder.js:1011
 msgid "Tags added to the contact"
 msgstr ""
 
-#: assets/builder.js:998
+#: assets/builder.js:1011
 msgid "Separated by commas."
 msgstr ""
 
-#: assets/builder.js:1004
+#: assets/builder.js:1017
 msgid "Always on, with no outside service: a hidden field that only robots fill in, a check of how fast the form was sent, and a limit of sends per visitor (Aluleth › Settings › Security)."
 msgstr ""
 
-#: assets/builder.js:1005
+#: assets/builder.js:1018
 msgid "Minimum seconds before sending"
 msgstr ""
 
-#: assets/builder.js:1005
+#: assets/builder.js:1018
 msgid "Forms sent faster than this are treated as robots. 3 seconds suits most forms."
 msgstr ""
 
-#: assets/builder.js:1009
+#: assets/builder.js:1022
 msgid "none"
 msgstr ""
 
 #. translators: %s: anti-spam service name.
-#: assets/builder.js:1010
+#: assets/builder.js:1023
 #, js-format
 msgid "Default (%s)"
 msgstr ""
 
-#: assets/builder.js:1012
+#: assets/builder.js:1025
 msgid "not set up"
 msgstr ""
 
-#: assets/builder.js:1015
+#: assets/builder.js:1028
 msgid "Captcha or anti-spam service"
 msgstr ""
 
-#: assets/builder.js:1017
+#: assets/builder.js:1030
 msgid "Services are set up once for every form in Aluleth › Settings › Security."
 msgstr ""
 
-#: assets/builder.js:1017
+#: assets/builder.js:1030
 msgid "Open the security settings"
 msgstr ""
 
-#: assets/builder.js:1024
+#: assets/builder.js:1037
 msgid "Message shown after sending"
 msgstr ""
 
-#: assets/builder.js:1025
+#: assets/builder.js:1038
 msgid "Or go to this page instead"
 msgstr ""
 
-#: assets/builder.js:1025
+#: assets/builder.js:1038
 msgid "Leave empty to show the message."
 msgstr ""
 
-#: assets/builder.js:1040
+#: assets/builder.js:1053
 msgid "Field settings"
 msgstr ""

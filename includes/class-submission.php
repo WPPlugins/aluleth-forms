@@ -336,23 +336,37 @@ final class Submission {
 	 * What happens once an entry is saved (and paid, for a payment form):
 	 * contact, emails, outside tools, the "entry created" action.
 	 *
-	 * @param array  $form     Form.
-	 * @param array  $values   Clean values.
-	 * @param int    $entry_id Entry id.
-	 * @param string $page_url Page the form was sent from.
-	 * @param array  $payment  Payment details (Payments::record()), or empty.
+	 * With $steps (an entry saved in steps by its own code: an order, a crypto
+	 * payment), each step is recorded once it is done and skipped when it was done
+	 * before, so a finish that was interrupted goes on where it stopped; an email
+	 * the mail server refused then throws (the step runs again on the next try).
+	 *
+	 * @param array             $form     Form.
+	 * @param array             $values   Clean values.
+	 * @param int               $entry_id Entry id.
+	 * @param string            $page_url Page the form was sent from.
+	 * @param array             $payment  Payment details (Payments::record()), or empty.
+	 * @param Finish_Steps|null $steps    Steps already done (null: everything runs now).
+	 * @throws \RuntimeException With $steps, when an email could not be sent.
 	 * @return int Contact id.
 	 */
-	public static function finish( array $form, array $values, $entry_id, $page_url, array $payment = array() ) {
+	public static function finish( array $form, array $values, $entry_id, $page_url, array $payment = array(), $steps = null ) {
 		$settings = $form['schema']['settings'];
+		$steps    = $steps instanceof Finish_Steps ? $steps : null;
 
 		// 6. Contact, consent, tags, event.
-		$contact_id = self::contact( $form, $values, $entry_id );
+		$contact_id = Finish_Steps::run(
+			$steps,
+			'contact',
+			static function () use ( $form, $values, $entry_id ) {
+				return self::contact( $form, $values, $entry_id );
+			}
+		);
 
-		// 7. Emails.
-		self::notify( $form, $values, $entry_id, $contact_id, $payment );
+		// 7. Emails (team, confirmation, receipt: one step each).
+		self::notify( $form, $values, $entry_id, $contact_id, $payment, $steps );
 
-		// 8. Outside tools (MailPoet, FluentCRM, webhooks…), sent in the background.
+		// 8. Outside tools (MailPoet, FluentCRM, webhooks…), queued and sent in the background.
 		if ( ! empty( $settings['integrations'] ) && class_exists( '\\Aluleth\\Core\\Integrations' ) ) {
 			$payload = self::payload( $form, $values, $entry_id, $page_url, $contact_id );
 			if ( $payment ) {
@@ -367,25 +381,37 @@ final class Submission {
 					$payload['payment']['order'] = (string) $payment['order']['number'];
 				}
 			}
-			\Aluleth\Core\Integrations::dispatch(
-				$settings['integrations'],
-				$payload,
-				array(
-					'object'  => array( 'entry', $entry_id ),
-					'contact' => $contact_id,
-				)
+			Finish_Steps::run(
+				$steps,
+				'integrations',
+				static function () use ( $settings, $payload, $entry_id, $contact_id ) {
+					\Aluleth\Core\Integrations::dispatch(
+						$settings['integrations'],
+						$payload,
+						array(
+							'object'  => array( 'entry', $entry_id ),
+							'contact' => $contact_id,
+						)
+					);
+				}
 			);
 		}
 
-		/**
-		 * Fires after an entry was saved (after the payment, for a payment form).
-		 *
-		 * @param int   $entry_id   Entry id.
-		 * @param array $form       Form (id, title, schema).
-		 * @param array $values     Clean values.
-		 * @param int   $contact_id Contact id (0 without an email field).
-		 */
-		do_action( 'aluleth_forms/entry_created', $entry_id, $form, $values, $contact_id );
+		Finish_Steps::run(
+			$steps,
+			'created',
+			static function () use ( $entry_id, $form, $values, $contact_id ) {
+				/**
+				 * Fires after an entry was saved (after the payment, for a payment form).
+				 *
+				 * @param int   $entry_id   Entry id.
+				 * @param array $form       Form (id, title, schema).
+				 * @param array $values     Clean values.
+				 * @param int   $contact_id Contact id (0 without an email field).
+				 */
+				do_action( 'aluleth_forms/entry_created', $entry_id, $form, $values, $contact_id );
+			}
+		);
 
 		// "Do not save entries" (Aluleth › Settings › General): the entry only lived for the emails and
 		// sends above. Paid entries are always kept, as the record of the payment.
@@ -621,14 +647,39 @@ final class Submission {
 	 * Sends the team notification, the optional confirmation and, for a
 	 * payment, the receipt.
 	 *
-	 * @param array $form       Form.
-	 * @param array $values     Clean values.
-	 * @param int   $entry_id   Entry id.
-	 * @param int   $contact_id Contact id.
-	 * @param array $payment    Payment details, or empty.
+	 * @param array             $form       Form.
+	 * @param array             $values     Clean values.
+	 * @param int               $entry_id   Entry id.
+	 * @param int               $contact_id Contact id.
+	 * @param array             $payment    Payment details, or empty.
+	 * @param Finish_Steps|null $steps Steps (see finish()).
 	 * @return void
 	 */
-	private static function notify( array $form, array $values, $entry_id, $contact_id, array $payment = array() ) {
+	private static function notify( array $form, array $values, $entry_id, $contact_id, array $payment = array(), $steps = null ) {
+		if ( ! $steps instanceof Finish_Steps ) {
+			self::notify_steps( $form, $values, $entry_id, $contact_id, $payment, null );
+			return;
+		}
+		add_action( 'wp_mail_failed', array( __CLASS__, 'mail_failed' ) );
+		try {
+			self::notify_steps( $form, $values, $entry_id, $contact_id, $payment, $steps );
+		} finally {
+			remove_action( 'wp_mail_failed', array( __CLASS__, 'mail_failed' ) );
+		}
+	}
+
+	/**
+	 * Work of notify().
+	 *
+	 * @param array             $form       Form.
+	 * @param array             $values     Clean values.
+	 * @param int               $entry_id   Entry id.
+	 * @param int               $contact_id Contact id.
+	 * @param array             $payment    Payment, or empty.
+	 * @param Finish_Steps|null $steps      Steps.
+	 * @return void
+	 */
+	private static function notify_steps( array $form, array $values, $entry_id, $contact_id, array $payment, $steps ) {
 		$settings = $form['schema']['settings'];
 		$mail     = aluleth_core()->mail();
 		$email    = '';
@@ -680,42 +731,60 @@ final class Submission {
 		$rows = (string) apply_filters( 'aluleth_forms/mail_rows', $rows, $form, $values, $entry_id );
 
 		if ( $settings['notify'] ) {
-			$to   = '' !== $settings['notify_to'] ? array_map( 'trim', explode( ',', $settings['notify_to'] ) ) : array( get_option( 'admin_email' ) );
-			$to   = str_replace( '{admin_email}', get_option( 'admin_email' ), $to );
+			$to   = Forms::recipients( $settings );
 			$link = admin_url( 'admin.php?page=aluleth-forms-entries&entry=' . (int) $entry_id );
 			$html = '<h2 style="margin:0 0 16px;font-size:18px">' . esc_html( $form['title'] ) . '</h2><table style="border-collapse:collapse;width:100%">' . $rows . '</table>' . $pay_rows . '<p style="margin:20px 0 0"><a href="' . esc_url( $link ) . '" style="display:inline-block;background:#0e1116;color:#ffffff;text-decoration:none;padding:10px 16px;border-radius:8px;font-weight:600">' . esc_html__( 'Open the entry', 'aluleth-forms' ) . '</a></p>';
-			$mail->send(
-				$to,
-				strtr( $settings['notify_subject'], $replace ),
-				$html,
-				array_merge(
-					General::sender(),
-					array(
-						'reply_to'    => $email,
-						'attachments' => self::attachments( 'notify', $form, $values, $entry_id ),
-					)
-				)
+			Finish_Steps::run(
+				$steps,
+				'team',
+				static function () use ( $mail, $to, $settings, $replace, $html, $email, $form, $values, $entry_id, $steps ) {
+					self::$mail_failed = false;
+					$mail->send(
+						$to,
+						strtr( $settings['notify_subject'], $replace ),
+						$html,
+						array_merge(
+							General::sender(),
+							array(
+								'reply_to'    => $email,
+								'attachments' => self::attachments( 'notify', $form, $values, $entry_id ),
+							)
+						)
+					);
+					self::sent_or_throw( $steps, __( 'The email to the team could not be sent.', 'aluleth-forms' ) );
+				}
 			);
 		}
 
 		// At most 3 confirmations per address and per hour, so the form cannot be used to send mail to strangers.
 		$cap_key = 'aluleth_forms_cf_' . substr( md5( strtolower( $email ) ), 0, 32 );
-		$sent    = '' !== $email ? (int) get_transient( $cap_key ) : 0;
-		if ( $settings['confirm'] && '' !== $email && $sent < 3 ) {
-			set_transient( $cap_key, $sent + 1, HOUR_IN_SECONDS );
-			$html = wpautop( esc_html( strtr( $settings['confirm_message'], $replace ) ) ) . '<table style="border-collapse:collapse;width:100%;margin-top:16px">' . $rows . '</table>' . $pay_rows;
-			$mail->send(
-				$email,
-				strtr( $settings['confirm_subject'], $replace ),
-				$html,
-				array_merge(
-					General::sender(),
-					array(
-						'contact'     => $contact_id,
-						'kind'        => 'transactional',
-						'attachments' => self::attachments( 'confirm', $form, $values, $entry_id ),
-					)
-				)
+		if ( $settings['confirm'] && '' !== $email && ! ( $steps && $steps->has( 'confirm' ) ) ) {
+			Finish_Steps::run(
+				$steps,
+				'confirm',
+				static function () use ( $mail, $email, $settings, $replace, $rows, $pay_rows, $contact_id, $form, $values, $entry_id, $cap_key, $steps ) {
+					$count = (int) get_transient( $cap_key );
+					if ( $count >= 3 ) {
+						return; // The cap is reached: this step is done without an email.
+					}
+					$html              = wpautop( esc_html( strtr( $settings['confirm_message'], $replace ) ) ) . '<table style="border-collapse:collapse;width:100%;margin-top:16px">' . $rows . '</table>' . $pay_rows;
+					self::$mail_failed = false;
+					$mail->send(
+						$email,
+						strtr( $settings['confirm_subject'], $replace ),
+						$html,
+						array_merge(
+							General::sender(),
+							array(
+								'contact'     => $contact_id,
+								'kind'        => 'transactional',
+								'attachments' => self::attachments( 'confirm', $form, $values, $entry_id ),
+							)
+						)
+					);
+					set_transient( $cap_key, $count + 1, HOUR_IN_SECONDS );
+					self::sent_or_throw( $steps, __( 'The confirmation email could not be sent.', 'aluleth-forms' ) );
+				}
 			);
 		}
 		// Receipt to the payer when the form sends no confirmation of its own (Aluleth › Settings › Payments).
@@ -735,19 +804,60 @@ final class Submission {
 				/* translators: %s: site name. */
 				$subject = sprintf( __( 'Your payment to %s', 'aluleth-forms' ), $replace['{site_name}'] );
 				$html    = '<h2 style="margin:0 0 8px;font-size:18px">' . esc_html__( 'Thank you, your payment was received.', 'aluleth-forms' ) . '</h2><p style="margin:0;color:#5b6370">' . esc_html( $form['title'] . ' · ' . wp_date( get_option( 'date_format' ) ) ) . '</p>' . $pay_rows;
-				$mail->send(
-					$to,
-					$subject,
-					$html,
-					array_merge(
-						General::sender(),
-						array(
-							'contact' => $contact_id,
-							'kind'    => 'transactional',
-						)
-					)
+				Finish_Steps::run(
+					$steps,
+					'receipt',
+					static function () use ( $mail, $to, $subject, $html, $contact_id, $steps ) {
+						self::$mail_failed = false;
+						$mail->send(
+							$to,
+							$subject,
+							$html,
+							array_merge(
+								General::sender(),
+								array(
+									'contact' => $contact_id,
+									'kind'    => 'transactional',
+								)
+							)
+						);
+						self::sent_or_throw( $steps, __( 'The payment receipt could not be sent.', 'aluleth-forms' ) );
+					}
 				);
 			}
+		}
+	}
+
+	/**
+	 * Whether the mail server refused the last email (WordPress "wp_mail_failed").
+	 *
+	 * @var bool
+	 */
+	private static $mail_failed = false;
+
+	/**
+	 * Notes that the mail server refused an email.
+	 *
+	 * @return void
+	 */
+	public static function mail_failed() {
+		self::$mail_failed = true;
+	}
+
+	/**
+	 * For an entry finished in steps, an email the mail server refused stops the
+	 * finish here (the step runs again on the next try). An address that cannot get
+	 * mail (unsubscribed, not valid) is not a failure. Without steps nothing
+	 * happens: a form sent by a visitor never fails because of the mail server.
+	 *
+	 * @param Finish_Steps|null $steps   Steps.
+	 * @param string            $message Message.
+	 * @throws \RuntimeException When the email was refused and the finish runs in steps.
+	 * @return void
+	 */
+	private static function sent_or_throw( $steps, $message ) {
+		if ( $steps instanceof Finish_Steps && self::$mail_failed ) {
+			throw new \RuntimeException( $message ); // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- an internal message, saved as an entry note.
 		}
 	}
 

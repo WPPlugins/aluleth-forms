@@ -492,7 +492,7 @@ final class Admin {
 		echo '<tr><th><label for="alf-submit">' . esc_html__( 'Button text', 'aluleth-forms' ) . '</label></th><td><input id="alf-submit" class="regular-text" name="alf_settings[submit_label]" value="' . esc_attr( $s['submit_label'] ) . '"></td></tr>';
 		echo '<tr><th><label for="alf-success">' . esc_html__( 'Message after sending', 'aluleth-forms' ) . '</label></th><td><textarea id="alf-success" class="large-text" rows="2" name="alf_settings[success_message]">' . esc_textarea( $s['success_message'] ) . '</textarea></td></tr>';
 		echo '<tr><th><label for="alf-redirect">' . esc_html__( 'Or go to this page', 'aluleth-forms' ) . '</label></th><td><input id="alf-redirect" type="url" class="regular-text" name="alf_settings[redirect]" value="' . esc_attr( $s['redirect'] ) . '" placeholder="https://"></td></tr>';
-		echo '<tr><th>' . esc_html__( 'Email to your team', 'aluleth-forms' ) . '</th><td><label><input type="checkbox" name="alf_settings[notify]" value="1"' . checked( $s['notify'], true, false ) . '> ' . esc_html__( 'Send each new entry by email', 'aluleth-forms' ) . '</label><br><label for="alf-notify-to" class="screen-reader-text">' . esc_html__( 'Send to', 'aluleth-forms' ) . '</label><input id="alf-notify-to" class="regular-text" name="alf_settings[notify_to]" value="' . esc_attr( $s['notify_to'] ) . '" placeholder="' . esc_attr( get_option( 'admin_email' ) ) . '"><p class="description">' . esc_html__( 'Several addresses: separate them with commas. Empty: the site admin email.', 'aluleth-forms' ) . '</p></td></tr>';
+		echo '<tr><th>' . esc_html__( 'Email to your team', 'aluleth-forms' ) . '</th><td><label><input type="checkbox" name="alf_settings[notify]" value="1"' . checked( $s['notify'], true, false ) . '> ' . esc_html__( 'Send each new entry by email', 'aluleth-forms' ) . '</label><br><label for="alf-notify-to" class="screen-reader-text">' . esc_html__( 'Send to', 'aluleth-forms' ) . '</label><input id="alf-notify-to" class="regular-text" name="alf_settings[notify_to]" value="' . esc_attr( $s['notify_to'] ) . '" placeholder="' . esc_attr( get_option( 'admin_email' ) ) . '"><p class="description">' . esc_html( sprintf( /* translators: %s: the site admin email. */ __( 'Who gets each new entry. Several addresses: separate them with commas. Left empty, entries go to the site admin email (%s).', 'aluleth-forms' ), get_option( 'admin_email' ) ) ) . '</p></td></tr>';
 		echo '<tr><th>' . esc_html__( 'Email to the visitor', 'aluleth-forms' ) . '</th><td><label><input type="checkbox" name="alf_settings[confirm]" value="1"' . checked( $s['confirm'], true, false ) . '> ' . esc_html__( 'Send a confirmation with a copy of their answers', 'aluleth-forms' ) . '</label><br><label for="alf-confirm-subject" class="screen-reader-text">' . esc_html__( 'Subject', 'aluleth-forms' ) . '</label><input id="alf-confirm-subject" class="regular-text" name="alf_settings[confirm_subject]" value="' . esc_attr( $s['confirm_subject'] ) . '"><br><label for="alf-confirm-message" class="screen-reader-text">' . esc_html__( 'Message', 'aluleth-forms' ) . '</label><textarea id="alf-confirm-message" class="large-text" rows="4" name="alf_settings[confirm_message]">' . esc_textarea( $s['confirm_message'] ) . '</textarea></td></tr>';
 		echo '<tr><th><label for="alf-tags">' . esc_html__( 'Tags for the contact', 'aluleth-forms' ) . '</label></th><td><input id="alf-tags" class="regular-text" name="alf_settings[tags]" value="' . esc_attr( implode( ', ', $s['tags'] ) ) . '"><p class="description">' . esc_html__( 'Separated by commas. Shared with every Aluleth plugin.', 'aluleth-forms' ) . '</p></td></tr>';
 		echo '</tbody></table>';
@@ -557,6 +557,7 @@ final class Admin {
 		unset( $columns['date'] );
 		$columns['alf_shortcode']        = __( 'Shortcode', 'aluleth-forms' );
 		$columns['aluleth_form_entries'] = __( 'Entries', 'aluleth-forms' );
+		$columns['alf_emails']           = __( 'New entries emailed to', 'aluleth-forms' );
 		if ( $date ) {
 			$columns['date'] = $date;
 		}
@@ -581,6 +582,19 @@ final class Admin {
 				)
 			);
 			echo '<a href="' . esc_url( admin_url( 'admin.php?page=aluleth-forms-entries&form=' . $post_id ) ) . '">' . esc_html( number_format_i18n( $count['total'] ) ) . '</a>';
+		} elseif ( 'alf_emails' === $column ) {
+			// Who gets each new entry, and a link straight to where it is changed.
+			$form   = Forms::get( $post_id, true );
+			$to     = $form ? Forms::recipients( $form['schema']['settings'] ) : array();
+			$change = add_query_arg(
+				array(
+					'tab'     => 'settings',
+					'section' => 'emails',
+				),
+				Builder::url( $post_id )
+			);
+			echo $to ? esc_html( implode( ', ', $to ) ) : '<span class="description">' . esc_html__( 'Not emailed', 'aluleth-forms' ) . '</span>';
+			echo ' <a href="' . esc_url( $change ) . '" aria-label="' . esc_attr( sprintf( /* translators: %s: form title. */ __( 'Change who gets the entries of %s by email', 'aluleth-forms' ), get_the_title( $post_id ) ) ) . '">' . esc_html__( 'Change', 'aluleth-forms' ) . '</a>';
 		}
 	}
 
